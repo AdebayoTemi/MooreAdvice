@@ -1,0 +1,729 @@
+/* Contact Modal Styles */
+.contact-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.contact-modal-overlay.active {
+  display: flex !important;
+}
+
+.contact-modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-modal-content {
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px 32px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.contact-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: rgba(5, 5, 143, 1);
+  font-size: 36px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  z-index: 10;
+  font-weight: 300;
+}
+
+.contact-close-btn:hover {
+  opacity: 0.6;
+}
+
+.contact-modal-title {
+  font-size: 32px;
+  font-weight: 400;
+  color: rgba(5, 5, 143, 1);
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+  padding-right: 40px;
+}
+
+.contact-info-card {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contact-info-card:last-child {
+  margin-bottom: 0;
+}
+
+.contact-icon-wrapper {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  width: 28px;
+  height: 28px;
+  color: rgba(5, 5, 143, 1);
+}
+
+.contact-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.contact-detail {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(5, 5, 143, 1);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+  .contact-modal-content {
+    padding: 36px 24px;
+  }
+
+  .contact-modal-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .contact-close-btn {
+    top: 16px;
+    right: 16px;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .contact-info-card {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .contact-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+
+  .contact-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact-label {
+    font-size: 14px;
+  }
+
+  .contact-detail {
+    font-size: 14px;
+  }
+}
+
+/* book an Appointment */
+/* Appointment Modal Styles */
+/* Appointment Modal Styles - COMPLETE FIX */
+/* Appointment Modal Styles - FINAL FIX */
+/* Appointment Modal Styles - OVERLAY FIX */
+.appointment-modal-overlay {
+  display: none;
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100vh !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  z-index: 999999 !important;
+  padding: 15px;
+  margin: 0 !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.appointment-modal-overlay.active {
+  display: block !important;
+}
+
+.appointment-modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  margin: 30px auto;
+  z-index: 1000000;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.appointment-modal-content {
+  background-color: white;
+  border-radius: 12px;
+  padding: 42px 32px 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 100%;
+}
+
+.appointment-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: rgba(5, 5, 143, 1);
+  font-size: 36px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  z-index: 100;
+  font-weight: 300;
+}
+
+.appointment-close-btn:hover {
+  opacity: 0.6;
+}
+
+.appointment-modal-title {
+  font-size: 26px;
+  font-weight: 400;
+  color: rgba(5, 5, 143, 1);
+  text-align: center;
+  margin-bottom: 24px;
+  letter-spacing: 1.5px;
+  padding-right: 30px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.appointment-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.appointment-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.appointment-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 2px;
+}
+
+.appointment-input,
+.appointment-textarea,
+.appointment-select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #333;
+  background-color: white;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.appointment-input:focus,
+.appointment-textarea:focus,
+.appointment-select:focus {
+  outline: none;
+  border-color: rgba(5, 5, 143, 1);
+}
+
+.appointment-input::placeholder,
+.appointment-textarea::placeholder {
+  color: #999;
+}
+
+.appointment-textarea {
+  resize: vertical;
+  min-height: 75px;
+  max-height: 150px;
+}
+
+.appointment-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  padding-right: 36px;
+  cursor: pointer;
+  color: #666;
+}
+
+.appointment-select:focus {
+  color: #333;
+}
+
+.appointment-select option {
+  color: #333;
+  padding: 8px;
+}
+
+.appointment-submit-btn {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: rgba(5, 5, 143, 1);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 6px;
+}
+
+.appointment-submit-btn:hover {
+  background-color: rgba(5, 5, 143, 0.88);
+}
+
+.appointment-submit-btn:active {
+  background-color: rgba(5, 5, 143, 1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .appointment-modal-overlay {
+    padding: 12px;
+  }
+
+  .appointment-modal-container {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .appointment-modal-content {
+    padding: 38px 26px 28px;
+  }
+
+  .appointment-modal-title {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .appointment-close-btn {
+    top: 12px;
+    right: 12px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .appointment-modal-overlay {
+    padding: 10px;
+  }
+
+  .appointment-modal-container {
+    margin: 15px auto;
+  }
+
+  .appointment-modal-content {
+    padding: 35px 22px 26px;
+  }
+
+  .appointment-modal-title {
+    font-size: 21px;
+    margin-bottom: 18px;
+    padding-right: 28px;
+  }
+
+  .appointment-close-btn {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .appointment-form {
+    gap: 13px;
+  }
+
+  .appointment-form-row {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .appointment-label {
+    font-size: 13px;
+  }
+
+  .appointment-input,
+  .appointment-textarea,
+  .appointment-select {
+    font-size: 14px;
+    padding: 9px 11px;
+  }
+
+  .appointment-submit-btn {
+    font-size: 15px;
+    padding: 11px 20px;
+  }
+}
+
+/* career appointment */
+
+/* Career Modal Styles */
+.career-modal-overlay {
+  display: none;
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100vh !important;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  z-index: 999999 !important;
+  padding: 15px;
+  margin: 0 !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.career-modal-overlay.active {
+  display: block !important;
+}
+
+.career-modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  margin: 30px auto;
+  z-index: 1000000;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.career-modal-content {
+  background-color: white;
+  border-radius: 12px;
+  padding: 42px 32px 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 100%;
+}
+
+.career-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: rgba(5, 5, 143, 1);
+  font-size: 36px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  z-index: 100;
+  font-weight: 300;
+}
+
+.career-close-btn:hover {
+  opacity: 0.6;
+}
+
+.career-modal-title {
+  font-size: 26px;
+  font-weight: 400;
+  color: rgba(5, 5, 143, 1);
+  text-align: center;
+  margin-bottom: 24px;
+  letter-spacing: 1.5px;
+  padding-right: 30px;
+}
+
+.career-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.career-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.career-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.career-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 2px;
+}
+
+.career-input,
+.career-textarea,
+.career-select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #333;
+  background-color: white;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.career-input:focus,
+.career-textarea:focus,
+.career-select:focus {
+  outline: none;
+  border-color: rgba(5, 5, 143, 1);
+}
+
+.career-input::placeholder,
+.career-textarea::placeholder {
+  color: #999;
+}
+
+.career-textarea {
+  resize: vertical;
+  min-height: 75px;
+  max-height: 150px;
+}
+
+.career-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  padding-right: 36px;
+  cursor: pointer;
+  color: #666;
+}
+
+.career-select:focus {
+  color: #333;
+}
+
+/* File Input Styles */
+.career-file-input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.career-file-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.career-file-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.career-file-label:hover {
+  border-color: rgba(5, 5, 143, 1);
+  background-color: #f8f8f8;
+}
+
+.career-file-text {
+  color: #666;
+}
+
+.career-file-name {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.career-submit-btn {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: rgba(5, 5, 143, 1);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 6px;
+}
+
+.career-submit-btn:hover {
+  background-color: rgba(5, 5, 143, 0.88);
+}
+
+.career-submit-btn:active {
+  background-color: rgba(5, 5, 143, 1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .career-modal-overlay {
+    padding: 12px;
+  }
+
+  .career-modal-container {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .career-modal-content {
+    padding: 38px 26px 28px;
+  }
+
+  .career-modal-title {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .career-close-btn {
+    top: 12px;
+    right: 12px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .career-modal-overlay {
+    padding: 10px;
+  }
+
+  .career-modal-container {
+    margin: 15px auto;
+  }
+
+  .career-modal-content {
+    padding: 35px 22px 26px;
+  }
+
+  .career-modal-title {
+    font-size: 21px;
+    margin-bottom: 18px;
+    padding-right: 28px;
+  }
+
+  .career-close-btn {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .career-form {
+    gap: 13px;
+  }
+
+  .career-form-row {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .career-label {
+    font-size: 13px;
+  }
+
+  .career-input,
+  .career-textarea,
+  .career-select {
+    font-size: 14px;
+    padding: 9px 11px;
+  }
+
+  .career-file-label {
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+
+  .career-submit-btn {
+    font-size: 15px;
+    padding: 11px 20px;
+  }
+}

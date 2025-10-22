@@ -1,0 +1,2239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In the Begining</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/page-hero.css" />
+    <link rel="stylesheet" href="css/story-section.css" />
+    <link rel="stylesheet" href="css/faq-section.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <main class="bg-gray-50">
+      <!-- Page Hero Section - Reusable Component -->
+      <section class="page-hero" id="pageHero">
+        <!-- Background Image (will be set dynamically) -->
+        <div class="page-hero__background"></div>
+
+        <!-- Overlay -->
+        <div class="page-hero__overlay"></div>
+
+        <!-- Content -->
+        <div class="page-hero__content">
+          <h1 class="page-hero__title" id="heroTitle">Where It All Began</h1>
+          <p class="page-hero__subtitle" id="heroSubtitle">
+            Our journey from humble beginnings to industry leadership
+          </p>
+        </div>
+      </section>
+
+      <!-- Content Section with Sidebar Navigation -->
+      <section class="py-12 px-6 md:px-12 lg:px-6 mt-12">
+        <div class="">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Left Sidebar Navigation - Always Visible -->
+            <aside class="lg:col-span-3">
+              <nav class="sidebar-nav bg-white rounded-xl shadow-lg">
+                <!-- Blue Header Section with decorative circles -->
+                <div class="bg-[#05058F] rounded-t-xl p-3">
+                  <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-lg font-medium text-white mt-1">
+                      IN THE BEGINNING
+                    </h3>
+                    <div class="flex gap-2 mt-1">
+                      <span class="w-4 h-4 bg-white rounded-full"></span>
+                      <span class="w-4 h-4 bg-white rounded-full"></span>
+                      <span class="w-4 h-4 bg-white rounded-full"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Navigation Links - White Background -->
+                <div class="p-2 pt-4">
+                  <ul class="space-y-2">
+                    <li>
+                      <a
+                        href="#our-story"
+                        onclick="scrollToSection('our-story')"
+                        class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-normal"
+                      >
+                        <span class="mr-3 text-xl">›</span> Our Story
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#our-heritage"
+                        onclick="scrollToSection('our-heritage')"
+                        class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-normal"
+                      >
+                        <span class="mr-3 text-xl">›</span> Our Heritage
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#our-evolution"
+                        onclick="scrollToSection('our-evolution')"
+                        class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-normal"
+                      >
+                        <span class="mr-3 text-xl">›</span> Our Evolution
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#key-milestones"
+                        onclick="scrollToSection('key-milestones')"
+                        class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-normal"
+                      >
+                        <span class="mr-3 text-xl">›</span> Key Milestones
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#funding-principles"
+                        onclick="scrollToSection('funding-principles')"
+                        class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-normal"
+                      >
+                        <span class="mr-3 text-xl">›</span> Funding Principles
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#faq"
+                        onclick="scrollToSection('faq')"
+                        class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-normal"
+                      >
+                        <span class="mr-3 text-xl">›</span> FAQ
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </aside>
+
+            <!-- Right Content Area -->
+            <main class="lg:col-span-9 space-y-[140px]">
+              <!-- Card 1: Our Story -->
+              <article
+                id="our-story"
+                class="content-card bg-white rounded-xl shadow-lg overflow-hidden" style="grid-auto-rows: 1fr;"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2  ">
+                  <!-- Left: Content -->
+                  <div class="p-8 md:p-10 flex flex-col">
+                    <h2
+                      class="text-3xl md:text-4xl font-light text-blue-900 mb-4"
+                    >
+                      Our Founding Story
+                    </h2>
+                    <p class="text-[#000] mb-6 text-lg font-light">
+                      Founded in 2005, our journey began with a bold vision to
+                      transform how businesses approach digital solutions.
+                    </p>
+
+                    <div class="flex justify-end">
+                                   <button
+          onclick="toggleAllAccordions('story')"
+          id="toggleAllBtn-story"
+          class="text-sm font-medium text-blue-900 hover:text-blue-900 transition-colors duration-200 flex items-center  gap-1 whitespace-nowrap ml-4 mt-2 mb-2 border border-gray-200 rounded-md px-3 py-1 w-fit "
+        >
+          <span id="toggleAllText-story">Expand All</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+                    </div>
+
+         
+
+                    <!-- Accordion Items -->
+                    <div class="space-y-4">
+                      <!-- Accordion Item 1 -->
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('story-1')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-gray-800 text-lg"
+                            >Vision and Mission</span
+                          >
+                          <svg
+                            id="icon-story-1"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-story-1"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Our journey began with a clear vision to
+                            revolutionize digital solutions for businesses.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Accordion Item 2 -->
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('story-2')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-gray-800 text-lg"
+                            >Initial Team</span
+                          >
+                          <svg
+                            id="icon-story-2"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-story-2"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Three passionate innovators came together with
+                            complementary skills and shared values.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Accordion Item 3 -->
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('story-3')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-gray-800 text-lg"
+                            >Early Challenges</span
+                          >
+                          <svg
+                            id="icon-story-3"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-story-3"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Navigating market uncertainties and building trust
+                            with our first clients.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Accordion Item 4 -->
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('story-4')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-gray-800 text-lg"
+                            >First Success</span
+                          >
+                          <svg
+                            id="icon-story-4"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-story-4"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Landing our first major client and delivering
+                            transformative results.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Right: Timeline Graphic -->
+                  <div class="relative overflow-hidden  h-[400px] md:h-full md:self-stretch" style="min-height: 100%;">
+                    <img
+                      src="./img/In-the-begining.webp"
+                      alt="in the beginiing"
+                      class="rounded-lg shadow-lg h-full w-full object-cover absolute inset-0"
+                       style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 2: Our Heritage -->
+              <article
+                id="our-heritage"
+                class="content-card bg-white rounded-xl shadow-lg overflow-hidden min-h-[400px]"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <div class="p-8 md:p-10">
+                    <h2
+                      class="text-3xl md:text-4xl font-light text-blue-900 mb-4"
+                    >
+                      Our Heritage
+                    </h2>
+                    <p class="text-[#000] mb-6 font-light text-lg">
+                      A rich history of innovation and client success built over
+                      two decades.
+                    </p>
+
+                    
+                    <div class="flex justify-end">
+                                   <button
+          onclick="toggleAllAccordions('heritage')"
+          id="toggleAllBtn-story"
+          class="text-sm font-medium text-blue-900 hover:text-blue-900 transition-colors duration-200 flex items-center  gap-1 whitespace-nowrap ml-4 mt-2 mb-2 border border-gray-200 rounded-md px-3 py-1 w-fit "
+        >
+          <span id="toggleAllText-story">Expand All</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+                    </div>
+
+                    
+
+                    <div class="space-y-4">
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('heritage-1')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Company Values</span
+                          >
+                          <svg
+                            id="icon-heritage-1"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-heritage-1"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Our core values have guided us through every
+                            challenge and success.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('heritage-2')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-medium text-gray-800"
+                            >Cultural Foundation</span
+                          >
+                          <svg
+                            id="icon-heritage-2"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-heritage-2"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Building a culture of excellence, innovation, and
+                            collaboration.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('heritage-3')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-medium text-gray-800"
+                            >Legacy Projects</span
+                          >
+                          <svg
+                            id="icon-heritage-3"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-heritage-3"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Landmark projects that defined our approach and
+                            reputation.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('heritage-4')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Industry Impact</span
+                          >
+                          <svg
+                            id="icon-heritage-4"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-heritage-4"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            How we've influenced and shaped industry standards.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative overflow-hidden" style="min-height: 100%;">
+                    <img
+                      src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&h=600&fit=crop"
+                      alt="Our Heritage"
+                      class="rounded-lg shadow-lg h-full w-full object-cover absolute inset-0"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 3: Our Evolution -->
+              <article
+                id="our-evolution"
+                class="content-card bg-white rounded-xl shadow-lg overflow-hidden"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <div class="p-8 md:p-10">
+                    <h2
+                      class="text-3xl md:text-4xl font-light text-blue-900 mb-4"
+                    >
+                      Our Evolution
+                    </h2>
+                    <p class="text-[#000] font-light text-lg mb-6">
+                      How we've grown and adapted to serve our clients better.
+                    </p>
+
+                    
+                    <div class="flex justify-end">
+                                   <button
+          onclick="toggleAllAccordions('evolution')"
+          id="toggleAllBtn-story"
+          class="text-sm font-medium text-blue-900 hover:text-blue-900 transition-colors duration-200 flex items-center  gap-1 whitespace-nowrap ml-4 mt-2 mb-2 border border-gray-200 rounded-md px-3 py-1 w-fit "
+        >
+          <span id="toggleAllText-story">Expand All</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('evolution-1')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Growth Milestones</span
+                          >
+                          <svg
+                            id="icon-evolution-1"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-evolution-1"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Key moments that shaped our journey and expanded our
+                            capabilities.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('evolution-2')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Technology Adoption</span
+                          >
+                          <svg
+                            id="icon-evolution-2"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-evolution-2"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Embracing new technologies to deliver cutting-edge
+                            solutions.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('evolution-3')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Market Expansion</span
+                          >
+                          <svg
+                            id="icon-evolution-3"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-evolution-3"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Extending our reach to new markets and industries.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('evolution-4')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Team Growth</span
+                          >
+                          <svg
+                            id="icon-evolution-4"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-evolution-4"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Scaling our team with top talent and diverse
+                            expertise.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative overflow-hidden" style="min-height: 100%;">
+                    <img
+                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=600&fit=crop"
+                      alt="Our Evolution"
+                      class="rounded-lg shadow-lg w-full h-full object-cover absolute inset-0"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 4: Key Milestones -->
+              <article
+                id="key-milestones"
+                class="content-card bg-white rounded-xl shadow-lg overflow-hidden"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <div class="p-8 md:p-10">
+                    <h2
+                      class="text-3xl md:text-4xl font-light text-blue-900 mb-4"
+                    >
+                      Key Milestones
+                    </h2>
+                    <p class="text-[#000] font-light text-lg mb-6">
+                      Celebrating our achievements and significant moments.
+                    </p>
+                    
+                    <div class="flex justify-end">
+                                   <button
+          onclick="toggleAllAccordions('milestones')"
+          id="toggleAllBtn-story"
+          class="text-sm font-medium text-blue-900 hover:text-blue-900 transition-colors duration-200 flex items-center  gap-1 whitespace-nowrap ml-4 mt-2 mb-2 border border-gray-200 rounded-md px-3 py-1 w-fit "
+        >
+          <span id="toggleAllText-story">Expand All</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('milestones-1')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Major Achievements</span
+                          >
+                          <svg
+                            id="icon-milestones-1"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-milestones-1"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Recognitions and awards that validate our commitment
+                            to excellence.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('milestones-2')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Client Success Stories</span
+                          >
+                          <svg
+                            id="icon-milestones-2"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-milestones-2"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Transformative results that made a lasting impact on
+                            businesses.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('milestones-3')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Industry Recognition</span
+                          >
+                          <svg
+                            id="icon-milestones-3"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-milestones-3"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Awards and certifications that showcase our
+                            expertise.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('milestones-4')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Partnership Highlights</span
+                          >
+                          <svg
+                            id="icon-milestones-4"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-milestones-4"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Strategic collaborations that amplified our impact.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative overflow-hidden" style="min-height: 100%;">
+                    <img
+                      src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=600&fit=crop"
+                      alt="Key Milestones"
+                      class="rounded-lg shadow-lg w-full h-full object-cover absolute inset-0"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 5: Funding Principles -->
+              <article
+                id="funding-principles"
+                class="content-card bg-white rounded-xl shadow-lg overflow-hidden"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <div class="p-8 md:p-10">
+                    <h2
+                      class="text-3xl md:text-4xl font-light text-blue-900 mb-4"
+                    >
+                      Funding Principles
+                    </h2>
+                    <p class="text-[#000] font-light text-lg mb-6">
+                      Our approach to sustainable growth and financial
+                      integrity.
+                    </p>
+
+                    
+                    <div class="flex justify-end">
+                                   <button
+          onclick="toggleAllAccordions('funding')"
+          id="toggleAllBtn-story"
+          class="text-sm font-medium text-blue-900 hover:text-blue-900 transition-colors duration-200 flex items-center  gap-1 whitespace-nowrap ml-4 mt-2 mb-2 border border-gray-200 rounded-md px-3 py-1 w-fit "
+        >
+          <span id="toggleAllText-story">Expand All</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('funding-1')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Financial Strategy</span
+                          >
+                          <svg
+                            id="icon-funding-1"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-funding-1"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            How we maintain financial health while investing in
+                            innovation.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('funding-2')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Investment Approach</span
+                          >
+                          <svg
+                            id="icon-funding-2"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-funding-2"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Strategic investments in technology and talent
+                            development.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('funding-3')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Revenue Models</span
+                          >
+                          <svg
+                            id="icon-funding-3"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-funding-3"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Diverse revenue streams ensuring long-term
+                            stability.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('funding-4')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Sustainability Focus</span
+                          >
+                          <svg
+                            id="icon-funding-4"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-funding-4"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Balancing profitability with environmental and
+                            social responsibility.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative overflow-hidden" style="min-height: 100%;">
+                    <img
+                      src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=600&fit=crop"
+                      alt="Funding Principles"
+                      class="rounded-lg shadow-lg w-full h-full object-cover absolute inset-0"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 6: FAQ -->
+              <article
+                id="faq"
+                class="content-card bg-white rounded-xl shadow-lg overflow-hidden mb-32"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <div class="p-8 md:p-10">
+                    <h2
+                      class="text-3xl md:text-4xl font-light text-blue-900 mb-4"
+                    >
+                      FAQ
+                    </h2>
+                    <p class="text-gray-600 mb-6">
+                      Answers to commonly asked questions about our journey.
+                    </p>
+
+                    
+                    <div class="flex justify-end">
+                                   <button
+          onclick="toggleAllAccordions('faq')"
+          id="toggleAllBtn-story"
+          class="text-sm font-medium text-blue-900 hover:text-blue-900 transition-colors duration-200 flex items-center  gap-1 whitespace-nowrap ml-4 mt-2 mb-2 border border-gray-200 rounded-md px-3 py-1 w-fit "
+        >
+          <span id="toggleAllText-story">Expand All</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('faq-1')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-[#000] text-lg"
+                            >What makes us different?</span
+                          >
+                          <svg
+                            id="icon-faq-1"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-faq-1"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Our unique 460-degree approach and commitment to
+                            client success.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('faq-2')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >How do you ensure quality?</span
+                          >
+                          <svg
+                            id="icon-faq-2"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-faq-2"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Through rigorous processes, experienced teams, and
+                            continuous improvement.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('faq-3')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >What industries do you serve?</span
+                          >
+                          <svg
+                            id="icon-faq-3"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-faq-3"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            We work across diverse industries including
+                            technology, finance, healthcare, and retail.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('faq-4')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >How can we get started?</span
+                          >
+                          <svg
+                            id="icon-faq-4"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-faq-4"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Contact us for a consultation and we'll create a
+                            customized solution for your needs.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative overflow-hidden" style="min-height: 100%;">
+                    <img
+                      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=600&fit=crop"
+                      alt="FAQ"
+                      class="rounded-lg shadow-lg w-full h-full object-cover absolute inset-0"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- FAQ Section -->
+              <article
+                class="content-card bg-white rounded-xl shadow-lg p-8 md:p-10"
+              >
+                <!-- Section Title -->
+                <h2 class="text-3xl md:text-4xl font-light text-blue-900 mb-8">
+                  Frequently Asked Questions
+                </h2>
+
+                <!-- FAQ Accordion -->
+                <div class="space-y-4">
+                  <!-- FAQ Item 1 -->
+                  <div class="faq-item border-b border-gray-200">
+                    <button
+                      onclick="toggleAccordion('faq1')"
+                      class="w-full flex justify-between items-center py-4 text-left group"
+                    >
+                      <span
+                        class="text-base md:text-lg font-medium text-gray-900 pr-8"
+                        >When the company was founded?</span
+                      >
+                      <svg
+                        id="icon-faq1"
+                        class="w-6 h-6 text-gray-600 transition-transform duration-300 flex-shrink-0 rotate-180"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      id="content-faq1"
+                      class="accordion-content overflow-hidden transition-all duration-300"
+                      style="max-height: 200px"
+                    >
+                      <p
+                        class="pb-4 text-gray-600 text-sm md:text-base leading-relaxed"
+                      >
+                        Our company was founded in 2010 with a vision to
+                        transform how businesses approach digital solutions.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 2 -->
+                  <div class="faq-item border-b border-gray-200">
+                    <button
+                      onclick="toggleAccordion('faq2')"
+                      class="w-full flex justify-between items-center py-4 text-left group"
+                    >
+                      <span
+                        class="text-base md:text-lg font-medium text-gray-900 pr-8"
+                        >Who were the Original Founders?</span
+                      >
+                      <svg
+                        id="icon-faq2"
+                        class="w-6 h-6 text-gray-600 transition-transform duration-300 flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      id="content-faq2"
+                      class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                    >
+                      <p
+                        class="pb-4 text-gray-600 text-sm md:text-base leading-relaxed"
+                      >
+                        The company was founded by three passionate
+                        entrepreneurs with complementary expertise in
+                        technology, business strategy, and creative design.
+                        Their shared vision and collaborative approach laid the
+                        foundation for our success.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 3 -->
+                  <div class="faq-item border-b border-gray-200">
+                    <button
+                      onclick="toggleAccordion('faq3')"
+                      class="w-full flex justify-between items-center py-4 text-left group"
+                    >
+                      <span
+                        class="text-base md:text-lg font-medium text-gray-900 pr-8"
+                        >What was the company's first major Project?</span
+                      >
+                      <svg
+                        id="icon-faq3"
+                        class="w-6 h-6 text-gray-600 transition-transform duration-300 flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      id="content-faq3"
+                      class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                    >
+                      <p
+                        class="pb-4 text-gray-600 text-sm md:text-base leading-relaxed"
+                      >
+                        Our first major project was a comprehensive digital
+                        transformation initiative for a leading retail brand.
+                        This project showcased our ability to deliver innovative
+                        solutions and established our reputation in the
+                        industry.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 4 -->
+                  <div class="faq-item border-b border-gray-200">
+                    <button
+                      onclick="toggleAccordion('faq4')"
+                      class="w-full flex justify-between items-center py-4 text-left group"
+                    >
+                      <span
+                        class="text-base md:text-lg font-medium text-gray-900 pr-8"
+                        >How has the company's mission evolved overtime?</span
+                      >
+                      <svg
+                        id="icon-faq4"
+                        class="w-6 h-6 text-gray-600 transition-transform duration-300 flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      id="content-faq4"
+                      class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                    >
+                      <p
+                        class="pb-4 text-gray-600 text-sm md:text-base leading-relaxed"
+                      >
+                        While our core mission remains consistent, we've
+                        expanded our focus to embrace emerging technologies and
+                        evolving market needs. We've evolved from a traditional
+                        agency to a comprehensive digital solutions partner,
+                        adapting to serve our clients in increasingly
+                        sophisticated ways.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 5 -->
+                  <div class="faq-item">
+                    <button
+                      onclick="toggleAccordion('faq5')"
+                      class="w-full flex justify-between items-center py-4 text-left group"
+                    >
+                      <span
+                        class="text-base md:text-lg font-medium text-gray-900 pr-8"
+                        >What major milestones shaped the company's
+                        growth?</span
+                      >
+                      <svg
+                        id="icon-faq5"
+                        class="w-6 h-6 text-gray-600 transition-transform duration-300 flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      id="content-faq5"
+                      class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                    >
+                      <p
+                        class="pb-4 text-gray-600 text-sm md:text-base leading-relaxed"
+                      >
+                        Key milestones include our first international
+                        expansion, winning industry awards for innovation,
+                        reaching 100+ successful projects, and establishing
+                        strategic partnerships with leading technology
+                        providers. Each milestone has strengthened our
+                        capabilities and market position.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </main>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Our Impact Container -->
+    <div id="ourImpact"></div>
+
+    <!-- Footer Container -->
+    <div id="footer"></div>
+    <script src="components/navbar.js"></script>
+    <script src="components/ourImpact.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/page-hero.js"></script>
+    <script src="js/story-section.js"></script>
+    <script src="js/faq-section.js"></script>
+
+     <style>
+     * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  /* REMOVED: overflow: hidden */
+}
+
+body.popup-active {
+  overflow: hidden;
+}
+
+.background-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: filter 1s ease;
+  z-index: 1;
+  display: none;
+}
+
+.background-content.blurred {
+  filter: blur(8px);
+}
+
+.background-content h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.background-content p {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 2rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1100;
+  transition: background 1s ease, opacity 0.6s ease;
+  opacity: 0;
+  pointer-events: none; /* CRITICAL: Prevents blocking when inactive */
+}
+
+.overlay.active {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  pointer-events: auto; /* CRITICAL: Allows clicks when active */
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* CRITICAL: Prevents blocking when inactive */
+}
+
+.popup-container.active {
+  pointer-events: auto;
+}
+
+.popup {
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+  height: auto; /* Default - adjusts to content */
+  min-height: 550px; /* Add minimum height */
+  max-height: 80vh; /* Maximum 90% of viewport height */
+  max-width: 1300px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  display: flex;
+  overflow: hidden;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: auto;
+  position: relative;
+}
+
+.popup.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Keep all your other styles the same */
+.popup-content {
+  flex: 0 0 68.6667%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup-header {
+  margin-bottom: 0;
+}
+
+.popup-title {
+  font-size: 25px;
+  color: #05058f;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.popup-subtitle {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  padding-right: 5rem;
+  margin-top: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-icon svg {
+  width: 30px;
+  height: 30px;
+  color: #05058f;
+}
+
+.feature-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.feature-content p {
+  font-size: 14px;
+  color: rgb(75, 85, 99);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.popup-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  cursor: pointer;
+  text-transform: inherit !important;
+  border-radius: 6px;
+  padding: 12px 30px;
+  width: auto;
+  background: #05058f;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #05058f;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(5, 5, 143, 0.3);
+}
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  text-transform: inherit !important;
+  border-radius: 6px;
+  padding: 6px 12px;
+  width: auto;
+  color: #05058f !important;
+  border: 2px solid #05058f;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  /* background: #05058f;
+  color: white !important; */
+}
+
+.close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 40px;
+  height: 40px;
+  background: #05058f;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  background: #05058f;
+  transform: scale(1.1);
+}
+
+.close-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke: #fff;
+}
+
+.popup-image {
+  flex: 0 0 33.3333%;
+  background: url("./img/read-More3.webp") center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.popup-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(5, 5, 143, 0.1),
+    rgba(5, 5, 143, 0.1)
+  );
+}
+
+.timer-container {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(5, 5, 143, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #05058f;
+  z-index: 10;
+}
+
+.timer-icon {
+  width: 20px;
+  height: 20px;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.timer-text {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .popup {
+    flex-direction: column;
+    height: 90vh;
+    width: 95%;
+  }
+
+  .popup-content {
+    padding: 2rem;
+  }
+
+  .popup-title {
+    font-size: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .popup-image {
+    flex: 0 0 200px;
+  }
+
+  .popup-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .timer-container {
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
+
+.success-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1300;
+  opacity: 0;
+  scale: 0.8;
+  transition: all 0.4s ease;
+  display: none;
+}
+
+.success-message.active {
+  opacity: 1;
+  scale: 1;
+}
+
+.success-message h2 {
+  color: #05058f;
+  margin-bottom: 1rem;
+}
+
+.success-message p {
+  color: #666;
+}
+
+.heading-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #dcd6d6;
+  padding-bottom: 12px;
+}
+
+.span {
+  margin-top: 3px;
+}
+
+.disPlay {
+  text-decoration: none;
+  color: #05058f;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 8px;
+  transition: background-color 0.25s ease;
+}
+
+.feature-item:hover {
+  background-color: rgba(5, 5, 143, 0.06);
+}
+
+.feature-item[onclick] {
+  cursor: pointer;
+}
+/* Hide popup on mobile devices */
+@media (max-width: 768px) {
+  .overlay,
+  .popup-container {
+    display: none !important;
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="background-content" id="backgroundContent">
+      <div>
+        <h1>Welcome to Our Company</h1>
+      </div>
+      <p>
+        Discover our innovative solutions and exceptional team that drives
+        success in every project we undertake. We're committed to excellence and
+        building lasting partnerships.
+      </p>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="popup-container" id="popupContainer">
+      <div class="popup" id="popup">
+        <button class="close-btn" onclick="closePopup()">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Timer at bottom left -->
+        <div class="timer-container" id="timerContainer">
+          <svg class="timer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span class="timer-text">Auto-close in <span id="timerValue">10</span>s</span>
+        </div>
+
+        <div class="popup-content">
+          <div class="popup-header">
+            <div class="heading-flex">
+              <h1 class="popup-title">In the Beginning</h1>
+              <div class="btn-secondary">
+                <a class="disPlay" href="Portfolio.html">
+                  <div onclick="viewPortfolio()">View Portfolio</div>
+                </a>
+                <span class="span">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8L22 12L18 16" />
+                    <path d="M2 12H22" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <p class="popup-subtitle">Explore our in the beginning section</p>
+          </div>
+
+          <div class="features-grid">
+  <div class="feature-item" onclick="scrollToSectionAndClose('our-story')" style="cursor: pointer;">
+    <div class="feature-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+        <path d="M3 3v5h5" />
+        <path d="M12 7v5l4 2" />
+      </svg>
+    </div>
+    <div class="feature-content">
+      <h3>Our Story</h3>
+      <p>The beginning of our journey and founding story</p>
+    </div>
+  </div>
+
+  <div class="feature-item" onclick="scrollToSectionAndClose('key-milestones')" style="cursor: pointer;">
+    <div class="feature-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 13v8" />
+        <path d="M12 3v3" />
+        <path d="M4 6a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h13a2 2 0 0 0 1.152-.365l3.424-2.317a1 1 0 0 0 0-1.635l-3.424-2.318A2 2 0 0 0 17 6z" />
+      </svg>
+    </div>
+    <div class="feature-content">
+      <h3>Key Milestones</h3>
+      <p>Significant achievements in our journey</p>
+    </div>
+  </div>
+
+  <div class="feature-item" onclick="scrollToSectionAndClose('our-heritage')" style="cursor: pointer;">
+    <div class="feature-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" />
+        <path d="M5 21h14" />
+      </svg>
+    </div>
+    <div class="feature-content">
+      <h3>Our Heritage</h3>
+      <p>Our rich history and traditional values</p>
+    </div>
+  </div>
+
+  <div class="feature-item" onclick="scrollToSectionAndClose('funding-principles')" style="cursor: pointer;">
+    <div class="feature-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 7.7c0-.6-.4-1.2-.8-1.5l-6.3-3.9a1.72 1.72 0 0 0-1.7 0l-10.3 6c-.5.2-.9.8-.9 1.4v6.6c0 .5.4 1.2.8 1.5l6.3 3.9a1.72 1.72 0 0 0 1.7 0l10.3-6c.5-.3.9-1 .9-1.5Z" />
+        <path d="M10 21.9V14L2.1 9.1" />
+        <path d="m10 14 11.9-6.9" />
+        <path d="M14 19.8v-8.1" />
+        <path d="M18 17.5V9.4" />
+      </svg>
+    </div>
+    <div class="feature-content">
+      <h3>Founding Principles</h3>
+      <p>The core values that guide us</p>
+    </div>
+  </div>
+
+  <div class="feature-item" onclick="scrollToSectionAndClose('our-evolution')" style="cursor: pointer;">
+    <div class="feature-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="12" height="20" x="6" y="2" rx="2" />
+        <rect width="20" height="12" x="2" y="6" rx="2" />
+      </svg>
+    </div>
+    <div class="feature-content">
+      <h3>Our Evolution</h3>
+      <p>How we've grown and adapted over time</p>
+    </div>
+  </div>
+
+  <div class="feature-item" onclick="scrollToSectionAndClose('faq')" style="cursor: pointer;">
+    <div class="feature-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 10.5V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h12.5" />
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+        <path d="M18 15.28c.2-.4.5-.8.9-1a2.1 2.1 0 0 1 2.6.4c.3.4.5.8.5 1.3 0 1.3-2 2-2 2" />
+        <path d="M20 22v.01" />
+      </svg>
+    </div>
+    <div class="feature-content">
+      <h3>FAQ</h3>
+      <p>Frequently asked questions about our history</p>
+    </div>
+  </div>
+</div>
+
+
+          <div class="popup-buttons">
+            <div class="btn-primary" onclick="goToPage()">
+              <div>Go to Page</div>
+              <span class="span">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-image"></div>
+      </div>
+    </div>
+
+    <div class="success-message" id="successMessage">
+      <h2>Welcome!</h2>
+      <p>You're now entering our main page...</p>
+    </div>
+
+    <script>
+let isPopupVisible = false;
+let countdownInterval = null;
+let timeRemaining = 10;
+
+function stopTimer() {
+  if (countdownInterval) {
+    clearInterval(countdownInterval);
+    countdownInterval = null;
+  }
+}
+
+function startTimer() {
+  const timerValue = document.getElementById('timerValue');
+  
+  countdownInterval = setInterval(() => {
+    timeRemaining--;
+    timerValue.textContent = timeRemaining;
+    
+    if (timeRemaining <= 0) {
+      stopTimer();
+      closePopup();
+    }
+  }, 1000);
+}
+
+function closePopup() {
+  stopTimer();
+  isPopupVisible = false;
+  
+  const popup = document.getElementById("popup");
+  const overlay = document.getElementById("overlay");
+  const popupContainer = document.getElementById("popupContainer");
+  const backgroundContent = document.getElementById("backgroundContent");
+
+  popup.classList.remove("active");
+  overlay.classList.remove("active");
+  popupContainer.classList.remove("active");
+  
+  document.body.classList.remove("popup-active");
+
+  setTimeout(() => {
+    backgroundContent.classList.remove("blurred");
+    overlay.style.display = "none";
+    popupContainer.style.display = "none";
+  }, 600);
+}
+
+function scrollToSectionAndClose(sectionId) {
+  closePopup();
+  
+  setTimeout(() => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+      
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${sectionId}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+  }, 700);
+}
+
+function goToPage() {
+  stopTimer();
+  closePopup();
+}
+
+function viewPortfolio() {
+  stopTimer();
+  console.log("Opening portfolio...");
+  closePopup();
+}
+
+window.addEventListener("load", () => {
+  const backgroundContent = document.getElementById("backgroundContent");
+  const overlay = document.getElementById("overlay");
+  const popup = document.getElementById("popup");
+  const popupContainer = document.getElementById("popupContainer");
+  
+  overlay.style.display = "block";
+  popupContainer.style.display = "flex";
+  
+  document.body.classList.add("popup-active");
+  isPopupVisible = true;
+
+  setTimeout(() => {
+    backgroundContent.classList.add("blurred");
+    overlay.classList.add("active");
+    popupContainer.classList.add("active");
+
+    setTimeout(() => {
+      popup.classList.add("active");
+      
+      // TIMER NOW ACTIVE - Uncommented
+      setTimeout(() => {
+        startTimer();
+      }, 500);
+    }, 400);
+  }, 300);
+});
+
+document.getElementById("overlay").addEventListener("click", closePopup);
+
+document.getElementById("popup").addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && isPopupVisible) {
+    closePopup();
+  }
+});
+
+
+
+    </script>
+    <script>
+      // Add this new function to your existing script section
+function toggleAllAccordions(prefix) {
+  // Get all accordion items with the given prefix
+  const accordionIds = [];
+  let index = 1;
+  
+  // Find all accordions with this prefix (story-1, story-2, etc.)
+  while (document.getElementById(`content-${prefix}-${index}`)) {
+    accordionIds.push(`${prefix}-${index}`);
+    index++;
+  }
+  
+  // Check if any accordion is open
+  const anyOpen = accordionIds.some(id => {
+    const content = document.getElementById(`content-${id}`);
+    return content && content.style.maxHeight && content.style.maxHeight !== '0px';
+  });
+  
+  // Toggle all accordions
+  accordionIds.forEach(id => {
+    const content = document.getElementById(`content-${id}`);
+    const icon = document.getElementById(`icon-${id}`);
+    
+    if (content && icon) {
+      if (anyOpen) {
+        // Close all
+        content.style.maxHeight = '0px';
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        // Open all
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+  });
+  
+  // Update button text
+  const buttonText = document.getElementById(`toggleAllText-${prefix}`);
+  if (buttonText) {
+    buttonText.textContent = anyOpen ? 'Expand All' : 'Collapse All';
+  }
+}
+
+// Your existing toggleAccordion function (keep it as is)
+function toggleAccordion(id) {
+  const content = document.getElementById(`content-${id}`);
+  const icon = document.getElementById(`icon-${id}`);
+
+  if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+    content.style.maxHeight = '0px';
+    icon.style.transform = 'rotate(0deg)';
+  } else {
+    content.style.maxHeight = content.scrollHeight + 'px';
+    icon.style.transform = 'rotate(180deg)';
+  }
+}
+    </script>
+  </body>
+</html>

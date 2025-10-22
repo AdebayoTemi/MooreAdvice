@@ -1,0 +1,105 @@
+/* Story Section Styles */
+
+/* TEMPORARY - Add this to test */
+body,
+html,
+main,
+section,
+div {
+  overflow: visible !important;
+}
+
+/* Alternative approach using overflow: clip */
+section,
+section > div {
+  overflow: clip; /* Modern alternative that works with sticky */
+}
+
+/* But keep accordion-content with overflow: hidden */
+.accordion-content {
+  overflow: hidden !important;
+}
+
+/* IMPORTANT: Ensure parent section doesn't have overflow issues */
+section {
+  position: relative;
+  overflow: visible !important;
+}
+
+/* Sticky Sidebar - Must have explicit positioning */
+.sidebar-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 96px; /* Distance from top when stuck - adjust to match your navbar height */
+  align-self: flex-start; /* Prevents stretching in flex/grid containers */
+  transition: all 0.3s ease;
+  min-width: 280px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  z-index: 10;
+}
+
+/* Navigation Links - Base Styles */
+.nav-link {
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+/* Hover state for non-active links */
+.nav-link:not(.active):hover {
+  background-color: #e5e7eb;
+}
+
+/* Active link styling - Blue background with white text */
+.nav-link.active {
+  background-color: #e5e7eb !important;
+  color: #040470 !important;
+  font-weight: 500;
+}
+
+.nav-link.active:hover {
+  background-color: #e5e7eb !important;
+}
+
+/* Content Cards - Shadow on all sides including top */
+.content-card {
+  scroll-margin-top: 120px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.12);
+  /* OR use this for a more prominent shadow on all sides */
+  /* box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15); */
+}
+
+/* Accordion Animation */
+.accordion-content {
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Timeline Styles */
+.timeline-graphic {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+/* Shadow Effects */
+.sidebar-nav.shadow-lg {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive adjustments - Mobile */
+@media (max-width: 1023px) {
+  .sidebar-nav {
+    position: relative;
+    top: auto;
+    width: 100%;
+    max-height: none;
+  }
+}

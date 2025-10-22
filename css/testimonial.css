@@ -1,0 +1,170 @@
+/* Testimonial Slider Styles */
+.testimonial-container {
+  position: relative;
+}
+
+.testimonial-slider {
+  position: relative;
+  height: 100%;
+}
+
+.testimonial-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+}
+
+.testimonial-slide.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
+/* Navigation Buttons - Positioned outside the slider */
+.testimonial-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  color: #1e3a8a;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 20;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-nav-btn:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-prev {
+  left: -25px;
+}
+
+.testimonial-next {
+  right: -25px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .testimonial-prev {
+    left: -15px;
+  }
+
+  .testimonial-next {
+    right: -15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonial-prev {
+    left: 5px;
+  }
+
+  .testimonial-next {
+    right: 5px;
+  }
+}
+/* Testimonial Navigation Buttons */
+.testimonial-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  color: #1e3a8a;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.testimonial-prev {
+  left: -22px;
+}
+
+.testimonial-next {
+  right: -22px;
+}
+
+.testimonial-nav-btn:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-nav-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Mobile dots styling */
+.testimonial-dot {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.testimonial-dot.active {
+  background-color: #1e3a8a !important;
+  width: 0.625rem;
+  height: 0.625rem;
+}
+
+@media (min-width: 1024px) {
+  .testimonial-nav-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonial-prev {
+    left: -25px;
+  }
+
+  .testimonial-next {
+    right: -25px;
+  }
+}
+
+/* Add to your CSS file */
+.testimonial-slider {
+  overflow: hidden;
+  border-radius: 1rem; /* 16px */
+}
+
+/* Target only the main image container (first child with md:w-1/2 class) */
+.testimonial-slide > div:first-child img {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  display: block; /* Remove inline gap */
+}
+
+/* OR use a more specific selector targeting the image section directly */
+.testimonial-slide .md\:w-1\/2:first-child img {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  display: block;
+}

@@ -1,0 +1,2693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/page-hero.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <style>
+      .tab-btn {
+        font-family: "Roboto";
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <main class="bg-gray-50">
+      <!-- Page Hero Section -->
+      <section class="page-hero" id="pageHero">
+        <div class="page-hero__background"></div>
+        <div class="page-hero__overlay"></div>
+        <div class="page-hero__content">
+          <h1 class="page-hero__title" id="heroTitle">Our Blog</h1>
+          <p class="page-hero__subtitle" id="heroSubtitle">
+            Breaking new ground from our roots to industry leadership.
+          </p>
+        </div>
+      </section>
+
+      <!-- Blog Content Section -->
+      <section class="article-section-bg py-12 px-6 md:px-12 lg:px-24">
+        <div class="max-w-7xl mx-auto">
+          <!-- Category Filter Tabs -->
+          <div class="flex flex-wrap gap-3 mb-12 tab-btn">
+            <button
+              onclick="filterBlogs('all')"
+              id="filter-all"
+              class="blog-filter-tab active px-6 py-3 rounded-lg font-normal text-lg transition-all"
+            >
+              All Features
+            </button>
+            <button
+              onclick="filterBlogs('branding')"
+              id="filter-branding"
+              class="blog-filter-tab px-6 py-3 rounded-lg font-normal text-lg transition-all"
+            >
+              Branding
+            </button>
+            <button
+              onclick="filterBlogs('marketing')"
+              id="filter-marketing"
+              class="blog-filter-tab px-6 py-3 rounded-lg font-normal text-lg transition-all"
+            >
+              Marketing
+            </button>
+            <button
+              onclick="filterBlogs('technology')"
+              id="filter-technology"
+              class="blog-filter-tab px-6 py-3 rounded-lg font-normal text-lg transition-all"
+            >
+              Technology
+            </button>
+            <button
+              onclick="filterBlogs('strategy')"
+              id="filter-strategy"
+              class="blog-filter-tab px-6 py-3 rounded-lg font-normal text-lg transition-all"
+            >
+              Strategy
+            </button>
+            <button
+              onclick="filterBlogs('social-media')"
+              id="filter-social-media"
+              class="blog-filter-tab px-6 py-3 rounded-lg font-normal text-lg transition-all"
+            >
+              Social Media
+            </button>
+          </div>
+
+          <!-- Blog Articles Container -->
+          <div class="space-y-4" id="blogContainer">
+            <!-- ARTICLE 1 - STRATEGY - FIXED WITH data-category -->
+            <article
+              class="blog-article bg-white rounded-xl shadow-md overflow-hidden"
+              data-category="strategy"
+            >
+              <div
+                class="flex cursor-pointer hover:bg-gray-50 transition-colors"
+                onclick="toggleArticle('article-1')"
+              >
+                <div class="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&q=80"
+                    alt="Strategy Meeting"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="flex-1 p-4 md:p-6 flex items-center justify-between"
+                >
+                  <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                      <span
+                        class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-medium"
+                      >
+                        Strategy
+                      </span>
+                      <span
+                        class="text-gray-500 text-sm flex items-center gap-1"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        April 5, 2025
+                      </span>
+                    </div>
+                    <h3
+                      class="text-lg md:text-xl font-medium text-gray-800 primary-blue"
+                    >
+                      Aligning Brand Identity with Business Strategy
+                    </h3>
+                  </div>
+                  <svg
+                    id="arrow-article-1"
+                    class="w-6 h-6 text-gray-400 ml-4 flex-shrink-0 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Expanded Content -->
+              <div id="article-1" class="article-content hidden">
+                <div class="w-full h-64 md:h-96 p-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80"
+                    alt="Aligning Brand Identity with Business Strategy"
+                    class="w-full h-full object-cover rounded-xl"
+                  />
+                </div>
+
+                <div class="p-6 md:p-8 lg:p-10">
+                  <p class="text-gray-600 leading-relaxed text-base mb-6">
+                    A strong brand identity is not just a visual asset, but a
+                    strategic tool that supports business goals. When aligned
+                    with your business strategy, a cohesive experience is
+                    created that builds trust, drives engagement, and supports
+                    long-term growth. To ensure this, align your business
+                    strategy, which should include your mission, vision, goals,
+                    target market, and brand mission. Define a brand identity
+                    that reflects your strategy, using logos, colors,
+                    typography, imagery, and voice and messaging to reflect your
+                    industry, values, and tone.
+                  </p>
+
+                  <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Ensure internal alignment
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      by conducting brand training sessions, sharing brand
+                      guidelines, and encouraging cross-functional collaboration
+                      between marketing, sales, and leadership. Apply your brand
+                      identity consistently across various touchpoints, such as
+                      website, digital platforms, product packaging, customer
+                      service, and advertising and social media. Measure and
+                      adjust your brand identity by using KPIs like brand
+                      awareness, engagement, and customer loyalty, gather
+                      feedback from customers and employees, and refine your
+                      identity as your strategy evolves.
+                    </p>
+                  </div>
+
+                  <div class="mb-8">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      In conclusion
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      when your brand identity is aligned with your business
+                      strategy, every interaction becomes a strategic
+                      opportunity, focusing on communicating purpose, building
+                      trust, and driving results.
+                    </p>
+                  </div>
+
+                  <!-- Two Column Layout for Forms -->
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 border-t border-gray-200 pt-8"
+                  >
+                    <!-- Left: Comment Form -->
+                    <div class="bg-gray-50 p-5 rounded-sm">
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Leave a comment below
+                      </h4>
+                      <form class="space-y-4">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <textarea
+                          placeholder="Comment"
+                          rows="5"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <button
+                          type="submit"
+                          class="w-full bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+
+                    <!-- Right: Rating Form -->
+                    <div class="bg-gray-50 p-5 rounded-sm">
+                      <h4 class="text-xl font-semibold mb-9 primary-blue">
+                        Rate your experience with us.
+                      </h4>
+
+                      <!-- Star Rating -->
+                      <div class="flex gap-2 mb-6 justify-center">
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="1"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="2"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="3"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="4"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+
+                      <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <input
+                            type="text"
+                            placeholder="Your Name"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                          <input
+                            type="tel"
+                            placeholder="Phone Number"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                        </div>
+                        <textarea
+                          placeholder="Share your thoughts with us"
+                          rows="4"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <div class="flex gap-3">
+                          <button
+                            type="submit"
+                            class="flex-1 bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                              ></path>
+                            </svg>
+                            Submit Feedback
+                          </button>
+                          <button
+                            type="button"
+                            class="flex-1 bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                              />
+                            </svg>
+                            Send via Whatsapp
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- ARTICLE 2 - TECHNOLOGY - FIXED WITH data-category -->
+            <article
+              class="blog-article bg-white rounded-xl shadow-md overflow-hidden"
+              data-category="technology"
+            >
+              <div
+                class="flex cursor-pointer hover:bg-gray-50 transition-colors"
+                onclick="toggleArticle('article-2')"
+              >
+                <div class="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&q=80"
+                    alt="AI Technology"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="flex-1 p-4 md:p-6 flex items-center justify-between"
+                >
+                  <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                      <span
+                        class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium"
+                      >
+                        Technology
+                      </span>
+                      <span
+                        class="text-gray-500 text-sm flex items-center gap-1"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        April 8, 2025
+                      </span>
+                    </div>
+                    <h3
+                      class="text-lg md:text-xl font-medium text-gray-800 primary-blue"
+                    >
+                      How AI is Transforming Brand Strategy and Customer
+                      Experience
+                    </h3>
+                  </div>
+                  <svg
+                    id="arrow-article-2"
+                    class="w-6 h-6 text-gray-400 ml-4 flex-shrink-0 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Expanded Content -->
+              <div id="article-2" class="article-content hidden">
+                <div class="w-full h-64 md:h-96">
+                  <img
+                    src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=80"
+                    alt="AI Technology"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div class="p-6 md:p-8 lg:p-10">
+                  <p class="text-gray-600 leading-relaxed text-base mb-6">
+                    Artificial Intelligence is revolutionizing how brands
+                    interact with customers and make strategic decisions. From
+                    personalized marketing campaigns to predictive analytics, AI
+                    is enabling businesses to understand and serve their
+                    customers better than ever before.
+                  </p>
+
+                  <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      AI in Customer Experience
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      AI-powered chatbots provide 24/7 customer support, while
+                      machine learning algorithms analyze customer behavior to
+                      deliver personalized product recommendations. These
+                      technologies create seamless, intuitive experiences that
+                      build customer loyalty and drive conversions.
+                    </p>
+                  </div>
+
+                  <div class="mb-8">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Strategic Applications
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Brands are using AI for market research, competitor
+                      analysis, and trend forecasting. By processing vast
+                      amounts of data, AI helps businesses make informed
+                      decisions quickly and stay ahead of market changes.
+                    </p>
+                  </div>
+
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 border-t border-gray-200 pt-8"
+                  >
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Leave a comment below
+                      </h4>
+                      <form class="space-y-4">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <textarea
+                          placeholder="Comment"
+                          rows="5"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <button
+                          type="submit"
+                          class="w-full bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Rate your experience with us.
+                      </h4>
+                      <div class="flex gap-2 mb-6">
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="1"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="2"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="3"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="4"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <input
+                            type="text"
+                            placeholder="Your Name"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                          <input
+                            type="tel"
+                            placeholder="Phone Number"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                        </div>
+                        <textarea
+                          placeholder="Share your thoughts with us"
+                          rows="4"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <div class="flex gap-3">
+                          <button
+                            type="submit"
+                            class="flex-1 bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                              />
+                            </svg>
+                            Submit Feedback
+                          </button>
+                          <button
+                            type="button"
+                            class="flex-1 bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                              />
+                            </svg>
+                            Send via Whatsapp
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- ARTICLE 3 - BRANDING - FIXED WITH data-category -->
+            <article
+              class="blog-article bg-white rounded-xl shadow-md overflow-hidden"
+              data-category="branding"
+            >
+              <div
+                class="flex cursor-pointer hover:bg-gray-50 transition-colors"
+                onclick="toggleArticle('article-3')"
+              >
+                <div class="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&q=80"
+                    alt="Brand Identity"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="flex-1 p-4 md:p-6 flex items-center justify-between"
+                >
+                  <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                      <span
+                        class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-medium"
+                      >
+                        Branding
+                      </span>
+                      <span
+                        class="text-gray-500 text-sm flex items-center gap-1"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        April 10, 2025
+                      </span>
+                    </div>
+                    <h3
+                      class="text-lg md:text-xl font-medium text-gray-800 primary-blue"
+                    >
+                      Building a Brand Identity That Resonates: A Step-by-Step
+                      Guide
+                    </h3>
+                  </div>
+                  <svg
+                    id="arrow-article-3"
+                    class="w-6 h-6 text-gray-400 ml-4 flex-shrink-0 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Expanded Content -->
+              <div id="article-3" class="article-content hidden">
+                <div class="w-full h-64 md:h-96">
+                  <img
+                    src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=1200&q=80"
+                    alt="Building Brand Identity"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div class="p-6 md:p-8 lg:p-10">
+                  <p class="text-gray-600 leading-relaxed text-base mb-6">
+                    Creating a strong brand identity is essential for standing
+                    out in today's competitive marketplace. This comprehensive
+                    guide walks you through the process of developing a brand
+                    identity that truly resonates with your target audience,
+                    from defining your core values to creating visual elements
+                    that tell your brand's story.
+                  </p>
+
+                  <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Key Steps to Building Your Brand
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Start with thorough market research and competitor
+                      analysis. Define your unique value proposition and target
+                      audience. Develop a cohesive visual identity including
+                      logo, color palette, and typography. Create brand
+                      guidelines to ensure consistency across all touchpoints.
+                    </p>
+                  </div>
+
+                  <div class="mb-8">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Implementation Strategy
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Roll out your brand identity systematically across all
+                      channels. Train your team on brand guidelines and
+                      messaging. Monitor brand perception and gather feedback to
+                      refine your approach over time.
+                    </p>
+                  </div>
+
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 border-t border-gray-200 pt-8"
+                  >
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Leave a comment below
+                      </h4>
+                      <form class="space-y-4">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <textarea
+                          placeholder="Comment"
+                          rows="5"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <button
+                          type="submit"
+                          class="w-full bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Rate your experience with us.
+                      </h4>
+                      <div class="flex gap-2 mb-6">
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="1"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="2"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="3"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="4"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <input
+                            type="text"
+                            placeholder="Your Name"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                          <input
+                            type="tel"
+                            placeholder="Phone Number"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                        </div>
+                        <textarea
+                          placeholder="Share your thoughts with us"
+                          rows="4"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <div class="flex gap-3">
+                          <button
+                            type="submit"
+                            class="flex-1 bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                              />
+                            </svg>
+                            Submit Feedback
+                          </button>
+                          <button
+                            type="button"
+                            class="flex-1 bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                              />
+                            </svg>
+                            Send via Whatsapp
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- MARKETING ARTICLE 1 -->
+            <article
+              class="blog-article bg-white rounded-xl shadow-md overflow-hidden"
+              data-category="marketing"
+            >
+              <div
+                class="flex cursor-pointer hover:bg-gray-50 transition-colors"
+                onclick="toggleArticle('article-marketing-1')"
+              >
+                <div class="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80"
+                    alt="Marketing Strategy"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="flex-1 p-4 md:p-6 flex items-center justify-between"
+                >
+                  <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                      <span
+                        class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-medium"
+                        >Marketing</span
+                      >
+                      <span
+                        class="text-gray-500 text-sm flex items-center gap-1"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        April 10, 2025
+                      </span>
+                    </div>
+                    <h3
+                      class="text-lg md:text-xl font-medium text-gray-800 primary-blue"
+                    >
+                      Brand Consistency in Marketing
+                    </h3>
+                  </div>
+                  <svg
+                    id="arrow-article-marketing-1"
+                    class="w-6 h-6 text-gray-400 ml-4 flex-shrink-0 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div id="article-marketing-1" class="article-content hidden">
+                <div class="w-full h-64 md:h-96">
+                  <img
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
+                    alt="Brand Consistency in Marketing"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-6 md:p-8 lg:p-10">
+                  <p class="text-gray-600 leading-relaxed text-base mb-6">
+                    Brand consistency across all marketing channels is crucial
+                    for building trust and recognition with your audience. When
+                    your brand maintains a unified voice, visual identity, and
+                    messaging across platforms, customers develop stronger
+                    connections and loyalty to your business.
+                  </p>
+                  <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Why Consistency Matters
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Consistent branding increases revenue by up to 23% and
+                      makes your brand 3.5 times more visible. It builds trust,
+                      improves recognition, and creates a professional image
+                      that resonates with your target audience across every
+                      touchpoint.
+                    </p>
+                  </div>
+                  <div class="mb-8">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Key Areas for Consistency
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Focus on maintaining consistent visual elements (logo,
+                      colors, typography), brand voice and tone, messaging
+                      themes, customer experience, and content quality across
+                      all platforms including website, social media, email, and
+                      advertising.
+                    </p>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 border-t border-gray-200 pt-8"
+                  >
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Leave a comment below
+                      </h4>
+                      <form class="space-y-4">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <textarea
+                          placeholder="Comment"
+                          rows="5"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <button
+                          type="submit"
+                          class="w-full bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Rate your experience with us.
+                      </h4>
+                      <div class="flex gap-2 mb-6">
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="1"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="2"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="3"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="4"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <input
+                            type="text"
+                            placeholder="Your Name"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                          <input
+                            type="tel"
+                            placeholder="Phone Number"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                        </div>
+                        <textarea
+                          placeholder="Share your thoughts with us"
+                          rows="4"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <div class="flex gap-3">
+                          <button
+                            type="submit"
+                            class="flex-1 bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                              />
+                            </svg>
+                            Submit Feedback
+                          </button>
+                          <button
+                            type="button"
+                            class="flex-1 bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                              />
+                            </svg>
+                            Send via Whatsapp
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- MARKETING ARTICLE 2 -->
+            <article
+              class="blog-article bg-white rounded-xl shadow-md overflow-hidden"
+              data-category="marketing"
+            >
+              <div
+                class="flex cursor-pointer hover:bg-gray-50 transition-colors"
+                onclick="toggleArticle('article-marketing-2')"
+              >
+                <div class="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80"
+                    alt="Storytelling"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="flex-1 p-4 md:p-6 flex items-center justify-between"
+                >
+                  <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                      <span
+                        class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-medium"
+                        >Marketing</span
+                      >
+                      <span
+                        class="text-gray-500 text-sm flex items-center gap-1"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        April 8, 2025
+                      </span>
+                    </div>
+                    <h3
+                      class="text-lg md:text-xl font-medium text-gray-800 primary-blue"
+                    >
+                      From Awareness to Loyalty: The Role of Storytelling in
+                      Marketing
+                    </h3>
+                  </div>
+                  <svg
+                    id="arrow-article-marketing-2"
+                    class="w-6 h-6 text-gray-400 ml-4 flex-shrink-0 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div id="article-marketing-2" class="article-content hidden">
+                <div class="w-full h-64 md:h-96">
+                  <img
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80"
+                    alt="Storytelling in Marketing"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-6 md:p-8 lg:p-10">
+                  <p class="text-gray-600 leading-relaxed text-base mb-6">
+                    Storytelling is one of the most powerful tools in modern
+                    marketing. Stories create emotional connections, make your
+                    brand memorable, and transform customers from passive
+                    observers into engaged participants in your brand journey.
+                  </p>
+                  <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      The Power of Narrative
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Human brains are wired to respond to stories. When you
+                      tell a compelling brand story, you activate multiple areas
+                      of the brain, creating deeper engagement and stronger
+                      memory retention than facts and figures alone could
+                      achieve.
+                    </p>
+                  </div>
+                  <div class="mb-8">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Building Customer Loyalty Through Stories
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Share authentic stories about your brand's origins,
+                      values, and the people behind your products. Highlight
+                      customer success stories and create narratives that align
+                      with your audience's aspirations and values.
+                    </p>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 border-t border-gray-200 pt-8"
+                  >
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Leave a comment below
+                      </h4>
+                      <form class="space-y-4">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <textarea
+                          placeholder="Comment"
+                          rows="5"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <button
+                          type="submit"
+                          class="w-full bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Rate your experience with us.
+                      </h4>
+                      <div class="flex gap-2 mb-6">
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="1"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="2"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="3"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="4"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <input
+                            type="text"
+                            placeholder="Your Name"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                          <input
+                            type="tel"
+                            placeholder="Phone Number"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                        </div>
+                        <textarea
+                          placeholder="Share your thoughts with us"
+                          rows="4"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <div class="flex gap-3">
+                          <button
+                            type="submit"
+                            class="flex-1 bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                              />
+                            </svg>
+                            Submit Feedback
+                          </button>
+                          <button
+                            type="button"
+                            class="flex-1 bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                              />
+                            </svg>
+                            Send via Whatsapp
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- SOCIAL MEDIA ARTICLE 1 -->
+            <article
+              class="blog-article bg-white rounded-xl shadow-md overflow-hidden"
+              data-category="social-media"
+            >
+              <div
+                class="flex cursor-pointer hover:bg-gray-50 transition-colors"
+                onclick="toggleArticle('article-social-1')"
+              >
+                <div class="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&q=80"
+                    alt="Social Media"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="flex-1 p-4 md:p-6 flex items-center justify-between"
+                >
+                  <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                      <span
+                        class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-medium"
+                        >Social Media</span
+                      >
+                      <span
+                        class="text-gray-500 text-sm flex items-center gap-1"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        April 10, 2025
+                      </span>
+                    </div>
+                    <h3
+                      class="text-lg md:text-xl font-medium text-gray-800 primary-blue"
+                    >
+                      Creating a Cohesive Brand Presence Across Social Platforms
+                    </h3>
+                  </div>
+                  <svg
+                    id="arrow-article-social-1"
+                    class="w-6 h-6 text-gray-400 ml-4 flex-shrink-0 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div id="article-social-1" class="article-content hidden">
+                <div class="w-full h-64 md:h-96">
+                  <img
+                    src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&q=80"
+                    alt="Social Media Branding"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-6 md:p-8 lg:p-10">
+                  <p class="text-gray-600 leading-relaxed text-base mb-6">
+                    Building a unified brand presence across social media
+                    platforms is essential for recognition and trust. Each
+                    platform has its unique characteristics, but your core brand
+                    identity should remain consistent while adapting to each
+                    platform's format and audience expectations.
+                  </p>
+                  <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Platform-Specific Strategies
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Adapt your content format and tone for each platform while
+                      maintaining consistent visual branding. Instagram favors
+                      high-quality visuals, LinkedIn requires professional
+                      content, Twitter demands concise messaging, and TikTok
+                      thrives on authentic, entertaining content.
+                    </p>
+                  </div>
+                  <div class="mb-8">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Maintaining Visual Consistency
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Use consistent profile pictures, cover images, bio
+                      information, color schemes, and brand voice across all
+                      platforms. Create platform-specific templates that
+                      incorporate your brand colors and fonts to ensure instant
+                      recognition.
+                    </p>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 border-t border-gray-200 pt-8"
+                  >
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Leave a comment below
+                      </h4>
+                      <form class="space-y-4">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <textarea
+                          placeholder="Comment"
+                          rows="5"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <button
+                          type="submit"
+                          class="w-full bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Rate your experience with us.
+                      </h4>
+                      <div class="flex gap-2 mb-6">
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="1"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="2"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="3"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="4"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <input
+                            type="text"
+                            placeholder="Your Name"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                          <input
+                            type="tel"
+                            placeholder="Phone Number"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                        </div>
+                        <textarea
+                          placeholder="Share your thoughts with us"
+                          rows="4"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <div class="flex gap-3">
+                          <button
+                            type="submit"
+                            class="flex-1 bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                              />
+                            </svg>
+                            Submit Feedback
+                          </button>
+                          <button
+                            type="button"
+                            class="flex-1 bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                              />
+                            </svg>
+                            Send via Whatsapp
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- SOCIAL MEDIA ARTICLE 2 -->
+            <article
+              class="blog-article bg-white rounded-xl shadow-md overflow-hidden"
+              data-category="social-media"
+            >
+              <div
+                class="flex cursor-pointer hover:bg-gray-50 transition-colors"
+                onclick="toggleArticle('article-social-2')"
+              >
+                <div class="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=80"
+                    alt="Social Branding"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="flex-1 p-4 md:p-6 flex items-center justify-between"
+                >
+                  <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                      <span
+                        class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-medium"
+                        >Social Media</span
+                      >
+                      <span
+                        class="text-gray-500 text-sm flex items-center gap-1"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        April 8, 2025
+                      </span>
+                    </div>
+                    <h3
+                      class="text-lg md:text-xl font-medium text-gray-800 primary-blue"
+                    >
+                      Social Media Branding Mistakes to Avoid
+                    </h3>
+                  </div>
+                  <svg
+                    id="arrow-article-social-2"
+                    class="w-6 h-6 text-gray-400 ml-4 flex-shrink-0 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div id="article-social-2" class="article-content hidden">
+                <div class="w-full h-64 md:h-96">
+                  <img
+                    src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&q=80"
+                    alt="Social Media Mistakes"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-6 md:p-8 lg:p-10">
+                  <p class="text-gray-600 leading-relaxed text-base mb-6">
+                    Avoid common pitfalls that can damage your brand on social
+                    media. Learn from these mistakes and implement best
+                    practices to build a strong, authentic social media presence
+                    that resonates with your audience and drives engagement.
+                  </p>
+                  <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Common Mistakes to Avoid
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Inconsistent posting schedules, ignoring customer
+                      comments, overly promotional content, lack of
+                      authenticity, poor visual quality, and copying competitors
+                      without adding unique value are all mistakes that can hurt
+                      your brand reputation.
+                    </p>
+                  </div>
+                  <div class="mb-8">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Building Authentic Connections
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Focus on genuine engagement, respond promptly to comments
+                      and messages, share behind-the-scenes content, and show
+                      the human side of your brand. Authenticity builds trust
+                      and fosters long-term customer relationships.
+                    </p>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 border-t border-gray-200 pt-8"
+                  >
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Leave a comment below
+                      </h4>
+                      <form class="space-y-4">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <textarea
+                          placeholder="Comment"
+                          rows="5"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <button
+                          type="submit"
+                          class="w-full bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Rate your experience with us.
+                      </h4>
+                      <div class="flex gap-2 mb-6">
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="1"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="2"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="3"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="4"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <input
+                            type="text"
+                            placeholder="Your Name"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                          <input
+                            type="tel"
+                            placeholder="Phone Number"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                        </div>
+                        <textarea
+                          placeholder="Share your thoughts with us"
+                          rows="4"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <div class="flex gap-3">
+                          <button
+                            type="submit"
+                            class="flex-1 bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                              />
+                            </svg>
+                            Submit Feedback
+                          </button>
+                          <button
+                            type="button"
+                            class="flex-1 bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                              />
+                            </svg>
+                            Send via Whatsapp
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- BRANDING ARTICLE 2 -->
+            <article
+              class="blog-article bg-white rounded-xl shadow-md overflow-hidden"
+              data-category="branding"
+            >
+              <div
+                class="flex cursor-pointer hover:bg-gray-50 transition-colors"
+                onclick="toggleArticle('article-branding-2')"
+              >
+                <div class="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&q=80"
+                    alt="Logo Design"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="flex-1 p-4 md:p-6 flex items-center justify-between"
+                >
+                  <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                      <span
+                        class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-medium"
+                        >Branding</span
+                      >
+                      <span
+                        class="text-gray-500 text-sm flex items-center gap-1"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        April 8, 2025
+                      </span>
+                    </div>
+                    <h3
+                      class="text-lg md:text-xl font-medium text-gray-800 primary-blue"
+                    >
+                      Logo Design Principles
+                    </h3>
+                  </div>
+                  <svg
+                    id="arrow-article-branding-2"
+                    class="w-6 h-6 text-gray-400 ml-4 flex-shrink-0 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div id="article-branding-2" class="article-content hidden">
+                <div class="w-full h-64 md:h-96">
+                  <img
+                    src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1200&q=80"
+                    alt="Logo Design Principles"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-6 md:p-8 lg:p-10">
+                  <p class="text-gray-600 leading-relaxed text-base mb-6">
+                    A great logo is the cornerstone of your brand identity. It's
+                    often the first thing people notice about your business and
+                    plays a crucial role in creating lasting impressions.
+                    Understanding the fundamental principles of logo design
+                    helps you create a mark that stands the test of time.
+                  </p>
+                  <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      The Five Principles of Effective Logo Design
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Simplicity ensures easy recognition and memorability.
+                      Memorable designs create lasting impressions. Timeless
+                      logos avoid trendy elements that quickly date. Versatile
+                      logos work across all sizes and mediums. Appropriate
+                      design reflects your brand's personality and industry.
+                    </p>
+                  </div>
+                  <div class="mb-8">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Creating Your Logo
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Start with thorough research into your industry and
+                      competitors. Sketch multiple concepts before refining.
+                      Consider color psychology and typography carefully. Test
+                      your logo at various sizes and in different contexts.
+                      Ensure it works in black and white as well as color.
+                    </p>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 border-t border-gray-200 pt-8"
+                  >
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Leave a comment below
+                      </h4>
+                      <form class="space-y-4">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <textarea
+                          placeholder="Comment"
+                          rows="5"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <button
+                          type="submit"
+                          class="w-full bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Rate your experience with us.
+                      </h4>
+                      <div class="flex gap-2 mb-6">
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="1"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="2"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="3"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="4"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <input
+                            type="text"
+                            placeholder="Your Name"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                          <input
+                            type="tel"
+                            placeholder="Phone Number"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                        </div>
+                        <textarea
+                          placeholder="Share your thoughts with us"
+                          rows="4"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <div class="flex gap-3">
+                          <button
+                            type="submit"
+                            class="flex-1 bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                              />
+                            </svg>
+                            Submit Feedback
+                          </button>
+                          <button
+                            type="button"
+                            class="flex-1 bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                              />
+                            </svg>
+                            Send via Whatsapp
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- TECHNOLOGY ARTICLE 2 -->
+            <article
+              class="blog-article bg-white rounded-xl shadow-md overflow-hidden"
+              data-category="technology"
+            >
+              <div
+                class="flex cursor-pointer hover:bg-gray-50 transition-colors"
+                onclick="toggleArticle('article-technology-2')"
+              >
+                <div class="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&q=80"
+                    alt="Web Design Trends"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="flex-1 p-4 md:p-6 flex items-center justify-between"
+                >
+                  <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                      <span
+                        class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-medium"
+                        >Technology</span
+                      >
+                      <span
+                        class="text-gray-500 text-sm flex items-center gap-1"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        April 8, 2025
+                      </span>
+                    </div>
+                    <h3
+                      class="text-lg md:text-xl font-medium text-gray-800 primary-blue"
+                    >
+                      Web Design Trends That Elevate Your Brand Identity
+                    </h3>
+                  </div>
+                  <svg
+                    id="arrow-article-technology-2"
+                    class="w-6 h-6 text-gray-400 ml-4 flex-shrink-0 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div id="article-technology-2" class="article-content hidden">
+                <div class="w-full h-64 md:h-96">
+                  <img
+                    src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1200&q=80"
+                    alt="Web Design Trends"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-6 md:p-8 lg:p-10">
+                  <p class="text-gray-600 leading-relaxed text-base mb-6">
+                    Your website is often the first interaction customers have
+                    with your brand. Modern web design trends focus on creating
+                    immersive, user-friendly experiences that reflect brand
+                    values while maximizing engagement and conversions.
+                  </p>
+                  <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Current Web Design Trends
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Dark mode options provide visual comfort and modern
+                      aesthetics. Micro-interactions create engaging user
+                      experiences. 3D elements and immersive graphics capture
+                      attention. Minimalist navigation improves usability. Voice
+                      user interfaces prepare for the future of search.
+                    </p>
+                  </div>
+                  <div class="mb-8">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Implementing Trends Strategically
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Choose trends that align with your brand identity and
+                      audience preferences. Prioritize user experience over
+                      aesthetics. Ensure accessibility compliance across all
+                      design elements. Test performance on various devices and
+                      optimize loading speeds for better engagement.
+                    </p>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 border-t border-gray-200 pt-8"
+                  >
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Leave a comment below
+                      </h4>
+                      <form class="space-y-4">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <textarea
+                          placeholder="Comment"
+                          rows="5"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <button
+                          type="submit"
+                          class="w-full bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Rate your experience with us.
+                      </h4>
+                      <div class="flex gap-2 mb-6">
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="1"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="2"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="3"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="4"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <input
+                            type="text"
+                            placeholder="Your Name"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                          <input
+                            type="tel"
+                            placeholder="Phone Number"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                        </div>
+                        <textarea
+                          placeholder="Share your thoughts with us"
+                          rows="4"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <div class="flex gap-3">
+                          <button
+                            type="submit"
+                            class="flex-1 bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                              />
+                            </svg>
+                            Submit Feedback
+                          </button>
+                          <button
+                            type="button"
+                            class="flex-1 bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                              />
+                            </svg>
+                            Send via Whatsapp
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- STRATEGY ARTICLE 2 -->
+            <article
+              class="blog-article bg-white rounded-xl shadow-md overflow-hidden"
+              data-category="strategy"
+            >
+              <div
+                class="flex cursor-pointer hover:bg-gray-50 transition-colors"
+                onclick="toggleArticle('article-strategy-2')"
+              >
+                <div class="w-24 h-24 md:w-32 md:h-32 flex-shrink-0">
+                  <img
+                    src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80"
+                    alt="Brand Positioning"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="flex-1 p-4 md:p-6 flex items-center justify-between"
+                >
+                  <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-2">
+                      <span
+                        class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-medium"
+                        >Strategy</span
+                      >
+                      <span
+                        class="text-gray-500 text-sm flex items-center gap-1"
+                      >
+                        <svg
+                          class="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        April 8, 2025
+                      </span>
+                    </div>
+                    <h3
+                      class="text-lg md:text-xl font-medium text-gray-800 primary-blue"
+                    >
+                      Brand Positioning: Standing Out in a Crowded Market
+                    </h3>
+                  </div>
+                  <svg
+                    id="arrow-article-strategy-2"
+                    class="w-6 h-6 text-gray-400 ml-4 flex-shrink-0 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div id="article-strategy-2" class="article-content hidden">
+                <div class="w-full h-64 md:h-96">
+                  <img
+                    src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=80"
+                    alt="Brand Positioning"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="p-6 md:p-8 lg:p-10">
+                  <p class="text-gray-600 leading-relaxed text-base mb-6">
+                    Effective brand positioning differentiates your business
+                    from competitors and creates a unique space in customers'
+                    minds. It defines how you want your target audience to
+                    perceive your brand and what makes you the preferred choice
+                    in your market segment.
+                  </p>
+                  <div class="mb-6">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Developing Your Positioning Strategy
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Analyze your target market and competitors thoroughly.
+                      Identify your unique value proposition and key
+                      differentiators. Define your brand personality and tone.
+                      Create a positioning statement that clearly articulates
+                      your brand's unique value and target audience.
+                    </p>
+                  </div>
+                  <div class="mb-8">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">
+                      Communicating Your Position
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed text-base">
+                      Ensure consistency across all brand touchpoints. Train
+                      your team to embody your brand positioning. Monitor market
+                      perception and adjust as needed. Test your positioning
+                      with your target audience and refine based on feedback and
+                      market response.
+                    </p>
+                  </div>
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 border-t border-gray-200 pt-8"
+                  >
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Leave a comment below
+                      </h4>
+                      <form class="space-y-4">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                        />
+                        <textarea
+                          placeholder="Comment"
+                          rows="5"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <button
+                          type="submit"
+                          class="w-full bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors"
+                        >
+                          Submit
+                        </button>
+                      </form>
+                    </div>
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 primary-blue">
+                        Rate your experience with us.
+                      </h4>
+                      <div class="flex gap-2 mb-6">
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="1"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="2"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="3"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="4"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-10 h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          data-rating="5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <input
+                            type="text"
+                            placeholder="Your Name"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                          <input
+                            type="tel"
+                            placeholder="Phone Number"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F]"
+                          />
+                        </div>
+                        <textarea
+                          placeholder="Share your thoughts with us"
+                          rows="4"
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#05058F] resize-none"
+                        ></textarea>
+                        <div class="flex gap-3">
+                          <button
+                            type="submit"
+                            class="flex-1 bg-[#05058F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                              />
+                            </svg>
+                            Submit Feedback
+                          </button>
+                          <button
+                            type="button"
+                            class="flex-1 bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                              />
+                            </svg>
+                            Send via Whatsapp
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="ourImpact"></div>
+
+    <div id="footer"></div>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/ourImpact.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/page-hero.js"></script>
+    <script src="js/blog.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        initPageHero({
+          backgroundImage:
+            "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1920&q=80",
+          title: "Our Blog",
+          subtitle:
+            "Breaking new ground from our roots to industry leadership.",
+        });
+      });
+    </script>
+  </body>
+</html>

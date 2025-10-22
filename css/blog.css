@@ -1,0 +1,396 @@
+/* Article Section Background */
+.article-section-bg {
+  background-color: rgba(5, 5, 143, 0.14);
+  min-height: 100vh;
+}
+
+/* Blog Filter Tabs */
+.blog-filter-tab {
+  background-color: white;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+}
+
+.blog-filter-tab.active {
+  background-color: #05058f;
+  color: white;
+  border-color: #05058f;
+}
+
+.blog-filter-tab:hover {
+  background-color: #f3f4f6;
+}
+
+.blog-filter-tab.active:hover {
+  background-color: #040470;
+}
+
+/* Article Accordion Styles */
+.article-content {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth arrow rotation */
+svg {
+  transition: transform 0.3s ease;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.primary-blue {
+  color: rgba(5, 5, 143, 1);
+}
+
+/* Blog Article Transition */
+.blog-article {
+  transition: all 0.3s ease;
+}
+
+.blog-article:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* reponsive palava */
+
+/* ============================================
+   RESPONSIVE ENHANCEMENTS FOR BLOG PAGE
+   ============================================ */
+
+/* ============================================
+   PROPER FIX FOR BLOG CARD DROPDOWN ICON
+/* ============================================
+   COMPLETE RESPONSIVE CSS FOR BLOG PAGE
+   ============================================ */
+
+/* ========================================
+   MOBILE RESPONSIVENESS (≤768px)
+   ======================================== */
+@media (max-width: 768px) {
+  /* ====== PAGE HERO SECTION ====== */
+  .page-hero__title {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .page-hero__subtitle {
+    font-size: 1rem !important;
+    padding: 0 1rem !important;
+  }
+
+  /* ====== FILTER TABS ====== */
+  .blog-filter-tab {
+    font-size: 0.875rem !important;
+    padding: 0.5rem 1rem !important;
+    width: 100%;
+    text-align: center;
+    min-height: 44px !important;
+  }
+
+  /* ====== BLOG ARTICLE CARDS - COLLAPSED STATE ====== */
+  .blog-article {
+    margin-bottom: 1rem !important;
+    padding: 0.75rem !important;
+    position: relative !important;
+  }
+
+  /* Fix the flex container to prevent icon stretching */
+  .blog-article > div:first-child {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+  }
+
+  /* Fix dropdown arrow icon size */
+  .blog-article > div:first-child > svg,
+  .blog-article svg[id^="arrow-"] {
+    flex-shrink: 0 !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    min-width: 1.5rem !important;
+    min-height: 1.5rem !important;
+    margin-top: 0.25rem !important;
+    flex-grow: 0 !important;
+  }
+
+  /* Remove items-center effect */
+  .blog-article .flex.items-center.justify-between {
+    align-items: flex-start !important;
+  }
+
+  /* Card thumbnail image */
+  .blog-article .w-24.h-24 {
+    width: 5rem !important;
+    height: 5rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Card title */
+  .blog-article h3 {
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* Category badge and date container */
+  .blog-article .flex.items-center.gap-3 {
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+  }
+
+  /* Category badge */
+  .blog-article .px-3.py-1 {
+    padding: 0.25rem 0.625rem !important;
+    font-size: 0.75rem !important;
+  }
+
+  /* Date text */
+  .blog-article .text-gray-500.text-sm {
+    font-size: 0.75rem !important;
+  }
+
+  /* Ensure text content takes remaining space */
+  .blog-article .flex-1 {
+    min-width: 0 !important;
+  }
+
+  /* ====== EXPANDED ARTICLE CONTENT ====== */
+
+  /* Article header image (full-width when expanded) */
+  .article-content img {
+    height: 250px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* Article body content padding */
+  .article-content > div {
+    padding: 1.5rem 1rem !important;
+  }
+
+  /* Article text content */
+  .article-content p {
+    font-size: 0.9375rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .article-content h4 {
+    font-size: 1.125rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  /* ====== FORMS IN EXPANDED ARTICLE ====== */
+
+  /* Form inputs and textarea */
+  .article-content form input,
+  .article-content form textarea {
+    font-size: 1rem !important;
+    padding: 0.75rem !important;
+  }
+
+  /* Two-column form layout - stack on mobile */
+  .article-content .grid.grid-cols-1.lg\\:grid-cols-2,
+  .article-content .grid.grid-cols-1.md\\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Form background sections */
+  .article-content .bg-gray-50 {
+    padding: 1.25rem !important;
+  }
+
+  /* Star rating */
+  .star-rating {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+
+  /* Form buttons */
+  .article-content button {
+    font-size: 0.875rem !important;
+    padding: 0.625rem 1rem !important;
+    min-height: 44px !important;
+  }
+
+  /* WhatsApp and Submit button container - stack vertically */
+  .article-content .flex.gap-3 {
+    flex-direction: column !important;
+  }
+
+  .article-content .flex.gap-3 button {
+    width: 100% !important;
+  }
+
+  /* Comment/Rating sections spacing */
+  .article-content .border-t.border-gray-200 {
+    padding-top: 1.5rem !important;
+    gap: 1.5rem !important;
+  }
+
+  /* ====== GENERAL IMPROVEMENTS ====== */
+
+  /* Article section padding */
+  .article-section-bg {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Better touch targets */
+  .blog-article > div:first-child {
+    min-height: 60px !important;
+  }
+}
+
+/* ========================================
+   TABLET ADJUSTMENTS (769px - 1024px)
+   ======================================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .page-hero__title {
+    font-size: 2.5rem !important;
+  }
+
+  .blog-filter-tab {
+    font-size: 1rem !important;
+    padding: 0.625rem 1.25rem !important;
+  }
+
+  .blog-article h3 {
+    font-size: 1.125rem !important;
+  }
+
+  .blog-article > div:first-child img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+/* ========================================
+   SMALL MOBILE DEVICES (≤480px)
+   ======================================== */
+@media (max-width: 480px) {
+  /* Hero section */
+  .page-hero__title {
+    font-size: 1.5rem !important;
+  }
+
+  .page-hero__subtitle {
+    font-size: 0.875rem !important;
+  }
+
+  /* Filter tabs */
+  .blog-filter-tab {
+    font-size: 0.75rem !important;
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  /* Blog cards */
+  .blog-article svg[id^="arrow-"] {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    min-width: 1.25rem !important;
+    min-height: 1.25rem !important;
+  }
+
+  .blog-article h3 {
+    font-size: 0.9375rem !important;
+  }
+
+  .blog-article .w-24.h-24 {
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+
+  /* Expanded article content */
+  .article-content > div {
+    padding: 1rem !important;
+  }
+
+  .article-content input,
+  .article-content textarea {
+    padding: 0.625rem 0.75rem !important;
+  }
+
+  .star-rating {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+  }
+
+  .article-content img {
+    height: 200px !important;
+  }
+}
+
+/* ========================================
+   LANDSCAPE MOBILE ORIENTATION
+   ======================================== */
+@media (max-width: 768px) and (orientation: landscape) {
+  .page-hero {
+    min-height: 50vh !important;
+  }
+
+  .article-content img {
+    height: 200px !important;
+  }
+}
+
+/* ========================================
+   UTILITY FIXES
+   ======================================== */
+
+/* Prevent horizontal overflow */
+* {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  object-fit: cover;
+}
+
+/* Ensure SVG doesn't grow with flex */
+.blog-article svg {
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+/* Smooth transitions */
+.blog-article,
+.blog-filter-tab,
+.article-content button {
+  transition: all 0.3s ease;
+}
+
+/* Focus states for accessibility */
+@media (max-width: 768px) {
+  .blog-filter-tab:focus,
+  .article-content button:focus,
+  .article-content input:focus,
+  .article-content textarea:focus {
+    outline: 2px solid #05058f;
+    outline-offset: 2px;
+  }
+}
+
+/* Optimize filter tab container */
+@media (max-width: 640px) {
+  .tab-btn {
+    gap: 0.5rem !important;
+  }
+}
+
+/* Ensure proper spacing for filter tabs */
+.flex.flex-wrap.gap-3 {
+  justify-content: flex-start;
+}

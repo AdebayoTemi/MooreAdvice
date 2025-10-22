@@ -1,0 +1,561 @@
+/* Tab Content Transitions */
+.tab-content {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Ensure tab content wrapper has proper height */
+.tab-content-wrapper {
+  min-height: 500px;
+}
+
+/* Section Header Styling */
+.values-header-title {
+  color: rgb(94, 94, 181);
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.values-header-subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Tab Button Styling */
+.value-tab {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 11px 15px;
+  background-color: rgba(123, 138, 161, 0.27);
+  /* border: 1px solid rgba(123, 138, 161, 0.3); */
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.value-tab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.value-tab.active {
+  background-color: #05058f !important;
+  color: white !important;
+  border: 2px solid rgb(174, 172, 172);
+  /* border-color: rgba(123, 138, 161, 0.3); */
+}
+
+/* Tab Title Button Style */
+/* Tab Title Button Style - Inline button that fits content */
+/* Tab Title Button Style - Inline button that fits content */
+.tab-title-badge {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: inherit !important;
+  border-radius: 10px;
+  padding: 12px 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: inline-block;
+  width: auto;
+  max-width: fit-content;
+}
+
+/* Tab Content Text Sizing */
+.tab-subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.tab-description {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+/* Guide Section */
+.guide-section-title {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.guide-list {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+/* Two column layout for guide items */
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+
+@media (max-width: 768px) {
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-image {
+  transition: transform 0.3s ease;
+}
+
+.gallery-image.scale-up {
+  transform: scale(1.1);
+}
+
+.gallery-image.scale-back {
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+.gallery-image {
+  transition: transform 0.3s ease;
+}
+
+.gallery-image.scale-up {
+  transform: scale(1.1);
+}
+
+.gallery-image.scale-back {
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.image-frame {
+  background: white;
+  padding: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button {
+  border: 1px solid #d1d5db;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: #4747bdc2;
+  color: white;
+  border-color: #4747bdc2;
+}
+
+.tab-button:not(.active) {
+  color: #5e5eb5;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* modal window for gallery  */
+/* Modal Styles */
+
+/* Modal Styles */
+/* Gallery Modal Styles */
+.gallery-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.gallery-modal-overlay.active {
+  display: flex !important;
+}
+
+.gallery-modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.gallery-close-btn {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 48px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s;
+  z-index: 10000;
+}
+
+.gallery-close-btn:hover {
+  color: #ccc;
+}
+
+.gallery-modal-content {
+  /* Glass effect background */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 32px;
+}
+
+.gallery-tabs-wrapper {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.gallery-tab {
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid rgb(94, 94, 181);
+  background-color: white;
+  color: rgb(94, 94, 181);
+}
+
+.gallery-tab.active {
+  background-color: #4747bdc2;
+  color: white;
+  border: 2px solid #808080;
+}
+
+.gallery-tab:hover {
+  opacity: 0.85;
+}
+
+.gallery-image-frame {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 450px;
+  max-height: 550px;
+}
+
+.gallery-modal-img {
+  max-width: 100%;
+  max-height: 550px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .gallery-modal-content {
+    padding: 24px;
+  }
+
+  .gallery-tabs-wrapper {
+    gap: 6px;
+  }
+
+  .gallery-tab {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .gallery-image-frame {
+    padding: 12px;
+  }
+
+  .gallery-image-container {
+    min-height: 300px;
+    max-height: 400px;
+  }
+
+  .gallery-modal-img {
+    max-height: 400px;
+  }
+
+  .gallery-close-btn {
+    top: -40px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-tab {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+/* Core Values Section - Responsive Styles */
+
+/* Tab Buttons Responsive */
+.value-tab {
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.value-tab:hover {
+  background-color: #e5e7eb;
+}
+
+.value-tab.active {
+  background-color: #05058f;
+  color: white;
+  border-color: #05058f;
+}
+
+/* Card Container - Responsive Heights */
+.value-card-container {
+  height: 500px;
+}
+
+/* Overlay for Images */
+.value-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.74) 89%
+  );
+}
+
+/* Typography Responsive */
+.tab-title-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  /* background-color: rgba(5, 5, 143, 0.9); */
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tab-subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.tab-description {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.guide-section-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* Tablet Screens (768px - 1023px) */
+@media (max-width: 1023px) {
+  .value-card-container {
+    height: 450px;
+  }
+
+  .tab-title-badge {
+    font-size: 16px;
+    padding: 7px 14px;
+  }
+
+  .tab-subtitle {
+    font-size: 15px;
+  }
+
+  .tab-description {
+    font-size: 14px;
+  }
+
+  .guide-section-title {
+    font-size: 14px;
+  }
+
+  .guide-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    font-size: 13px;
+  }
+}
+
+/* Mobile Screens (640px - 767px) */
+@media (max-width: 767px) {
+  .value-tab {
+    padding: 8px 12px;
+    font-size: 12px;
+    flex: 1 1 auto;
+    min-width: 100px;
+  }
+
+  .value-card-container {
+    height: 550px;
+  }
+
+  .tab-title-badge {
+    font-size: 15px;
+    padding: 6px 12px;
+  }
+
+  .tab-subtitle {
+    font-size: 14px;
+  }
+
+  .tab-description {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .guide-section-title {
+    font-size: 13px;
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    font-size: 12px;
+  }
+}
+
+/* Small Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+  .value-tab {
+    padding: 7px 10px;
+    font-size: 11px;
+    min-width: 90px;
+  }
+
+  .value-card-container {
+    height: 600px;
+  }
+
+  .tab-title-badge {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .tab-subtitle {
+    font-size: 13px;
+  }
+
+  .tab-description {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .guide-section-title {
+    font-size: 12px;
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    font-size: 11px;
+  }
+}
+
+/* Extra Small Screens (360px and below) */
+@media (max-width: 360px) {
+  .value-tab {
+    padding: 6px 8px;
+    font-size: 10px;
+    min-width: 80px;
+  }
+
+  .value-card-container {
+    height: 550px;
+  }
+
+  .tab-title-badge {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+
+  .tab-subtitle {
+    font-size: 12px;
+  }
+
+  .tab-description {
+    font-size: 11px;
+  }
+
+  .guide-section-title {
+    font-size: 11px;
+  }
+
+  .guide-grid {
+    font-size: 10px;
+    gap: 5px;
+  }
+}
+
+/* Hide/Show Tab Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}

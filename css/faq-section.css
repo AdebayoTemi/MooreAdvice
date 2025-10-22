@@ -1,0 +1,22 @@
+/* FAQ Section Styles */
+.faq-item {
+  transition: all 0.3s ease;
+}
+
+.faq-content {
+  transition: max-height 0.4s ease-in-out;
+}
+
+.faq-item button:hover span {
+  color: #1e3a8a;
+}
+
+/* Shadow for FAQ container */
+.faq-container {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth transitions */
+svg {
+  transition: transform 0.3s ease;
+}

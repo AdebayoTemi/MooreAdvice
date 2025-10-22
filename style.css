@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* transform: scale(0.9);
+  transform-origin: top left;
+  width: 111.11%; /* Compensate for the scaling */
+  /* height: 111.11%; */
+  zoom: 0.9;
+}
+.primary-blue {
+  color: rgba(5, 5, 143, 1);
+}
+.primary-blue-bg {
+  background-color: rgba(5, 5, 143, 1);
+}
+
+/* Carousel Slide Transitions */
+.slide {
+  transition: opacity 1s ease-in-out;
+  font-family: "Work Sans";
+}
+
+.slide-active {
+  opacity: 1;
+  z-index: 10;
+}
+
+.slide-inactive {
+  opacity: 0;
+  z-index: 0;
+}
+/* Logo Slider Styles */
+/* Logo Slider Styles */
+.logos-slider {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.logos-track {
+  display: inline-flex;
+  gap: 1rem;
+  animation: scroll-left 30s linear infinite;
+}
+
+.logos-track-reverse {
+  animation: scroll-right 30s linear infinite;
+}
+
+.logo-card {
+  display: inline-block;
+  background: white;
+  border-radius: 8px;
+  padding: 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 120px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.logo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Pause animation on hover */
+.logos-track:hover {
+  animation-play-state: paused;
+}
+
+/* Scroll Left Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Scroll Right Animation */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+  .logos-track {
+    gap: 1.5rem;
+  }
+
+  .logo-card {
+    min-width: 160px;
+    height: 80px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logos-track {
+    gap: 2rem;
+  }
+
+  .logo-card {
+    min-width: 200px;
+    height: 90px;
+    border-radius: 12px;
+  }
+}
+
+/* Extra small screens - even smaller cards */
+@media (max-width: 375px) {
+  .logo-card {
+    min-width: 100px;
+    height: 60px;
+  }
+
+  .logos-track {
+    gap: 0.75rem;
+  }
+}
+
+/* Achievement Section Card Shadow */
+.shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Achievement Gradient Overlay */
+.achievement-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.17) 9%,
+    rgba(30, 58, 138, 0.74) 100%
+  );
+}
+
+/* Smooth transitions for interactive elements */
+button {
+  transition: all 0.3s ease;
+}

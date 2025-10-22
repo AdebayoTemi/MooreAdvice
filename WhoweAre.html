@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who We Are</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/page-hero.css" />
+    <link rel="stylesheet" href="css/story-section.css" />
+    <link rel="stylesheet" href="css/WhoweAre.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <main class="bg-gray-50">
+      <!-- Page Hero Section -->
+      <section class="page-hero" id="pageHero">
+        <!-- Background Image -->
+        <div class="page-hero__background"></div>
+
+        <!-- Overlay -->
+        <div class="page-hero__overlay"></div>
+
+        <!-- Content -->
+        <div class="page-hero__content">
+          <h1 class="page-hero__title" id="heroTitle">Who We Are</h1>
+          <p class="page-hero__subtitle" id="heroSubtitle">
+            Our journey from humble beginnings to industry leadership
+          </p>
+        </div>
+      </section>
+
+      <!-- Content Section with Sidebar Navigation -->
+      <section class="py-12 px-6 md:px-12 lg:px-24 mt-12">
+        <div class="">
+          <div class="grid grid-cols-1 lg:grid-cols-10 gap-8">
+            <!-- Left Sidebar Navigation -->
+            <aside class="lg:col-span-3">
+              <nav class="sidebar-nav bg-white rounded-xl shadow-lg">
+                <!-- Blue Header Section -->
+                <div class="bg-[#05058F] rounded-t-xl p-3">
+                  <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-lg font-medium text-white mt-1">WHO WE ARE</h3>
+                    <div class="flex gap-2 mt-1">
+                      <span class="w-4 h-4 bg-white rounded-full"></span>
+                      <span class="w-4 h-4 bg-white rounded-full"></span>
+                      <span class="w-4 h-4 bg-white rounded-full"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="p-1 pt-4">
+                  <ul class="space-y-2">
+                    <li>
+                      <a
+                        href="#our-values"
+                        onclick="scrollToSection('our-values')"
+                        class="nav-link block py-2 px-4 text-gray-700 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-medium"
+                      >
+                        <span class="mr-3 text-xl">›</span> Our Values
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#our-team"
+                        onclick="scrollToSection('our-team')"
+                        class="nav-link block py-2 px-4 text-gray-700 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-medium"
+                      >
+                        <span class="mr-3 text-xl">›</span> Our Team
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#our-culture"
+                        onclick="scrollToSection('our-culture')"
+                        class="nav-link block py-2 px-4 text-gray-700 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-medium"
+                      >
+                        <span class="mr-3 text-xl">›</span> Our Culture
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#gallery"
+                        onclick="scrollToSection('gallery')"
+                        class="nav-link block py-2 px-4 text-gray-700 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-medium"
+                      >
+                        <span class="mr-3 text-xl">›</span> Gallery
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#news"
+                        onclick="scrollToSection('news')"
+                        class="nav-link block py-2 px-4 text-gray-700 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-medium"
+                      >
+                        <span class="mr-3 text-xl">›</span> News
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#rate"
+                        onclick="scrollToSection('rate')"
+                        class="nav-link block py-2 px-4 text-gray-700 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-medium"
+                      >
+                        <span class="mr-3 text-xl">›</span> Rate
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </aside>
+
+            <!-- Right Content Area - Core Values Tabs -->
+            <main class="lg:col-span-7">
+              <!-- Our Values Section -->
+              <!-- Our Values Section -->
+              <article
+                id="our-values"
+                class="content-card bg-white rounded-xl shadow-lg overflow-hidden p-8 md:p-10"
+              >
+                <!-- Section Header -->
+                <div class="text-center mb-8">
+                  <h2 class="values-header-title">OUR CORE VALUES</h2>
+                  <p class="values-header-subtitle text-gray-600">
+                    The principles that guide our work and define our approach
+                    to every project
+                  </p>
+                </div>
+
+                <!-- Tab Buttons -->
+                <div class="flex flex-wrap gap-2 justify-center mb-8">
+                  <button
+                    onclick="switchTab('creativity')"
+                    id="tab-creativity"
+                    class="value-tab active"
+                  >
+                    Creativity
+                  </button>
+                  <button
+                    onclick="switchTab('never-say-never')"
+                    id="tab-never-say-never"
+                    class="value-tab"
+                  >
+                    Never Say Never
+                  </button>
+                  <button
+                    onclick="switchTab('confidentiality')"
+                    id="tab-confidentiality"
+                    class="value-tab"
+                  >
+                    Confidentiality
+                  </button>
+                  <button
+                    onclick="switchTab('daring')"
+                    id="tab-daring"
+                    class="value-tab"
+                  >
+                    Daring
+                  </button>
+                  <button
+                    onclick="switchTab('teamwork')"
+                    id="tab-teamwork"
+                    class="value-tab"
+                  >
+                    Teamwork
+                  </button>
+                  <button
+                    onclick="switchTab('modesty')"
+                    id="tab-modesty"
+                    class="value-tab"
+                  >
+                    Modesty
+                  </button>
+                </div>
+
+                <!-- Tab Content Container -->
+                <div class="tab-content-wrapper">
+                  <!-- Creativity Tab (Active by default) -->
+                  <div id="content-creativity" class="tab-content active">
+                    <div
+                      class="relative rounded-xl overflow-hidden"
+                      style="height: 500px"
+                    >
+                      <div class="absolute inset-0">
+                        <img
+                          src="./img/fdfd.webp"
+                          alt="Creativity"
+                          class="w-full h-full object-cover rounded-xl"
+                        />
+                        <div
+                          class="absolute inset-0 rounded-xl"
+                          style="
+                            background-image: linear-gradient(
+                              180deg,
+                              rgba(0, 0, 0, 0) 0%,
+                              rgba(0, 0, 0, 0.74) 89%
+                            );
+                          "
+                        ></div>
+                      </div>
+
+                      <div
+                        class="relative h-full flex flex-col justify-end p-8 text-white"
+                      >
+                        <div class="mb-4">
+                          <span class="tab-title-badge">Creativity</span>
+                        </div>
+
+                        <p class="tab-subtitle mb-4 opacity-90">
+                          Innovative thinking that drives exceptional results.
+                        </p>
+                        <p class="tab-description mb-6 opacity-90">
+                          Our team consists of divergent thinkers who excel at
+                          re-framing problems and creating innovative solutions
+                          that stand out in the marketplace. We believe that
+                          creativity is the foundation of effective branding and
+                          marketing.
+                        </p>
+
+                        <div class="border-t border-white/50 pt-4">
+                          <p class="guide-section-title mb-3">
+                            How This Value Guides Us:
+                          </p>
+                          <div class="guide-grid guide-list opacity-90">
+                            <div>• In our design process</div>
+                            <div>• In our creative concepts</div>
+                            <div>• In our strategic thinking</div>
+                            <div>• In our brand development</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Never Say Never Tab -->
+                  <div id="content-never-say-never" class="tab-content hidden">
+                    <div
+                      class="relative  overflow-hidden rounded-xl"
+                      style="height: 500px"
+                    >
+                      <div class="absolute inset-0 ">
+                        <img
+                          src="./img/92663006307.webp"
+                          alt="Never Say Never"
+                          class="w-full h-full object-cover rounded-xl"
+                        />
+                        <div
+                          class="absolute inset-0 rounded-xl"
+                          style="
+                            background-image: linear-gradient(
+                              180deg,
+                              rgba(0, 0, 0, 0) 0%,
+                              rgba(0, 0, 0, 0.74) 89%
+                            );
+                          "
+                        ></div>
+                      </div>
+
+                      <div
+                        class="relative h-full flex flex-col justify-end p-8 text-white"
+                      >
+                        <h3 class="tab-title-badge mb-4">Never Say Never</h3>
+                        
+Embracing challenges with a positive mindset
+                        </p>
+                        <p class="tab-description mb-6 opacity-90">
+                         We embrace challenges with a positive mindset and believe in finding solutions where others see obstacles. Our persistent approach turns seemingly impossible tasks into success stories. When faced with difficult situations, we see opportunities to innovate and excel.
+                        </p>
+
+                        <div class="border-t border-white/30 pt-4">
+                          <p class="guide-section-title mb-3">
+                            How This Value Guides Us:
+                          </p>
+                          <div class="guide-grid guide-list opacity-90">
+                            <div>• In our client relationships </div>
+                            <div>• In our creative process</div>
+                            <div>• In our team culture  </div>
+                            <div>• In our business decisions</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Confidentiality Tab -->
+                  <div id="content-confidentiality" class="tab-content hidden">
+                    <div
+                      class="relative rounded-xl overflow-hidden"
+                      style="height: 500px"
+                    >
+                      <div class="absolute inset-0">
+                        <img
+                          src="./img/istockphoto-1383519627-612x612.webp"
+                          alt="Confidentiality"
+                          class="w-full h-full object-cover rounded-xl"
+                        />
+                        <div
+                          class="absolute inset-0 rounded-xl"
+                          style="
+                            background-image: linear-gradient(
+                              180deg,
+                              rgba(0, 0, 0, 0) 0%,
+                              rgba(0, 0, 0, 0.74) 89%
+                            );
+                          "
+                        ></div>
+                      </div>
+
+                      <div
+                        class="relative h-full flex flex-col justify-end p-8 text-white"
+                      >
+                        <h3 class="tab-title-badge mb-4">Confidentiality</h3>
+                        <p class="tab-subtitle mb-4 opacity-90">
+                          
+Protecting sensitive information with utmost care
+                        </p>
+                        <p class="tab-description mb-6 opacity-90">
+                         We adhere strictly to non-disclosure policies and agreements of our clients, ensuring that sensitive information remains protected at all times. Trust is the foundation of our client relationships, and we take this responsibility seriously.
+                        </p>
+
+                        <div class="border-t border-white/30 pt-4">
+                          <p class="guide-section-title mb-3">
+                            How This Value Guides Us:
+                          </p>
+                          <div class="guide-grid guide-list opacity-90">
+                            <div>• In our client relationships</div>
+                            <div>• In our creative process</div>
+                            <div>• In our team culture </div>
+                            <div>• In our business decisions</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Daring Tab -->
+                  <div id="content-daring" class="tab-content hidden">
+                    <div
+                      class="relative rounded-xl overflow-hidden"
+                      style="height: 500px"
+                    >
+                      <div class="absolute inset-0">
+                        <img
+                          src="./img/92c4c9916309e09358c75e128032f0dc.webp"
+                          alt="Daring"
+                          class="w-full h-full object-cover rounded-xl"
+                        />
+                        <div
+                          class="absolute inset-0 rounded-xl"
+                          style="
+                            background-image: linear-gradient(
+                              180deg,
+                              rgba(0, 0, 0, 0) 0%,
+                              rgba(0, 0, 0, 0.74) 89%
+                            );
+                          "
+                        ></div>
+                      </div>
+
+                      <div
+                        class="relative h-full flex flex-col justify-end p-8 text-white"
+                      >
+                        <h3 class="tab-title-badge mb-4">Daring</h3>
+                        <p class="tab-subtitle mb-4 opacity-90">
+                         We protect your sensitive information with fearless precision and uncompromising trust.
+                        </p>
+                        <p class="tab-description mb-6 opacity-90">
+                        We adhere  We create new experiences that deliver surprise and excitement. Our bold approach challenges conventions and pushes boundaries to achieve remarkable results..
+                        </p>
+
+                        <div class="border-t border-white/30 pt-4">
+                          <p class="guide-section-title mb-3">
+                            How This Value Guides Us:
+                          </p>
+                          <div class="guide-grid guide-list opacity-90">
+                            <div>• In our client relationships </div>
+                            <div>• In our creative process</div>
+                            <div>• In our team culture  </div>
+                            <div>• In our business decisions</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Teamwork Tab -->
+                  <div id="content-teamwork" class="tab-content hidden">
+                    <div
+                      class="relative rounded-xl overflow-hidden"
+                      style="height: 500px"
+                    >
+                      <div class="absolute inset-0">
+                        <img
+                          src="./img/wmremove-transformed.webp"
+                          alt="Teamwork"
+                          class="w-full h-full object-cover rounded-xl"
+                        />
+                        <div
+                          class="absolute inset-0 rounded-xl"
+                          style="
+                            background-image: linear-gradient(
+                              180deg,
+                              rgba(0, 0, 0, 0) 0%,
+                              rgba(0, 0, 0, 0.74) 89%
+                            );
+                          "
+                        ></div>
+                      </div>
+
+                      <div
+                        class="relative h-full flex flex-col justify-end p-8 text-white"
+                      >
+                        <h3 class="tab-title-badge mb-4">Teamwork</h3>
+                        <p class="tab-subtitle mb-4 opacity-90">
+                          Collaborative excellence through diverse perspectives
+                        </p>
+                        <p class="tab-description mb-6 opacity-90">
+                        We respect each individual and contribute equally to the success of every effort. Our collaborative approach ensures diverse perspectives and stronger outcomes. By bringing together specialists from different disciplines, we create integrated solutions.
+                        </p>
+
+                        <div class="border-t border-white/30 pt-4">
+                          <p class="guide-section-title mb-3">
+                            How This Value Guides Us:
+                          </p>
+                          <div class="guide-grid guide-list opacity-90">
+                            <div>• In our client relationships</div>
+                            <div>• In our creative process</div>
+                            <div>• In our team culture </div>
+                            <div>• In our business decisions</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Modesty Tab -->
+                  <div id="content-modesty" class="tab-content hidden">
+                    <div
+                      class="relative rounded-xl overflow-hidden"
+                      style="height: 500px"
+                    >
+                      <div class="absolute inset-0">
+                        <img
+                          src="./img/Modesty.webp"
+                          alt="Modesty"
+                          class="w-full h-full object-cover rounded-xl"
+                        />
+                        <div
+                          class="absolute inset-0 rounded-xl"
+                          style="
+                            background-image: linear-gradient(
+                              180deg,
+                              rgba(0, 0, 0, 0) 0%,
+                              rgba(0, 0, 0, 0.74) 89%
+                            );
+                          "
+                        ></div>
+                      </div>
+
+                      <div
+                        class="relative h-full flex flex-col justify-end p-8 text-white"
+                      >
+                        <h3 class="tab-title-badge mb-4">Modesty</h3>
+                        <p class="tab-subtitle mb-4 opacity-90">
+                          Client-focused approach built on trust
+                        </p>
+                        <p class="tab-description mb-6 opacity-90">
+                      We are regarded as trustworthy partners who focus on making our clients comfortable. We prioritize client success over self-promotion and build relationships on trust. Our modest approach means we listen more than we speak.
+                        </p>
+
+                        <div class="border-t border-white/30 pt-4">
+                          <p class="guide-section-title mb-3">
+                            How This Value Guides Us:
+                          </p>
+                          <div class="guide-grid guide-list opacity-90">
+                            <div>• In our client relationships </div>
+                            <div>• In our creative process</div>
+                            <div>• In our team culture </div>
+                            <div>• In our business decisions</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Placeholder sections for other nav items -->
+             <!-- Our Team Section -->
+<article id="our-team" class="content-card bg-white rounded-xl shadow-lg overflow-hidden p-8 md:p-10 mt-[140px]">
+  <div class="text-center mb-10">
+    <h2 class="text-3xl md:text-[27px] font-semibold text-gray-700 mb-3" style="color: rgb(94, 94, 181); font-weight: 300;">
+      OUR TEAMS
+    </h2>
+    <p class="text-[#000] text-[20px] max-w-4xl mx-auto font-light">
+      With over 80 years of combined experience among the three of us, our talented team brings expertise and passion to every project
+    </p>
+  </div>
+
+  <!-- Team Members Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+    
+    <!-- Team Member 1 -->
+    <div class="text-center">
+      <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+      <img src="./img/Pro3.webp" alt="mr kola">
+      </div>
+      <h3 class="font-medium text-gray-800 text-sm mb-1" style="color: rgba(5, 5, 143, 1);">KOLA MORADEYO</h3>
+      <p class="text-[#5E5EB5] text-sm mb-3 font-medium">Group Director, Innovation and<br/>Business Strategy</p>
+      <a href="mailto:kola@mooreadvice.com" class="inline-flex items-center justify-center w-10 h-10 border border-[#5E5EB5] rounded-full  transition-colors">
+        <svg class="w-5 h-5 text-[#5E5EB5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Team Member 2 -->
+    <div class="text-center">
+      <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+       <img src="./img/Pro1.webp" alt="ewrtyj">
+      </div>
+      <h3 class="font-medium text-gray-800 text-sm mb-1" style="color: rgba(5, 5, 143, 1);">ANTHONIO OKOJEVOH</h3>
+      <p class="text-[#5E5EB5] text-sm mb-3 font-medium">Group Director, Business<br/>Development and Operations</p>
+      <a href="mailto:anthonio@mooreadvice.com" class="inline-flex items-center justify-center w-10 h-10 border border-[#5E5EB5] rounded-full  transition-colors">
+        <svg class="w-5 h-5 text-[#5E5EB5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Team Member 3 -->
+    <div class="text-center">
+      <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
+        <img src="./img/Pro2.webp" alt="gfhjkl;">
+      </div>
+      <h3 class="font-medium text-gray-800 text-sm mb-1" style="color: rgba(5, 5, 143, 1);">TOLULOPE ODUNSI MORAKINYO</h3>
+      <p class="text-[#5E5EB5] text-sm mb-9 font-medium ">Assistant Director</p>
+      <a href="mailto:tolulope@mooreadvice.com" class="inline-flex items-center justify-center w-10 h-10 border border-[#5E5EB5] rounded-full  transition-colors font-normal">
+        <svg class="w-5 h-5 text-[#5E5EB5]" fill="none" stroke="#5E5EB5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Collective Expertise Section -->
+  <div class="mt-12 bg-[#6A8EC912] rounded-xl p-8">
+    <h3 class="text-[28px]  text-gray-700 mb-4" style="color: rgb(94, 94, 181); font-weight: 300;">
+      OUR COLLECTIVE EXPERTISE
+    </h3>
+    <p class="text-gray-600 text-base leading-relaxed">
+      Our diverse team brings together expertise from various disciplines including brand strategy, creative design, digital marketing, and project management. With over 40 years of combined experience across industries such as finance, retail, technology, and healthcare, we have the knowledge and skills to tackle any branding or marketing challenge. We're united by our passion for creating impactful brand experiences and our commitment to delivering exceptional results for our clients.
+    </p>
+  </div>
+</article>
+
+<!-- Our Culture Section -->
+<article id="our-culture" class="content-card bg-white rounded-xl shadow-lg overflow-hidden mt-[140px]">
+  <div class="p-8 md:p-10">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-[28px] font-semibold mb-3" style="color: rgb(94, 94, 181); font-weight: 300;">
+        OUR CULTURE
+      </h2>
+      <p class="text-[#000] text-[18px] font-light">
+        The environment we create to foster creativity and excellence
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <!-- Left: Image -->
+      <div class="rounded-xl overflow-hidden">
+        <img
+          src="./img/ChatGPT-Image-Jul-31-2025-10-22-44-AM.webp"
+          alt="Our Culture"
+          class=" max-h-[500px] w-full object-cover rounded-xl"
+        />
+      </div>
+
+      <!-- Right: Content -->
+      <div class="space-y-6 self-start mb-12">
+        <p class="text-[#000] text-[18px]  font-light leading-tight mt-5">
+          At Moore Advice, we foster a culture of creativity, collaboration, and continuous learning. We believe that the best ideas come from diverse perspectives and open communication.
+        </p>
+        <p class="text-[#000] text-[18px] leading-tight font-light">
+          Our team members are encouraged to think outside the box, challenge conventional wisdom, and bring their unique talents and perspectives to every project. We celebrate innovation and are not afraid to take calculated risks to achieve exceptional results.
+        </p>
+        <p class="text-[#000] text-[18px] leading-tight font-light">
+          We also prioritize work-life balance and personal growth, recognizing that our team performs at their best when they feel valued, supported, and inspired. This positive culture extends to our client relationships, where we emphasize transparency, respect, and a shared commitment to success.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- Gallery Section -->
+<article id="gallery" class="content-card bg-white rounded-xl shadow-lg overflow-hidden p-8 md:p-10 mt-[140px] max-w-6xl mx-auto">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-[28px] font-semibold mb-3" style="color: rgb(94, 94, 181); font-weight: 300;">
+        GALLERY
+      </h2>
+      <p class="text-[#000] text-[18px] font-light">
+        A visual showcase of our work and team
+      </p>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-8 max-w-4xl mx-auto">
+      <!-- Gallery Item 1 -->
+      <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow h-[134px]">
+        <img
+          src="./img/team-young-african-people-office-600nw-1928516477.webp"
+          alt="Gallery Image 1"
+          class="gallery-image w-full h-[134px] object-cover rounded-xl cursor-pointer"
+          data-category="team"
+        />
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow h-[134px]">
+        <img
+          src="./img/Solving-Business-Problems.webp"
+          alt="Gallery Image 2"
+          class="gallery-image w-full h-[134px] object-cover rounded-xl cursor-pointer"
+          data-category="brand"
+        />
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow h-[134px]">
+        <img
+          src="./img/Mis.webp"
+          alt="Gallery Image 3"
+          class="gallery-image w-full object-cover h-[134px] rounded-xl cursor-pointer"
+          data-category="consultation"
+        />
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow h-[134px]">
+        <img
+          src="./img/Our-Expertise.webp"
+          alt="Gallery Image 4"
+          class="gallery-image w-full h-[134px] object-cover rounded-xl cursor-pointer"
+          data-category="project"
+        />
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow h-[134px]">
+        <img
+          src="./img/Brand-Transformation.webp"
+          alt="Gallery Image 5"
+          class="gallery-image w-full object-cover h-[134px] rounded-xl cursor-pointer"
+          data-category="brand"
+        />
+      </div>
+
+      <!-- Gallery Item 6 -->
+      <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow h-[134px]">
+        <img
+          src="./img/Initial-Consultation.webp"
+          alt="Gallery Image 6"
+          class="gallery-image w-full h-[134px] object-cover rounded-xl cursor-pointer"
+          data-category="consultation"
+        />
+      </div>
+
+      <!-- Gallery Item 7 -->
+      <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow h-[134px]">
+        <img
+          src="./img/Viso.webp"
+          alt="Gallery Image 7"
+          class="gallery-image w-full h-[134px] object-cover rounded-xl cursor-pointer"
+          data-category="team"
+        />
+      </div>
+
+      <!-- Gallery Item 8 -->
+      <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow h-[134px]">
+        <img
+          src="./img/Project-Kickoff-Speed.webp"
+          alt="Gallery Image 8"
+          class="gallery-image w-full h-[134px] object-cover rounded-xl cursor-pointer"
+          data-category="project"
+        />
+      </div>
+    </div>
+
+    <!-- View All Button -->
+    <a href="Portfolio.html">
+      <div class="text-center">
+        <button class="bg-[#05058F] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#040470] transition-colors">
+          View All Photos
+        </button>
+      </div>
+    </a>
+</article>
+
+<!-- Gallery Modal -->
+
+<div id="galleryModal" class="gallery-modal-overlay">
+  <div class="gallery-modal-container">
+    <!-- Close Button -->
+    <button id="closeModal" class="gallery-close-btn">
+      ×
+    </button>
+
+    <!-- Modal Content -->
+    <div class="gallery-modal-content">
+      <!-- Tab Navigation -->
+      <div class="gallery-tabs-wrapper">
+        <button class="gallery-tab active" data-tab="brand">
+          Brand
+        </button>
+        <button class="gallery-tab" data-tab="team">
+          Team
+        </button>
+        <button class="gallery-tab" data-tab="consultation">
+          Initial Consultation
+        </button>
+        <button class="gallery-tab" data-tab="project">
+          Project
+        </button>
+      </div>
+
+      <!-- Image Display with White Frame -->
+      <div class="gallery-image-frame">
+        <div class="gallery-image-container">
+          <img id="modalImage" src="" alt="Gallery Image" class="gallery-modal-img">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- News Section -->
+<article id="news" class="content-card bg-white rounded-xl shadow-lg overflow-hidden p-8 md:p-10 mt-[140px]">
+  <div class="text-center mb-10">
+    <h2 class="text-3xl md:text-[28px] font-semibold mb-3" style="color: rgb(94, 94, 181); font-weight: 300;">
+      LATEST NEWS
+    </h2>
+    <p class="text-[#000] text-[20px] font-light">
+      Stay updated with our recent activities and announcements
+    </p>
+  </div>
+
+  <!-- News Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    
+    <!-- News Card 1 -->
+    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+      <div class="h-48 overflow-hidden">
+        <img
+          src="./img/AwardForExcellence.webp"
+          alt="News 1"
+          class="w-full h-full object-cover rounded-xl"
+        />
+      </div>
+      <div class="p-6">
+        <p class=" mb-2 text-[#5E5EB5]  font-light text-lg">June 15, 2023</p>
+        <h3 class="text-lg font-semibold mb-3 leading-tight" style="color: rgb(94, 94, 181); font-weight: 500;">
+          MOORE ADVICE WINS INDUSTRY AWARD FOR EXCELLENCE
+        </h3>
+        <p class="text-[#000] text-lg mb-20 leading-tight font-light">
+          Our team was recognized for outstanding work in brand development and marketing strategy...
+        </p>
+        <a href="#" class="inline-flex items-center text-[#5E5EB5]  font-light text-lg">
+          Read More
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- News Card 2 -->
+    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+      <div class="h-48 overflow-hidden">
+        <img
+          src="./img/NewPartnershipAnnouncement2.webp"
+          alt="News 2"
+          class="w-full h-full object-cover rounded-xl"
+        />
+      </div>
+      <div class="p-6">
+        <p class=" mb-2 text-[#5E5EB5]  font-light text-lg">May 22, 2023</p>
+        <h3 class="text-lg font-semibold mb-3 leading-tight" style="color: rgb(94, 94, 181); font-weight: 500">
+          NEW PARTNERSHIP ANNOUNCEMENT
+        </h3>
+        <p class="text-[#000] text-lg  leading-tight font-light mb-24">
+          Moore Advice is excited to announce a new strategic partnership with leading technology firm...
+        </p>
+        <a href="#" class="inline-flex items-center text-[#5E5EB5]  font-light text-lg">
+          Read More
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- News Card 3 -->
+    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+      <div class="h-48 overflow-hidden rounded-xl">
+        <img
+          src="./img/ExpandingOurServices.webp"
+          alt="News 3"
+          class="w-full h-full object-cover rounded-xl"
+        />
+      </div>
+      <div class="p-6">
+        <p class=" mb-2 text-[#5E5EB5]  font-light text-lg">April 10, 2023</p>
+        <h3 class="text-lg font-semibold mb-3 leading-tight" style="color: rgb(94, 94, 181); font-weight: 500">
+          MEXPANDING OUR SERVICES
+        </h3>
+        <p class="text-[#000] text-lg mb-24 leading-tight font-light">
+          We're proud to announce the expansion of our service offerings to include advanced AI solutions...
+        </p>
+        <a href="#" class="inline-flex items-center text-[#5E5EB5]  font-light text-lg">
+          Read More
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- View All Button -->
+  <div class="text-center">
+    <a href="OurBlog.html">
+        <button class="bg-[#05058F] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#4A4A95] transition-colors">
+      View All News
+    </button>
+    </a>
+  
+  </div>
+</article>
+
+<!-- Rate Our Services Section -->
+<article id="rate" class="content-card bg-white rounded-xl shadow-lg overflow-hidden p-8 md:p-10 mt-[140px] mb-32">
+  <div class="text-center mb-10">
+    <h2 class="text-3xl md:text-[34px] font-semibold mb-3" style="color: rgb(94, 94, 181); font-weight: 300;">
+      RATE OUR SERVICES
+    </h2>
+    <p class="text-[#000] text-lg font-light">
+      We value your feedback to help us improve
+    </p>
+  </div>
+
+  <div class="max-w-2xl mx-auto bg-gray-50 rounded-xl p-1 md:p-8">
+    <p class="text-center text-[#000] text-lg mb-8 font-light">
+      We value your feedback! Please take a moment to rate your experience working with Moore Advice
+    </p>
+
+     <div class="bg-gray-50 p-4 sm:p-5 md:p-6 rounded-lg">
+                    
+                      <!-- Star Rating -->
+                      <div
+                        class="flex justify-center gap-1.5 sm:gap-2 mb-4 sm:mb-5 md:mb-6"
+                      >
+                        <svg
+                          class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                        <svg
+                          class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      </div>
+                      <form class="space-y-3 sm:space-y-4">
+                        <div
+                          class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4"
+                        >
+                          <input
+                            type="text"
+                            placeholder="Your Name"
+                            class="w-full px-3 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                          />
+                          <input
+                            type="tel"
+                            placeholder="Phone Number"
+                            class="w-full px-3 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                          />
+                        </div>
+                        <textarea
+                          placeholder="Share your thoughts with us"
+                          rows="4"
+                          class="w-full px-3 py-2.5 sm:px-4 sm:py-3 text-sm sm:text-base rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                        ></textarea>
+                        <div
+                          class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4"
+                        >
+                          <button
+                            type="submit"
+                            class="w-full bg-blue-900 text-white px-4 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base rounded-md font-medium hover:bg-blue-800 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2"
+                          >
+                            <svg
+                              class="w-4 h-4 sm:w-5 sm:h-5"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                              />
+                            </svg>
+                            <span class="hidden sm:inline"
+                              >Submit Feedback</span
+                            >
+                            <span class="sm:hidden">Submit</span>
+                          </button>
+                         <a
+  href="https://wa.me/2348035354000"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="w-full bg-green-500 text-white px-4 py-3 md:px-6 md:py-3 rounded-lg font-medium hover:bg-green-600 transition-colors duration-300 flex items-center justify-center gap-2 text-sm"
+>
+  <svg
+    class="w-5 h-5"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+    />
+  </svg>
+  Send Via Whatsapp
+</a>
+                        </div>
+                      </form>
+                    </div>
+</article>
+
+            </main>
+          </div>
+        </div>
+      </section>
+    </main>
+<div id="ourImpact"></div>
+    <!-- Footer Container -->
+    <div id="footer"></div>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/ourImpact.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/page-hero.js"></script>
+    <script src="js/story-section.js"></script>
+    <script src="js/WhoweAre.js"></script>
+
+    <script>
+      // Initialize page hero
+      document.addEventListener("DOMContentLoaded", function () {
+        initPageHero({
+          backgroundImage:
+            "./img/Creative-brand-Solution.webp",
+          title: "Who We Are",
+          subtitle: "Our journey from humble beginnings to industry leadership",
+        });
+      });
+    </script>
+      <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  /* REMOVED: overflow: hidden */
+}
+
+body.popup-active {
+  overflow: hidden;
+}
+
+.background-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: filter 1s ease;
+  z-index: 1;
+  display: none;
+}
+
+.background-content.blurred {
+  filter: blur(8px);
+}
+
+.background-content h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.background-content p {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 2rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1100;
+  transition: background 1s ease, opacity 0.6s ease;
+  opacity: 0;
+  pointer-events: none; /* CRITICAL: Prevents blocking when inactive */
+}
+
+.overlay.active {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  pointer-events: auto; /* CRITICAL: Allows clicks when active */
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* CRITICAL: Prevents blocking when inactive */
+}
+
+.popup-container.active {
+  pointer-events: auto;
+}
+
+.popup {
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+  height: auto; /* Default - adjusts to content */
+  min-height: 550px; /* Add minimum height */
+  max-height: 80vh; /* Maximum 90% of viewport height */
+  max-width: 1300px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  display: flex;
+  overflow: hidden;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: auto;
+  position: relative;
+}
+
+.popup.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Keep all your other styles the same */
+.popup-content {
+  flex: 0 0 68.6667%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup-header {
+  margin-bottom: 0;
+}
+
+.popup-title {
+  font-size: 25px;
+  color: #05058f;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.popup-subtitle {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  padding-right: 5rem;
+  margin-top: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-icon svg {
+  width: 30px;
+  height: 30px;
+  color: #05058f;
+}
+
+.feature-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.feature-content p {
+  font-size: 14px;
+  color: rgb(75, 85, 99);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.popup-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  cursor: pointer;
+  text-transform: inherit !important;
+  border-radius: 6px;
+  padding: 12px 30px;
+  width: auto;
+  background: #05058f;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #05058f;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(5, 5, 143, 0.3);
+}
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  text-transform: inherit !important;
+  border-radius: 6px;
+  padding: 6px 12px;
+  width: auto;
+  color: #05058f !important;
+  border: 2px solid #05058f;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  /* background: #05058f;
+  color: white !important; */
+}
+
+.close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 40px;
+  height: 40px;
+  background: #05058f;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  background: #05058f;
+  transform: scale(1.1);
+}
+
+.close-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke: #fff;
+}
+
+.popup-image {
+  flex: 0 0 33.3333%;
+  background: url("./img/read-More3.webp") center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.popup-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(5, 5, 143, 0.1),
+    rgba(5, 5, 143, 0.1)
+  );
+}
+
+.timer-container {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(5, 5, 143, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #05058f;
+  z-index: 10;
+}
+
+.timer-icon {
+  width: 20px;
+  height: 20px;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.timer-text {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .popup {
+    flex-direction: column;
+    height: 90vh;
+    width: 95%;
+  }
+
+  .popup-content {
+    padding: 2rem;
+  }
+
+  .popup-title {
+    font-size: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .popup-image {
+    flex: 0 0 200px;
+  }
+
+  .popup-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .timer-container {
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
+
+.success-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1300;
+  opacity: 0;
+  scale: 0.8;
+  transition: all 0.4s ease;
+  display: none;
+}
+
+.success-message.active {
+  opacity: 1;
+  scale: 1;
+}
+
+.success-message h2 {
+  color: #05058f;
+  margin-bottom: 1rem;
+}
+
+.success-message p {
+  color: #666;
+}
+
+.heading-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #dcd6d6;
+  padding-bottom: 12px;
+}
+
+.span {
+  margin-top: 3px;
+}
+
+.disPlay {
+  text-decoration: none;
+  color: #05058f;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 8px;
+  transition: background-color 0.25s ease;
+}
+
+.feature-item:hover {
+  background-color: rgba(5, 5, 143, 0.06);
+}
+
+.feature-item[onclick] {
+  cursor: pointer;
+}
+/* Hide popup on mobile devices */
+@media (max-width: 768px) {
+  .overlay,
+  .popup-container {
+    display: none !important;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="background-content" id="backgroundContent">
+      <div>
+        <h1>Welcome to Our Company</h1>
+      </div>
+      <p>
+        Discover our innovative solutions and exceptional team that drives
+        success in every project we undertake. We're committed to excellence and
+        building lasting partnerships.
+      </p>
+    </div>
+
+    <div class="overlay" id="overlay" style="display: none;"></div>
+
+    <div class="popup-container" id="popupContainer" style="display: none;">
+      <div class="popup" id="popup">
+        <button class="close-btn" onclick="closePopup()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Timer at bottom left -->
+        <div class="timer-container" id="timerContainer">
+          <svg class="timer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span class="timer-text">Auto-close in <span id="timerValue">10</span>s</span>
+        </div>
+
+        <div class="popup-content">
+          <div class="popup-header">
+            <div class="heading-flex">
+              <h1 class="popup-title">Who We Are</h1>
+              <div class="btn-secondary">
+                <a class="disPlay" href="Portfolio.html">
+                  <div onclick="viewPortfolio()">View Portfolio</div>
+                </a>
+                <span class="span">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8L22 12L18 16" />
+                    <path d="M2 12H22" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <p class="popup-subtitle">
+              Get to know our team, culture, and values that drive us forward.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-item" onclick="scrollToSectionAndClose('our-values')">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="4" cy="4" r="2" />
+                  <path d="m14 5 3-3 3 3" />
+                  <path d="m14 10 3-3 3 3" />
+                  <path d="M17 14V2" />
+                  <path d="M17 14H7l-5 8h20Z" />
+                  <path d="M8 14v8" />
+                  <path d="m9 14 5 8" />
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h3>Our Core Value</h3>
+                <p>The principles that guide our work</p>
+              </div>
+            </div>
+
+            <div class="feature-item" onclick="scrollToSectionAndClose('gallery')">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m22 11-1.296-1.296a2.4 2.4 0 0 0-3.408 0L11 16" />
+                  <path d="M4 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2" />
+                  <circle cx="13" cy="7" r="1" fill="currentColor" />
+                  <rect x="8" y="2" width="14" height="14" rx="2" />
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h3>Gallery</h3>
+                <p>Visual journey through our work</p>
+              </div>
+            </div>
+
+            <div class="feature-item" onclick="scrollToSectionAndClose('our-culture')">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 13V2l8 4-8 4" />
+                  <path d="M20.561 10.222a9 9 0 1 1-12.55-5.29" />
+                  <path d="M8.002 9.997a5 5 0 1 0 8.9 2.02" />
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h3>Our Culture</h3>
+                <p>The environment we create together</p>
+              </div>
+            </div>
+
+            <div class="feature-item" onclick="scrollToSectionAndClose('news')">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="18" height="18" x="3" y="3" rx="2" />
+                  <path d="M7 7v10" />
+                  <path d="M11 7v10" />
+                  <path d="m15 7 2 10" />
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h3>Our Blog</h3>
+                <p>Latest insights and updates</p>
+              </div>
+            </div>
+
+            <div class="feature-item" onclick="scrollToSectionAndClose('our-team')">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19.414 14.414C21 12.828 22 11.5 22 9.5a5.5 5.5 0 0 0-9.591-3.676.6.6 0 0 1-.818.001A5.5 5.5 0 0 0 2 9.5c0 2.3 1.5 4 3 5.5l5.535 5.362a2 2 0 0 0 2.879.052 2.12 2.12 0 0 0-.004-3 2.124 2.124 0 1 0 3-3 2.124 2.124 0 0 0 3.004 0 2 2 0 0 0 0-2.828l-1.881-1.882a2.41 2.41 0 0 0-3.409 0l-1.71 1.71a2 2 0 0 1-2.828 0 2 2 0 0 1 0-2.828l2.823-2.762" />
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h3>Our Team</h3>
+                <p>Meet the people behind our success</p>
+              </div>
+            </div>
+
+            <div class="feature-item" onclick="scrollToSectionAndClose('rate')">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 14v2" />
+                  <path d="M14 20v2" />
+                  <path d="M14 2v2" />
+                  <path d="M14 8v2" />
+                  <path d="M2 15h8" />
+                  <path d="M2 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H2" />
+                  <path d="M2 9h8" />
+                  <path d="M22 15h-4" />
+                  <path d="M22 3h-2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h2" />
+                  <path d="M22 9h-4" />
+                  <path d="M5 3v18" />
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h3>Rate Us</h3>
+                <p>Share your experience with us</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="popup-buttons">
+            <div class="btn-primary" onclick="goToPage()">
+              <div>Go to Page</div>
+              <span class="span">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-image"></div>
+      </div>
+    </div>
+
+    <div class="success-message" id="successMessage">
+      <h2>Welcome!</h2>
+      <p>You're now entering our main page...</p>
+    </div>
+
+    <script>
+      let isPopupVisible = false;
+      let countdownInterval = null;
+      let timeRemaining = 10;
+
+      function stopTimer() {
+        if (countdownInterval) {
+          clearInterval(countdownInterval);
+          countdownInterval = null;
+        }
+      }
+
+      function startTimer() {
+        const timerValue = document.getElementById('timerValue');
+        
+        countdownInterval = setInterval(() => {
+          timeRemaining--;
+          timerValue.textContent = timeRemaining;
+          
+          if (timeRemaining <= 0) {
+            stopTimer();
+            closePopup();
+          }
+        }, 1000);
+      }
+
+      function closePopup() {
+        stopTimer();
+        isPopupVisible = false;
+        
+        const popup = document.getElementById("popup");
+        const overlay = document.getElementById("overlay");
+        const popupContainer = document.getElementById("popupContainer");
+        const backgroundContent = document.getElementById("backgroundContent");
+
+        popup.classList.remove("active");
+        overlay.classList.remove("active");
+        popupContainer.classList.remove("active");
+        
+        document.body.classList.remove("popup-active");
+
+        setTimeout(() => {
+          backgroundContent.classList.remove("blurred");
+          overlay.style.display = "none";
+          popupContainer.style.display = "none";
+        }, 600);
+      }
+
+      function scrollToSectionAndClose(sectionId) {
+        closePopup();
+        
+        setTimeout(() => {
+          const section = document.getElementById(sectionId);
+          if (section) {
+            section.scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'start' 
+            });
+            
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${sectionId}`) {
+                link.classList.add('active');
+              }
+            });
+          }
+        }, 700);
+      }
+
+      function goToPage() {
+        stopTimer();
+        closePopup();
+      }
+
+      function viewPortfolio() {
+        stopTimer();
+        console.log("Opening portfolio...");
+        closePopup();
+      }
+
+      window.addEventListener("load", () => {
+        // Only show popup on desktop (not mobile)
+        if (window.innerWidth > 768) {
+          const backgroundContent = document.getElementById("backgroundContent");
+          const overlay = document.getElementById("overlay");
+          const popup = document.getElementById("popup");
+          const popupContainer = document.getElementById("popupContainer");
+          
+          overlay.style.display = "block";
+          popupContainer.style.display = "flex";
+          
+          document.body.classList.add("popup-active");
+          isPopupVisible = true;
+
+          setTimeout(() => {
+            backgroundContent.classList.add("blurred");
+            overlay.classList.add("active");
+            popupContainer.classList.add("active");
+
+            setTimeout(() => {
+              popup.classList.add("active");
+              
+              setTimeout(() => {
+                startTimer();
+              }, 500);
+            }, 400);
+          }, 300);
+        }
+      });
+
+      document.getElementById("overlay").addEventListener("click", closePopup);
+
+      document.getElementById("popup").addEventListener("click", (e) => {
+        e.stopPropagation();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && isPopupVisible) {
+          closePopup();
+        }
+      });
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,34 @@
+/* Article Section Background */
+.article-section-bg {
+  background-color: rgba(5, 5, 143, 0.14);
+  min-height: 100vh;
+}
+
+/* Article Accordion Styles */
+.article-content {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth arrow rotation */
+svg {
+  transition: transform 0.3s ease;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.primary-blue {
+  color: rgba(5, 5, 143, 1);
+}

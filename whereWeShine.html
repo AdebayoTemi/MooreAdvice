@@ -1,0 +1,2364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Where We Shine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/page-hero.css" />
+    <link rel="stylesheet" href="css/story-section.css" />
+    <link rel="stylesheet" href="css/faq-section.css" />
+    <link rel="stylesheet" href="css/testimonial.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <main class="bg-gray-50">
+      <!-- Page Hero Section - Reusable Component -->
+      <section class="page-hero" id="pageHero">
+        <!-- Background Image (will be set dynamically) -->
+        <div class="page-hero__background"></div>
+
+        <!-- Overlay -->
+        <div class="page-hero__overlay"></div>
+
+        <!-- Content -->
+        <div class="page-hero__content">
+          <h1 class="page-hero__title" id="heroTitle">Where We Shine</h1>
+          <p class="page-hero__subtitle" id="heroSubtitle">
+            A structured approach to delivering exceptional results
+          </p>
+        </div>
+      </section>
+
+      <!-- Content Section with Sidebar Navigation -->
+      <section class="py-12 px-6 md:px-12 lg:px-6 mt-12">
+        <div class="">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Left Sidebar Navigation - Always Visible -->
+            <aside class="lg:col-span-3">
+              <nav class="sidebar-nav bg-white rounded-xl shadow-lg">
+                <!-- Blue Header Section with decorative circles -->
+                <div class="bg-[#05058F] rounded-t-xl p-3">
+                  <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-lg font-medium text-white mt-1">
+                      WHERE WE SHINE
+                    </h3>
+                    <div class="flex gap-2 mt-1">
+                      <span class="w-4 h-4 bg-white rounded-full"></span>
+                      <span class="w-4 h-4 bg-white rounded-full"></span>
+                      <span class="w-4 h-4 bg-white rounded-full"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Navigation Links - White Background -->
+                <div class="p-2 pt-4">
+                  <ul class="space-y-2">
+                    <li>
+                      <a
+                        href="#Initial-Consultation"
+                        onclick="scrollToSection('Initial-Consultation')"
+                        class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-normal"
+                      >
+                        <span class="mr-3 text-xl">›</span> Initial Consultation
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#our-heritage"
+                        onclick="scrollToSection('our-heritage')"
+                        class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-normal"
+                      >
+                        <span class="mr-3 text-xl">›</span> Project Kickoff
+                        Speed
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#our-evolution"
+                        onclick="scrollToSection('our-evolution')"
+                        class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-normal"
+                      >
+                        <span class="mr-3 text-xl">›</span> Design, Develop &
+                        Deploy
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#key-milestones"
+                        onclick="scrollToSection('key-milestones')"
+                        class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-normal"
+                      >
+                        <span class="mr-3 text-xl">›</span> Brand Transformation
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#funding-principles"
+                        onclick="scrollToSection('funding-principles')"
+                        class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-normal"
+                      >
+                        <span class="mr-3 text-xl">›</span> Enhance Solutions
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#faq"
+                        onclick="scrollToSection('faq')"
+                        class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg transition-all duration-300 cursor-pointer text-lg flex items-center font-normal"
+                      >
+                        <span class="mr-3 text-xl">›</span> Solving Problem
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </aside>
+
+            <!-- Right Content Area -->
+            <main class="lg:col-span-9 space-y-[140px]">
+              <!-- Card 1: Our Story -->
+              <article
+                id="Initial-Consultation"
+                class="content-card bg-white rounded-xl shadow-lg overflow-hidden"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <!-- Left: Content -->
+                  <div class="p-8 md:p-10">
+                    <h2
+                      class="text-3xl md:text-4xl font-light text-blue-900 mb-4"
+                    >
+                      Initial Consultation
+                    </h2>
+                    <p class="text-[#000] font-light text-lg mb-6">
+                      We begin with a thorough understanding of your needs and
+                      objectives.
+                    </p>
+
+                    
+                    <div class="flex justify-end">
+                                   <button
+          onclick="toggleAllAccordions('story')"
+          id="toggleAllBtn-story"
+          class="text-sm font-medium text-blue-900 hover:text-blue-900 transition-colors duration-200 flex items-center  gap-1 whitespace-nowrap ml-4 mt-2 mb-2 border border-gray-200 rounded-md px-3 py-1 w-fit "
+        >
+          <span id="toggleAllText-story">Expand All</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+                    </div>
+
+                    <!-- Accordion Items -->
+                    <div class="space-y-4">
+                      <!-- Accordion Item 1 -->
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('story-1')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Discovery</span
+                          >
+                          <svg
+                            id="icon-story-1"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-story-1"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            In-depth analysis of your business goals and
+                            requirements
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Accordion Item 2 -->
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('story-2')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Research</span
+                          >
+                          <svg
+                            id="icon-story-2"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-story-2"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Market research and competitor analysis to inform
+                            strategy
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Accordion Item 3 -->
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('story-3')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800">Planing</span>
+                          <svg
+                            id="icon-story-3"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-story-3"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Development of detailed project roadmap and timeline
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Accordion Item 4 -->
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('story-4')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Strategy</span
+                          >
+                          <svg
+                            id="icon-story-4"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-story-4"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Custom strategy tailored to your specific needs and
+                            objectives
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Right: Timeline Graphic -->
+                  <div class="relative">
+                    <img
+                      src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80"
+                      alt="in the beginiing picture"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 2: Our Heritage -->
+              <article
+                id="our-heritage"
+                class="content-card bg-white rounded-xl shadow-lg overflow-hidden"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <div class="p-8 md:p-10">
+                    <h2
+                      class="text-3xl md:text-4xl font-light text-blue-900 mb-4"
+                    >
+                      Project Kickoff Speed
+                    </h2>
+                    <p class="text-gray-600 mb-6">
+                      Rapid project initiation with clear goals and timelines
+                    </p>
+
+                             <div class="flex justify-end">
+                                   <button
+          onclick="toggleAllAccordions('heritage')"
+          id="toggleAllBtn-story"
+          class="text-sm font-medium text-blue-900 hover:text-blue-900 transition-colors duration-200 flex items-center  gap-1 whitespace-nowrap ml-4 mt-2 mb-2 border border-gray-200 rounded-md px-3 py-1 w-fit "
+        >
+          <span id="toggleAllText-story">Expand All</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('heritage-1')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Team Assembly</span
+                          >
+                          <svg
+                            id="icon-heritage-1"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-heritage-1"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Bringing together the right experts for your
+                            project.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('heritage-2')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Resources Planing</span
+                          >
+                          <svg
+                            id="icon-heritage-2"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-heritage-2"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Allocating resources and setting up project
+                            infrastructure
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('heritage-3')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >TimeLine Setup</span
+                          >
+                          <svg
+                            id="icon-heritage-3"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-heritage-3"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Creating detailed project timelines and milestones
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('heritage-4')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Communication Plan</span
+                          >
+                          <svg
+                            id="icon-heritage-4"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-heritage-4"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Establishing clear communication channels and
+                            protocols
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative">
+                    <img
+                      src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=1200&q=80"
+                      alt="Our Heritage"
+                      class="rounded-lg shadow-lg h-full w-full object-cover"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 3: Our Evolution -->
+              <article
+                id="our-evolution"
+                class="content-card bg-white rounded-xl shadow-lg overflow-hidden"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <div class="p-8 md:p-10">
+                    <h2
+                      class="text-3xl md:text-4xl font-light text-blue-900 mb-4"
+                    >
+                      Design, Develop & Deploy
+                    </h2>
+                    <p class="text-[#000] font-light text-lg mb-6">
+                      Creating and implementing your solution with precision
+                    </p>
+
+                                     <div class="flex justify-end">
+                                   <button
+          onclick="toggleAllAccordions('evolution')"
+          id="toggleAllBtn-story"
+          class="text-sm font-medium text-blue-900 hover:text-blue-900 transition-colors duration-200 flex items-center  gap-1 whitespace-nowrap ml-4 mt-2 mb-2 border border-gray-200 rounded-md px-3 py-1 w-fit "
+        >
+          <span id="toggleAllText-story">Expand All</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('evolution-1')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Design Phase</span
+                          >
+                          <svg
+                            id="icon-evolution-1"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-evolution-1"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Creating wireframes and visual designs
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('evolution-2')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Development</span
+                          >
+                          <svg
+                            id="icon-evolution-2"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-evolution-2"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Building your solution with cutting-edge technology
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('evolution-3')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800">Testing</span>
+                          <svg
+                            id="icon-evolution-3"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-evolution-3"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Rigorous quality assurance and testing procedures
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('evolution-4')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Development</span
+                          >
+                          <svg
+                            id="icon-evolution-4"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-evolution-4"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Smooth deployment and launch of your solution
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative">
+                    <img
+                      src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1200&q=80"
+                      alt="Our Evolution"
+                      class="rounded-lg shadow-lg w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 4: Key Milestones -->
+              <article
+                id="key-milestones"
+                class="content-card bg-white rounded-xl shadow-lg overflow-hidden"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <div class="p-8 md:p-10">
+                    <h2
+                      class="text-3xl md:text-4xl font-light text-blue-900 mb-4"
+                    >
+                      Brand Transformation
+                    </h2>
+                    <p class="text-[#000] text-lg font-light mb-6">
+                      Evolving your brand for the future
+                    </p>
+
+                                                  <div class="flex justify-end">
+                                   <button
+          onclick="toggleAllAccordions('miestones')"
+          id="toggleAllBtn-story"
+          class="text-sm font-medium text-blue-900 hover:text-blue-900 transition-colors duration-200 flex items-center  gap-1 whitespace-nowrap ml-4 mt-2 mb-2 border border-gray-200 rounded-md px-3 py-1 w-fit "
+        >
+          <span id="toggleAllText-story">Expand All</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('milestones-1')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Analysis</span
+                          >
+                          <svg
+                            id="icon-milestones-1"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-milestones-1"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Recognitions and awards that validate our commitment
+                            to excellence.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('milestones-2')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Strategy</span
+                          >
+                          <svg
+                            id="icon-milestones-2"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-milestones-2"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Transformative results that made a lasting impact on
+                            businesses.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('milestones-3')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Implementation</span
+                          >
+                          <svg
+                            id="icon-milestones-3"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-milestones-3"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Awards and certifications that showcase our
+                            expertise.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('milestones-4')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Monitoring</span
+                          >
+                          <svg
+                            id="icon-milestones-4"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-milestones-4"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Strategic collaborations that amplified our impact.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative">
+                    <img
+                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
+                      alt="Key Milestones"
+                      class="rounded-lg shadow-lg w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 5: Funding Principles -->
+              <article
+                id="funding-principles"
+                class="content-card bg-white rounded-xl shadow-lg overflow-hidden"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <div class="p-8 md:p-10">
+                    <h2
+                      class="text-3xl md:text-4xl font-light text-blue-900 mb-4"
+                    >
+                      Enhancing Solutions
+                    </h2>
+                    <p class="text-[#000] text-lg font-light mb-6">
+                      Continuously improving and optimizing your solutions
+                    </p>
+
+                                                         <div class="flex justify-end">
+                                   <button
+          onclick="toggleAllAccordions('funding')"
+          id="toggleAllBtn-story"
+          class="text-sm font-medium text-blue-900 hover:text-blue-900 transition-colors duration-200 flex items-center  gap-1 whitespace-nowrap ml-4 mt-2 mb-2 border border-gray-200 rounded-md px-3 py-1 w-fit "
+        >
+          <span id="toggleAllText-story">Expand All</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('funding-1')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Optimization</span
+                          >
+                          <svg
+                            id="icon-funding-1"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-funding-1"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            How we maintain financial health while investing in
+                            innovation.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('funding-2')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Innovation</span
+                          >
+                          <svg
+                            id="icon-funding-2"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-funding-2"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Strategic investments in technology and talent
+                            development.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('funding-3')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Performance</span
+                          >
+                          <svg
+                            id="icon-funding-3"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-funding-3"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Diverse revenue streams ensuring long-term
+                            stability.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('funding-4')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800">Scale</span>
+                          <svg
+                            id="icon-funding-4"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-funding-4"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Balancing profitability with environmental and
+                            social responsibility.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative">
+                    <img
+                      src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80"
+                      alt="Funding Principles"
+                      class="rounded-lg shadow-lg w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 6: FAQ -->
+              <article
+                id="faq"
+                class="content-card bg-white rounded-xl shadow-lg overflow-hidden mb-32"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                  <div class="p-8 md:p-10 shadow-lg">
+                    <h2
+                      class="text-3xl md:text-4xl font-light text-blue-900 mb-4"
+                    >
+                      Solving Problem
+                    </h2>
+                    <p class="text-[#000] font-light text-lg mb-6">
+                      Tackling challenges with innovative solutions
+                    </p>
+
+                                                               <div class="flex justify-end">
+                                   <button
+          onclick="toggleAllAccordions('faq')"
+          id="toggleAllBtn-story"
+          class="text-sm font-medium text-blue-900 hover:text-blue-900 transition-colors duration-200 flex items-center  gap-1 whitespace-nowrap ml-4 mt-2 mb-2 border border-gray-200 rounded-md px-3 py-1 w-fit "
+        >
+          <span id="toggleAllText-story">Expand All</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('faq-1')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Problem Analysis</span
+                          >
+                          <svg
+                            id="icon-faq-1"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-faq-1"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Our unique 460-degree approach and commitment to
+                            client success.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('faq-2')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Solution Design</span
+                          >
+                          <svg
+                            id="icon-faq-2"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-faq-2"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Through rigorous processes, experienced teams, and
+                            continuous improvement.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('faq-3')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Implemetation</span
+                          >
+                          <svg
+                            id="icon-faq-3"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-faq-3"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            We work across diverse industries including
+                            technology, finance, healthcare, and retail.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item border-b border-gray-200">
+                        <button
+                          onclick="toggleAccordion('faq-4')"
+                          class="w-full flex justify-between items-center py-4 text-left"
+                        >
+                          <span class="font-light text-lg text-gray-800"
+                            >Results?</span
+                          >
+                          <svg
+                            id="icon-faq-4"
+                            class="w-5 h-5 text-gray-600 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M19 9l-7 7-7-7"
+                            />
+                          </svg>
+                        </button>
+                        <div
+                          id="content-faq-4"
+                          class="accordion-content max-h-0 overflow-hidden transition-all duration-300"
+                        >
+                          <p class="pb-4 text-gray-600 text-sm">
+                            Contact us for a consultation and we'll create a
+                            customized solution for your needs.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative">
+                    <img
+                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80"
+                      alt="FAQ"
+                      class="rounded-lg shadow-lg w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </article>
+
+              <!-- FAQ Section -->
+            </main>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials Section -->
+      <section class="py-20 px-6 md:px-12 lg:px-24 mt-24 mb-24">
+        <div class="max-w-7xl mx-auto">
+          <!-- Two Column Grid -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
+          >
+            <!-- Left Column - Testimonial Slider -->
+            <div class="relative testimonial-container">
+              <div
+                class="testimonial-slider bg-gradient-to-br bg-[#05058F] rounded-2xl overflow-hidden shadow-2xl"
+              >
+                <!-- Testimonial 1 -->
+                <div
+                  class="testimonial-slide active flex flex-col md:flex-row h-full min-h-[450px] md:min-h-[550px]"
+                >
+                  <!-- Image Section -->
+                  <div class="md:w-1/2 h-56 md:h-auto">
+                    <img
+                      src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop"
+                      alt="Client"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Content Section -->
+                  <div
+                    class="md:w-1/2 p-6 md:p-8 lg:p-10 flex flex-col justify-center text-white"
+                  >
+                    <h3
+                      class="text-xl md:text-2xl font-semibold mb-4 border-b-2 border-white pb-2 inline-block"
+                    >
+                      Client Testimonial
+                    </h3>
+                    <p
+                      class="text-sm md:text-base leading-relaxed mb-4 opacity-90"
+                    >
+                      Working with Moore Advice was a game changer to our
+                      Business. Their Strategic insight help us reach our news
+                      markets and grow our customer base.
+                    </p>
+                    <p
+                      class="text-sm md:text-base leading-relaxed mb-6 opacity-90"
+                    >
+                      the attention to details throughout the project was
+                      remarkable
+                    </p>
+
+                    <!-- Author Info -->
+                    <div class="flex items-center gap-3 mt-auto">
+                      <img
+                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop"
+                        alt="Sarah Johnson"
+                        class="w-14 h-14 rounded-full border-2 border-white object-cover"
+                      />
+                      <div>
+                        <h4 class="font-semibold text-base">Sarah Johnson</h4>
+                        <p class="text-xs opacity-80">Marketing Director</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div
+                  class="testimonial-slide flex flex-col md:flex-row h-full min-h-[450px] md:min-h-[550px]"
+                >
+                  <!-- Image Section -->
+                  <div class="md:w-1/2 h-56 md:h-auto">
+                    <img
+                      src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=1000&fit=crop"
+                      alt="Client"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Content Section -->
+                  <div
+                    class="md:w-1/2 p-6 md:p-8 lg:p-10 flex flex-col justify-center text-white"
+                  >
+                    <h3
+                      class="text-xl md:text-2xl font-semibold mb-4 border-b-2 border-white pb-2 inline-block"
+                    >
+                      Client Testimonial
+                    </h3>
+                    <p
+                      class="text-sm md:text-base leading-relaxed mb-4 opacity-90"
+                    >
+                      Moore Advice transformed our brand identity from the
+                      ground up. Their creative team delivered designs that
+                      perfectly captured our vision and values.
+                    </p>
+                    <p
+                      class="text-sm md:text-base leading-relaxed mb-6 opacity-90"
+                    >
+                      The results exceeded our expectations and our customer
+                      engagement has increased by 200%
+                    </p>
+
+                    <!-- Author Info -->
+                    <div class="flex items-center gap-3 mt-auto">
+                      <img
+                        src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop"
+                        alt="Michael Chen"
+                        class="w-14 h-14 rounded-full border-2 border-white object-cover"
+                      />
+                      <div>
+                        <h4 class="font-semibold text-base">Michael Chen</h4>
+                        <p class="text-xs opacity-80">CEO, Tech Solutions</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div
+                  class="testimonial-slide flex flex-col md:flex-row h-full min-h-[450px] md:min-h-[550px]"
+                >
+                  <!-- Image Section -->
+                  <div class="md:w-1/2 h-56 md:h-auto">
+                    <img
+                      src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&h=1000&fit=crop"
+                      alt="Client"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Content Section -->
+                  <div
+                    class="md:w-1/2 p-6 md:p-8 lg:p-10 flex flex-col justify-center text-white"
+                  >
+                    <h3
+                      class="text-xl md:text-2xl font-semibold mb-4 border-b-2 border-white pb-2 inline-block"
+                    >
+                      Client Testimonial
+                    </h3>
+                    <p
+                      class="text-sm md:text-base leading-relaxed mb-4 opacity-90"
+                    >
+                      The team at Moore Advice demonstrated exceptional
+                      professionalism and expertise throughout our
+                      collaboration. They delivered innovative solutions that
+                      truly set us apart.
+                    </p>
+                    <p
+                      class="text-sm md:text-base leading-relaxed mb-6 opacity-90"
+                    >
+                      Their commitment to excellence and attention to detail
+                      made all the difference in achieving our business goals
+                    </p>
+
+                    <!-- Author Info -->
+                    <div class="flex items-center gap-3 mt-auto">
+                      <img
+                        src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop"
+                        alt="Emily Rodriguez"
+                        class="w-14 h-14 rounded-full border-2 border-white object-cover"
+                      />
+                      <div>
+                        <h4 class="font-semibold text-base">Emily Rodriguez</h4>
+                        <p class="text-xs opacity-80">Creative Director</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Navigation Buttons - Outside the slider -->
+              <button
+                onclick="previousTestimonial()"
+                class="testimonial-nav-btn testimonial-prev"
+                aria-label="Previous testimonial"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+
+              <button
+                onclick="nextTestimonial()"
+                class="testimonial-nav-btn testimonial-next"
+                aria-label="Next testimonial"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Right Column - Feedback Form -->
+            <div
+              class="bg-white rounded-2xl shadow-xl p-8 md:p-10 flex flex-col justify-center"
+            >
+              <h2
+                class="text-2xl md:text-3xl font-medium text-blue-900 mb-2 text-center"
+              >
+                Rate your experience with us.
+              </h2>
+              <p class="text-gray-600 text-center mb-8 text-sm md:text-base">
+                What are your thoughts on this project?
+              </p>
+
+              <!-- Star Rating -->
+              <div class="flex justify-center gap-2 mb-8">
+                <svg
+                  class="w-10 h-10 md:w-12 md:h-12 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="w-10 h-10 md:w-12 md:h-12 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="w-10 h-10 md:w-12 md:h-12 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="w-10 h-10 md:w-12 md:h-12 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <svg
+                  class="w-10 h-10 md:w-12 md:h-12 text-gray-300 hover:text-yellow-400 cursor-pointer transition-colors star-rating"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+              </div>
+
+              <!-- Feedback Form -->
+              <form class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-gray-700 font-medium mb-2 text-sm"
+                      >Your Name</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-gray-700 font-medium mb-2 text-sm"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      placeholder="+234 (567) 8900"
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-gray-700 font-medium mb-2 text-sm"
+                    >Share your thoughts with us</label
+                  >
+                  <textarea
+                    placeholder="Tell us about your experience................"
+                    rows="4"
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none text-sm"
+                  ></textarea>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                  <button
+                    type="submit"
+                    class="w-full bg-blue-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition-colors duration-300 flex items-center justify-center gap-2 text-sm"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                      />
+                    </svg>
+                    Submit Feedback
+                  </button>
+               <!-- Replace your current WhatsApp button with this -->
+<a
+  href="https://wa.me/2348035354000"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="w-full bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors duration-300 flex items-center justify-center gap-2 text-sm"
+>
+  <svg
+    class="w-5 h-5"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+    />
+  </svg>
+  Send Via Whatsapp
+</a>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Our Impact Container -->
+    <div id="ourImpact"></div>
+
+    <!-- Footer Container -->
+    <div id="footer"></div>
+    <script src="components/navbar.js"></script>
+    <script src="components/ourImpact.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/page-hero.js"></script>
+    <script src="js/story-section.js"></script>
+    <script src="js/faq-section.js"></script>
+    <script src="js/testimonials.js"></script>
+
+    <script>
+      // Example: Initialize on page load
+      document.addEventListener("DOMContentLoaded", function () {
+        // Default initialization - can be customized per page
+        initPageHero({
+          backgroundImage:
+            "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80",
+          title: "Where we shine",
+          subtitle: "A structured approach to delivering exceptional results",
+        });
+      });
+    </script>
+
+     <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  /* REMOVED: overflow: hidden */
+}
+
+body.popup-active {
+  overflow: hidden;
+}
+
+.background-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: filter 1s ease;
+  z-index: 1;
+  display: none;
+}
+
+.background-content.blurred {
+  filter: blur(8px);
+}
+
+.background-content h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.background-content p {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 2rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1100;
+  transition: background 1s ease, opacity 0.6s ease;
+  opacity: 0;
+  pointer-events: none; /* CRITICAL: Prevents blocking when inactive */
+}
+
+.overlay.active {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  pointer-events: auto; /* CRITICAL: Allows clicks when active */
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* CRITICAL: Prevents blocking when inactive */
+}
+
+.popup-container.active {
+  pointer-events: auto;
+}
+
+.popup {
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+  height: auto; /* Default - adjusts to content */
+  min-height: 550px; /* Add minimum height */
+  max-height: 80vh; /* Maximum 90% of viewport height */
+  max-width: 1300px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  display: flex;
+  overflow: hidden;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: auto;
+  position: relative;
+}
+
+.popup.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Keep all your other styles the same */
+.popup-content {
+  flex: 0 0 68.6667%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup-header {
+  margin-bottom: 0;
+}
+
+.popup-title {
+  font-size: 25px;
+  color: #05058f;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.popup-subtitle {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  padding-right: 5rem;
+  margin-top: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-icon svg {
+  width: 30px;
+  height: 30px;
+  color: #05058f;
+}
+
+.feature-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.feature-content p {
+  font-size: 14px;
+  color: rgb(75, 85, 99);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.popup-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  cursor: pointer;
+  text-transform: inherit !important;
+  border-radius: 6px;
+  padding: 12px 30px;
+  width: auto;
+  background: #05058f;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #05058f;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(5, 5, 143, 0.3);
+}
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  text-transform: inherit !important;
+  border-radius: 6px;
+  padding: 6px 12px;
+  width: auto;
+  color: #05058f !important;
+  border: 2px solid #05058f;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  /* background: #05058f;
+  color: white !important; */
+}
+
+.close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 40px;
+  height: 40px;
+  background: #05058f;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  background: #05058f;
+  transform: scale(1.1);
+}
+
+.close-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke: #fff;
+}
+
+.popup-image {
+  flex: 0 0 33.3333%;
+  background: url("./img/read-More3.webp") center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.popup-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(5, 5, 143, 0.1),
+    rgba(5, 5, 143, 0.1)
+  );
+}
+
+.timer-container {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(5, 5, 143, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #05058f;
+  z-index: 10;
+}
+
+.timer-icon {
+  width: 20px;
+  height: 20px;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.timer-text {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .popup {
+    flex-direction: column;
+    height: 90vh;
+    width: 95%;
+  }
+
+  .popup-content {
+    padding: 2rem;
+  }
+
+  .popup-title {
+    font-size: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .popup-image {
+    flex: 0 0 200px;
+  }
+
+  .popup-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .timer-container {
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
+
+.success-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1300;
+  opacity: 0;
+  scale: 0.8;
+  transition: all 0.4s ease;
+  display: none;
+}
+
+.success-message.active {
+  opacity: 1;
+  scale: 1;
+}
+
+.success-message h2 {
+  color: #05058f;
+  margin-bottom: 1rem;
+}
+
+.success-message p {
+  color: #666;
+}
+
+.heading-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #dcd6d6;
+  padding-bottom: 12px;
+}
+
+.span {
+  margin-top: 3px;
+}
+
+.disPlay {
+  text-decoration: none;
+  color: #05058f;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 8px;
+  transition: background-color 0.25s ease;
+}
+
+.feature-item:hover {
+  background-color: rgba(5, 5, 143, 0.06);
+}
+
+.feature-item[onclick] {
+  cursor: pointer;
+}
+/* Hide popup on mobile devices */
+@media (max-width: 768px) {
+  .overlay,
+  .popup-container {
+    display: none !important;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="background-content" id="backgroundContent">
+      <div>
+        <h1>Welcome to Our Company</h1>
+      </div>
+      <p>
+        Discover our innovative solutions and exceptional team that drives
+        success in every project we undertake. We're committed to excellence and
+        building lasting partnerships.
+      </p>
+    </div>
+
+    <div class="overlay" id="overlay" style="display: none;"></div>
+
+    <div class="popup-container" id="popupContainer" style="display: none;">
+      <div class="popup" id="popup">
+        <button class="close-btn" onclick="closePopup()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="timer-container" id="timerContainer">
+          <svg class="timer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span class="timer-text">Auto-close in <span id="timerValue">10</span>s</span>
+        </div>
+
+        <div class="popup-content">
+          <div class="popup-header">
+            <div class="heading-flex">
+              <h1 class="popup-title">Where We Shine</h1>
+              <div class="btn-secondary">
+                <a class="disPlay" href="Portfolio.html">
+                  <div onclick="viewPortfolio()">View Portfolio</div>
+                </a>
+                <span class="span">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8L22 12L18 16" />
+                    <path d="M2 12H22" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <p class="popup-subtitle">
+              Our proven approach to delivering exceptional results.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-item" onclick="scrollToSectionAndClose('initial-consultation')">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 2v2" />
+                  <path d="M17.915 22a6 6 0 0 0-12 0" />
+                  <path d="M8 2v2" />
+                  <circle cx="12" cy="12" r="4" />
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h3>Initial Consultation</h3>
+                <p>Understanding your needs</p>
+              </div>
+            </div>
+
+            <div class="feature-item" onclick="scrollToSectionAndClose('our-heritage')">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <circle cx="12" cy="12" r="6" />
+                  <circle cx="12" cy="12" r="2" />
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h3>Brand Transformation</h3>
+                <p>Complete brand evolution</p>
+              </div>
+            </div>
+
+            <div class="feature-item" onclick="scrollToSectionAndClose('project-kickoff')">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+                  <circle cx="12" cy="8" r="6" />
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h3>Project Kickoff Speed</h3>
+                <p>Quick and efficient start</p>
+              </div>
+            </div>
+
+            <div class="feature-item" onclick="scrollToSectionAndClose('enhancing-solutions')">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
+                  <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h3>Enhancing Solutions</h3>
+                <p>Improving existing systems</p>
+              </div>
+            </div>
+
+            <div class="feature-item" onclick="scrollToSectionAndClose('design-develop-deploy')">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 16h6" />
+                  <path d="M19 13v6" />
+                  <path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14" />
+                  <path d="m7.5 4.27 9 5.15" />
+                  <polyline points="3.29 7 12 12 20.71 7" />
+                  <line x1="12" x2="12" y1="22" y2="12" />
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h3>Design, Develop & Deploy</h3>
+                <p>End-to-end implementation</p>
+              </div>
+            </div>
+
+            <div class="feature-item" onclick="scrollToSectionAndClose('solving-problems')">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11.035 7.69a1 1 0 0 1 1.909.024l.737 1.452a1 1 0 0 0 .737.535l1.634.256a1 1 0 0 1 .588 1.806l-1.172 1.168a1 1 0 0 0-.282.866l.259 1.613a1 1 0 0 1-1.541 1.134l-1.465-.75a1 1 0 0 0-.912 0l-1.465.75a1 1 0 0 1-1.539-1.133l.258-1.613a1 1 0 0 0-.282-.866l-1.156-1.153a1 1 0 0 1 .572-1.822l1.633-.256a1 1 0 0 0 .737-.535z" />
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h3>Solving Problems</h3>
+                <p>Strategic problem-solving</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="popup-buttons">
+            <div class="btn-primary" onclick="goToPage()">
+              <div>Go to Page</div>
+              <span class="span">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-image"></div>
+      </div>
+    </div>
+
+    <div class="success-message" id="successMessage">
+      <h2>Welcome!</h2>
+      <p>You're now entering our main page...</p>
+    </div>
+
+    <script>
+      let isPopupVisible = false;
+      let countdownInterval = null;
+      let timeRemaining = 10;
+
+      function stopTimer() {
+        if (countdownInterval) {
+          clearInterval(countdownInterval);
+          countdownInterval = null;
+        }
+      }
+
+      function startTimer() {
+        const timerValue = document.getElementById('timerValue');
+        
+        countdownInterval = setInterval(() => {
+          timeRemaining--;
+          timerValue.textContent = timeRemaining;
+          
+          if (timeRemaining <= 0) {
+            stopTimer();
+            closePopup();
+          }
+        }, 1000);
+      }
+
+      function closePopup() {
+        stopTimer();
+        isPopupVisible = false;
+        
+        const popup = document.getElementById("popup");
+        const overlay = document.getElementById("overlay");
+        const popupContainer = document.getElementById("popupContainer");
+        const backgroundContent = document.getElementById("backgroundContent");
+
+        popup.classList.remove("active");
+        overlay.classList.remove("active");
+        popupContainer.classList.remove("active");
+        
+        document.body.classList.remove("popup-active");
+
+        setTimeout(() => {
+          backgroundContent.classList.remove("blurred");
+          overlay.style.display = "none";
+          popupContainer.style.display = "none";
+        }, 600);
+      }
+
+      function scrollToSectionAndClose(sectionId) {
+        closePopup();
+        
+        setTimeout(() => {
+          const section = document.getElementById(sectionId);
+          if (section) {
+            section.scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'start' 
+            });
+            
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${sectionId}`) {
+                link.classList.add('active');
+              }
+            });
+          }
+        }, 700);
+      }
+
+            function goToPage() {
+        stopTimer();
+        closePopup();
+      }
+
+      function viewPortfolio() {
+        stopTimer();
+        console.log("Opening portfolio...");
+        closePopup();
+      }
+
+      window.addEventListener("load", () => {
+        if (window.innerWidth > 768) {
+          const backgroundContent = document.getElementById("backgroundContent");
+          const overlay = document.getElementById("overlay");
+          const popup = document.getElementById("popup");
+          const popupContainer = document.getElementById("popupContainer");
+          
+          overlay.style.display = "block";
+          popupContainer.style.display = "flex";
+          
+          document.body.classList.add("popup-active");
+          isPopupVisible = true;
+
+          setTimeout(() => {
+            backgroundContent.classList.add("blurred");
+            overlay.classList.add("active");
+            popupContainer.classList.add("active");
+
+            setTimeout(() => {
+              popup.classList.add("active");
+              
+              setTimeout(() => {
+                startTimer();
+              }, 500);
+            }, 400);
+          }, 300);
+        }
+      });
+
+      document.getElementById("overlay").addEventListener("click", closePopup);
+
+      document.getElementById("popup").addEventListener("click", (e) => {
+        e.stopPropagation();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && isPopupVisible) {
+          closePopup();
+        }
+      });
+    </script>
+    <script>
+      // Add this new function to your existing script section
+function toggleAllAccordions(prefix) {
+  // Get all accordion items with the given prefix
+  const accordionIds = [];
+  let index = 1;
+  
+  // Find all accordions with this prefix (story-1, story-2, etc.)
+  while (document.getElementById(`content-${prefix}-${index}`)) {
+    accordionIds.push(`${prefix}-${index}`);
+    index++;
+  }
+  
+  // Check if any accordion is open
+  const anyOpen = accordionIds.some(id => {
+    const content = document.getElementById(`content-${id}`);
+    return content && content.style.maxHeight && content.style.maxHeight !== '0px';
+  });
+  
+  // Toggle all accordions
+  accordionIds.forEach(id => {
+    const content = document.getElementById(`content-${id}`);
+    const icon = document.getElementById(`icon-${id}`);
+    
+    if (content && icon) {
+      if (anyOpen) {
+        // Close all
+        content.style.maxHeight = '0px';
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        // Open all
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+  });
+  
+  // Update button text
+  const buttonText = document.getElementById(`toggleAllText-${prefix}`);
+  if (buttonText) {
+    buttonText.textContent = anyOpen ? 'Expand All' : 'Collapse All';
+  }
+}
+
+// Your existing toggleAccordion function (keep it as is)
+function toggleAccordion(id) {
+  const content = document.getElementById(`content-${id}`);
+  const icon = document.getElementById(`icon-${id}`);
+
+  if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+    content.style.maxHeight = '0px';
+    icon.style.transform = 'rotate(0deg)';
+  } else {
+    content.style.maxHeight = content.scrollHeight + 'px';
+    icon.style.transform = 'rotate(180deg)';
+  }
+}
+    </script>
+
+  </body>
+</html>

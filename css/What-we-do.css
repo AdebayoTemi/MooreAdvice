@@ -1,0 +1,183 @@
+/* Service Category Tabs */
+.service-category-tab {
+  background-color: #f3f4f6;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+}
+
+.service-category-tab.active {
+  background-color: #05058f;
+  color: white;
+  border-color: #05058f;
+}
+
+.service-category-tab:hover {
+  background-color: #e5e7eb;
+}
+
+.service-category-tab.active:hover {
+  background-color: #040470;
+}
+
+/* Service Content */
+.service-content {
+  display: none;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.service-content.active {
+  display: block;
+}
+/* Product Tab Container - Fix border alignment */
+.product-tabs-container {
+  position: relative;
+}
+
+.product-tabs-container .flex {
+  border-bottom: 2px solid #e5e7eb; /* Gray border */
+}
+
+/* Product Tab Styles - Border Bottom Active */
+.product-tab {
+  color: #6b7280;
+  border-bottom: 3px solid transparent;
+  font-size: 18px;
+  position: relative;
+  margin-bottom: -2px; /* Pull border down to align with gray line */
+}
+
+.product-tab.active {
+  color: #05058f;
+  border-bottom: 3px solid #05058f;
+  font-weight: 500;
+}
+
+.product-tab:hover {
+  color: #05058f;
+}
+
+/* Toggle Button Container - Search Box Style */
+.toggle-container {
+  position: relative;
+  display: inline-flex;
+  background-color: transparent;
+  border: 1px solid #05058f;
+  border-radius: 9999px;
+  padding: 4px;
+  overflow: hidden;
+}
+
+/* Sliding Background for Active Toggle */
+.toggle-slider {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: #05058f;
+  border-radius: 9999px;
+  transition: transform 0.3s ease, width 0.3s ease;
+  height: calc(100% - 8px);
+  z-index: 1;
+}
+
+/* Product Toggle Button Styles */
+.product-toggle {
+  position: relative;
+  z-index: 2;
+  padding: 12px 32px;
+  font-size: 14px;
+  font-weight: normal;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.product-toggle.active {
+  color: #ffffff !important;
+}
+
+.product-toggle:not(.active) {
+  color: #374151;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  .product-tab {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+
+  .product-toggle {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  .product-tab {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Make toggle container full width on mobile */
+  .toggle-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .product-toggle {
+    padding: 10px 16px;
+    font-size: 11px;
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-toggle {
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+}
+
+/* Project Tab Styles - Border Bottom Active */
+.project-tab-btn {
+  color: #6b7280;
+  border-bottom: 3px solid transparent;
+  font-size: 16px;
+  position: relative;
+  margin-bottom: -2px;
+}
+
+.project-tab-btn.active {
+  color: #05058f;
+  border-bottom: 3px solid #05058f;
+  font-weight: 500;
+}
+
+.project-tab-btn:hover {
+  color: #05058f;
+}
+
+/* Project Content Items */
+.project-content-item.hidden {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-tab-btn {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+}

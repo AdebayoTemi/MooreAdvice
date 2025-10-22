@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Production & Content Creation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/page-hero.css" />
+    <link rel="stylesheet" href="css/What-we-do.css" />
+
+    <style>
+      body {
+        background-color: rgba(174, 177, 183, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <main>
+      <!-- Page Hero Section -->
+      <section class="page-hero" id="pageHero">
+        <div class="page-hero__background"></div>
+        <div class="page-hero__overlay"></div>
+        <div class="page-hero__content">
+          <h1 class="page-hero__title" id="heroTitle">What We Do</h1>
+          <p class="page-hero__subtitle" id="heroSubtitle">
+            Comprehensive brand and marketing solutions to help your business
+            grow and succeed.
+          </p>
+        </div>
+      </section>
+
+      <!-- Main Content Section -->
+      <section class="py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-7xl mx-auto">
+          <!-- Main Tab Buttons - Full Width -->
+          <div class="flex flex-wrap gap-3 mb-8">
+            <a
+              href="WhatweDo.html"
+              id="main-tab-1"
+              class="main-tab-btn flex-1 px-7 py-[18px] rounded-md text-sm font-medium transition-all bg-transparent text-gray-700 border border-gray-300 hover:bg-gray-100"
+            >
+              Advertising & Brand Development
+            </a>
+            <a
+              href="media-production.html"
+              id="main-tab-2"
+              class="main-tab-btn active flex-1 px-7 py-[18px] rounded-md text-sm font-medium transition-all bg-[#05058f] text-white border border-[#05058f]"
+            >
+              Media Production & Content Creation
+            </a>
+            <a
+              href="#"
+              id="main-tab-3"
+              class="main-tab-btn flex-1 px-7 py-[18px] rounded-md text-sm font-medium transition-all bg-transparent text-gray-700 border border-gray-300 hover:bg-gray-100"
+            >
+              Digital Marketing & Analytics
+            </a>
+            <a
+              href="#"
+              id="main-tab-4"
+              class="main-tab-btn flex-1 px-7 py-[18px] rounded-md text-sm font-medium transition-all bg-transparent text-gray-700 border border-gray-300 hover:bg-gray-100"
+            >
+              Experiential & Event Marketing
+            </a>
+          </div>
+
+          <!-- Main Content -->
+          <div id="main-content-2" class="main-content active">
+            <!-- Text Content -->
+            <div class="mb-12">
+              <h2 class="text-3xl font-bold text-[#05058f] mb-4">
+                Media Production & Content Creation
+              </h2>
+              <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                Transform your brand story into captivating multimedia content.
+                From TV commercials to print campaigns and influencer
+                partnerships, we create professional content that engages and
+                converts across all platforms.
+              </p>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                Our production suite handles everything from scriptwriting to
+                final delivery, ensuring your message reaches audiences with
+                maximum impact and quality.
+              </p>
+            </div>
+
+            <!-- Service Category Tabs -->
+            <div class="flex flex-wrap gap-3 mb-8">
+              <button
+                onclick="switchServiceCategory(1)"
+                id="service-tab-1"
+                class="service-category-tab active flex-1 px-6 py-3 rounded-md text-sm font-medium transition-all"
+              >
+                Production Services
+              </button>
+              <button
+                onclick="switchServiceCategory(2)"
+                id="service-tab-2"
+                class="service-category-tab flex-1 px-6 py-3 rounded-md text-sm font-medium transition-all"
+              >
+                Content & Design
+              </button>
+              <button
+                onclick="switchServiceCategory(3)"
+                id="service-tab-3"
+                class="service-category-tab flex-1 px-6 py-3 rounded-md text-sm font-medium transition-all"
+              >
+                Influencer Marketing
+              </button>
+            </div>
+
+            <!-- Service Content -->
+            <!-- Production Services -->
+            <div id="service-content-1" class="service-content active">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
+              >
+                <!-- Service Card 1 -->
+                <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden h-[420px]"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=500"
+                    alt="Commercial Production"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-[#05058f] mb-3">
+                      TV & Radio Commercials
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                      Professional ad production for broadcast media. Full
+                      creative services from concept to final edit, optimized
+                      for maximum audience impact.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden h-[420px]"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=500"
+                    alt="Video Production"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-[#05058f] mb-3">
+                      Digital Video Content
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                      Engaging video content for social media and streaming
+                      platforms. Optimized formats for YouTube, Instagram,
+                      TikTok, and more.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden h-[420px]"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=500"
+                    alt="Audio Production"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-[#05058f] mb-3">
+                      Audio Branding & Jingles
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                      Custom audio identities and memorable jingles.
+                      Professional studio recording and mixing for radio and
+                      streaming ads.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content & Design -->
+            <div id="service-content-2" class="service-content">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
+              >
+                <!-- Service Card 1 -->
+                <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden h-[420px]"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=500"
+                    alt="Print Design"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-[#05058f] mb-3">
+                      Print Ad Design
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                      High-impact print advertising for magazines, newspapers,
+                      and outdoor campaigns. Bold layouts with premium-quality
+                      imagery.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden h-[420px]"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=500"
+                    alt="Package Design"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-[#05058f] mb-3">
+                      Interactive Packaging
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                      Smart packaging with QR codes, AR features, and
+                      eco-friendly materials. Turn packages into marketing tools
+                      with data tracking.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden h-[420px]"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=500"
+                    alt="Brand Assets"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-[#05058f] mb-3">
+                      Visual Asset Studio
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                      Premium photography, custom typography, and brand
+                      consistency tools. High-res assets prepared for any
+                      publication format.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Influencer Marketing -->
+            <div id="service-content-3" class="service-content">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
+              >
+                <!-- Service Card 1 -->
+                <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden h-[420px]"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500"
+                    alt="Influencer Discovery"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-[#05058f] mb-3">
+                      Influencer Matching
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                      AI-powered discovery of creators aligned with your brand
+                      goals. Automated outreach and personalized pitching at
+                      scale.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden h-[420px]"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500"
+                    alt="Campaign Management"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-[#05058f] mb-3">
+                      Campaign Management
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                      End-to-end influencer campaign execution. From contracts
+                      and briefs to content approval and performance tracking.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div
+                  class="bg-white rounded-lg shadow-md overflow-hidden h-[420px]"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500"
+                    alt="ROI Analytics"
+                    class="w-full h-48 object-cover"
+                  />
+                  <div class="p-6">
+                    <h3 class="text-xl font-semibold text-[#05058f] mb-3">
+                      ROI & Analytics
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                      Comprehensive performance metrics and engagement tracking.
+                      Measure true impact and optimize future partnerships.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured Products Section -->
+            <div class="mt-16">
+              <h2 class="text-2xl font-bold text-[#05058f] mb-8">
+                Featured Products
+              </h2>
+
+              <!-- Product Tabs -->
+              <div class="product-tabs-container mb-8">
+                <div class="flex flex-wrap gap-4 md:gap-6">
+                  <button
+                    onclick="switchProduct(1)"
+                    id="product-tab-1"
+                    class="product-tab active px-6 py-3"
+                  >
+                    SpotLight Media
+                  </button>
+                  <button
+                    onclick="switchProduct(2)"
+                    id="product-tab-2"
+                    class="product-tab px-6 py-3"
+                  >
+                    PackAPunch
+                  </button>
+                  <button
+                    onclick="switchProduct(3)"
+                    id="product-tab-3"
+                    class="product-tab px-6 py-3"
+                  >
+                    InkImpact
+                  </button>
+                  <button
+                    onclick="switchProduct(4)"
+                    id="product-tab-4"
+                    class="product-tab px-6 py-3"
+                  >
+                    InfluBoost
+                  </button>
+                </div>
+              </div>
+
+              <!-- PRODUCT 1: SpotLight Media -->
+              <div id="product-content-1" class="product-content active">
+                <!-- Toggle Buttons -->
+                <div class="flex justify-center mb-8">
+                  <div class="toggle-container" id="toggle-container-1">
+                    <div class="toggle-slider" id="toggle-slider-1"></div>
+                    <button
+                      onclick="toggleProductView(1, 'about')"
+                      id="toggle-1-about"
+                      class="product-toggle active"
+                    >
+                      What is SpotLight Media?
+                    </button>
+                    <button
+                      onclick="toggleProductView(1, 'feature')"
+                      id="toggle-1-feature"
+                      class="product-toggle"
+                    >
+                      Click here for Feature
+                    </button>
+                  </div>
+                </div>
+
+                <!-- About View -->
+                <div id="product-1-about" class="product-view active">
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"
+                  >
+                    <div>
+                      <img
+                        src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800"
+                        alt="SpotLight Media Production"
+                        class="rounded-lg shadow-lg w-full"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="text-3xl font-bold text-[#05058f] mb-4">
+                        SpotLight Media:
+                      </h3>
+                      <p class="text-gray-600 mb-4">
+                        TV, radio & streaming ad production
+                      </p>
+                      <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        SpotLight Media produces high-quality commercials for
+                        traditional and digital platforms. It blends
+                        storytelling, studio production, and creative scripting.
+                      </p>
+                      <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        Made for brands needing impactful visual and audio
+                        media. Bridges the gap between idea and broadcast-ready
+                        ad.
+                      </p>
+                      <button
+                        class="px-6 py-3 border-2 border-[#05058f] text-[#05058f] rounded-md hover:bg-[#05058f] hover:text-white transition-all font-medium flex items-center gap-2"
+                      >
+                        Let's Talk
+                        <svg
+                          class="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Feature View -->
+                <div id="product-1-feature" class="product-view">
+                  <h3
+                    class="text-2xl font-bold text-[#05058f] mb-6 text-center"
+                  >
+                    Feature & Impact
+                  </h3>
+                  <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                      <thead>
+                        <tr
+                          class="bg-gradient-to-r from-indigo-400 via-blue-800 to-indigo-400"
+                        >
+                          <th
+                            class="border border-gray-300 px-6 py-4 text-left text-white font-semibold"
+                          >
+                            Features:
+                          </th>
+                          <th
+                            class="border border-gray-300 px-6 py-4 text-left text-white font-semibold"
+                          >
+                            Description:
+                          </th>
+                          <th
+                            class="border border-gray-300 px-6 py-4 text-left text-white font-semibold"
+                          >
+                            Impact:
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+                                />
+                              </svg>
+                              <span class="font-medium">Script Studio</span>
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Crafts powerful brand narratives.</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>
+                                Engages audiences through compelling
+                                storytelling.
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >Voice & Jingle Lab</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Produces custom audio branding.</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>
+                                Enhances memorability across radio/streaming.
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >TV Production Suite</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Full-service video creation.</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>
+                                Delivers professional ads ready for TV airing.
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z"
+                                />
+                                <path
+                                  d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z"
+                                />
+                                <path
+                                  d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >Streaming Converter</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Optimizes for digital platforms.</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Ensures quality across all devices.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >Ad Clearance Manager</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Handles legal & platform approvals.</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Speeds up launch with full compliance.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PRODUCT 2: PackAPunch -->
+              <div id="product-content-2" class="product-content hidden">
+                <!-- Toggle Buttons -->
+                <div class="flex justify-center mb-8">
+                  <div class="toggle-container" id="toggle-container-2">
+                    <div class="toggle-slider" id="toggle-slider-2"></div>
+                    <button
+                      onclick="toggleProductView(2, 'about')"
+                      id="toggle-2-about"
+                      class="product-toggle active"
+                    >
+                      What is PackAPunch?
+                    </button>
+                    <button
+                      onclick="toggleProductView(2, 'feature')"
+                      id="toggle-2-feature"
+                      class="product-toggle"
+                    >
+                      Click here for Feature
+                    </button>
+                  </div>
+                </div>
+
+                <!-- About View -->
+                <div id="product-2-about" class="product-view active">
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"
+                  >
+                    <div>
+                      <img
+                        src="https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=800"
+                        alt="PackAPunch Packaging"
+                        class="rounded-lg shadow-lg w-full"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="text-3xl font-bold text-[#05058f] mb-4">
+                        PackAPunch:
+                      </h3>
+                      <p class="text-gray-600 mb-4">
+                        Smart, interactive packaging design
+                      </p>
+                      <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        PackAPunch develops interactive, functional, and
+                        brand-aligned packaging. It blends structural design
+                        with QR, AR, and smart labels.
+                      </p>
+                      <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        Great for product engagement, shelf impact, and
+                        storytelling. Turns packaging into a direct marketing
+                        and analytics tool.
+                      </p>
+                      <button
+                        class="px-6 py-3 border-2 border-[#05058f] text-[#05058f] rounded-md hover:bg-[#05058f] hover:text-white transition-all font-medium flex items-center gap-2"
+                      >
+                        Let's Talk
+                        <svg
+                          class="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Feature View -->
+                <div id="product-2-feature" class="product-view">
+                  <h3
+                    class="text-2xl font-bold text-[#05058f] mb-6 text-center"
+                  >
+                    Feature & Impact
+                  </h3>
+                  <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                      <thead>
+                        <tr
+                          class="bg-gradient-to-r from-indigo-400 via-blue-800 to-indigo-400"
+                        >
+                          <th
+                            class="border border-gray-300 px-6 py-4 text-left text-white font-semibold"
+                          >
+                            Features:
+                          </th>
+                          <th
+                            class="border border-gray-300 px-6 py-4 text-left text-white font-semibold"
+                          >
+                            Description:
+                          </th>
+                          <th
+                            class="border border-gray-300 px-6 py-4 text-left text-white font-semibold"
+                          >
+                            Impact:
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M3 4a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm2 2V5h1v1H5zM3 13a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1v-3zm2 2v-1h1v1H5zM13 3a1 1 0 00-1 1v3a1 1 0 001 1h3a1 1 0 001-1V4a1 1 0 00-1-1h-3zm1 2v1h1V5h-1z"
+                                  clip-rule="evenodd"
+                                />
+                                <path
+                                  d="M11 4a1 1 0 10-2 0v1a1 1 0 002 0V4zM10 7a1 1 0 011 1v1h2a1 1 0 110 2h-3a1 1 0 01-1-1V8a1 1 0 011-1zM16 9a1 1 0 100 2 1 1 0 000-2zM9 13a1 1 0 011-1h1a1 1 0 110 2v2a1 1 0 11-2 0v-3zM7 11a1 1 0 100-2H4a1 1 0 100 2h3zM17 13a1 1 0 01-1 1h-2a1 1 0 110-2h2a1 1 0 011 1zM16 17a1 1 0 100-2h-3a1 1 0 100 2h3z"
+                                />
+                              </svg>
+                              <span class="font-medium">QR Code Generator</span>
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Adds scannable links to packages.</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Connects packaging to digital content.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"
+                                />
+                              </svg>
+                              <span class="font-medium">AR Label Designer</span>
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Embeds augmented reality features</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>
+                                Boosts consumer engagement through interaction.
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >Eco-Pack Templates</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Provides sustainable material options</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Aligns with eco-conscious brand values.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >Smart Shelf Visualizer</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Tests design shelf impact</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>
+                                Increases in-store attention and pickup rate.
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >Data Feedback Loop</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Tracks user scans and engagement</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>
+                                Informs packaging strategy with real data.
+                              </li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PRODUCT 3: InkImpact -->
+              <div id="product-content-3" class="product-content hidden">
+                <!-- Toggle Buttons -->
+                <div class="flex justify-center mb-8">
+                  <div class="toggle-container" id="toggle-container-3">
+                    <div class="toggle-slider" id="toggle-slider-3"></div>
+                    <button
+                      onclick="toggleProductView(3, 'about')"
+                      id="toggle-3-about"
+                      class="product-toggle active"
+                    >
+                      What is InkImpact?
+                    </button>
+                    <button
+                      onclick="toggleProductView(3, 'feature')"
+                      id="toggle-3-feature"
+                      class="product-toggle"
+                    >
+                      Click here for Feature
+                    </button>
+                  </div>
+                </div>
+
+                <!-- About View -->
+                <div id="product-3-about" class="product-view active">
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"
+                  >
+                    <div>
+                      <img
+                        src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800"
+                        alt="InkImpact Print Design"
+                        class="rounded-lg shadow-lg w-full"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="text-3xl font-bold text-[#05058f] mb-4">
+                        InkImpact:
+                      </h3>
+                      <p class="text-gray-600 mb-4">
+                        Next-level print ad visuals
+                      </p>
+                      <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        InkImpact creates standout visual assets for magazines,
+                        newspapers, and print campaigns. It blends photography,
+                        typography, and creative layout techniques.
+                      </p>
+                      <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        Focused on grabbing attention and reinforcing brand
+                        identity. Ideal for high-impact print advertising and
+                        editorials.
+                      </p>
+                      <button
+                        class="px-6 py-3 border-2 border-[#05058f] text-[#05058f] rounded-md hover:bg-[#05058f] hover:text-white transition-all font-medium flex items-center gap-2"
+                      >
+                        Let's Talk
+                        <svg
+                          class="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Feature View -->
+                <div id="product-3-feature" class="product-view">
+                  <h3
+                    class="text-2xl font-bold text-[#05058f] mb-6 text-center"
+                  >
+                    Feature & Impact
+                  </h3>
+                  <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                      <thead>
+                        <tr
+                          class="bg-gradient-to-r from-indigo-400 via-blue-800 to-indigo-400"
+                        >
+                          <th
+                            class="border border-gray-300 px-6 py-4 text-left text-white font-semibold"
+                          >
+                            Features:
+                          </th>
+                          <th
+                            class="border border-gray-300 px-6 py-4 text-left text-white font-semibold"
+                          >
+                            Description:
+                          </th>
+                          <th
+                            class="border border-gray-300 px-6 py-4 text-left text-white font-semibold"
+                          >
+                            Impact:
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >Visual Composition</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Designs bold layouts</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Captures reader attention instantly.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm3 2h6v4H7V5zm8 8v2h1v-2h-1zm-2-2H7v4h6v-4zm2 0h1V9h-1v2zm1-4V5h-1v2h1zM5 5v2H4V5h1zm0 4H4v2h1V9zm-1 4h1v2H4v-2z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >High-Res Asset Studio</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Delivers premium-quality images</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Enhances brand perception in print.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"
+                                />
+                              </svg>
+                              <span class="font-medium">Custom Typography</span>
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Builds expressive font styles</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Strengthens brand voice on paper.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >Color Sync Manager</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Matches print and digital tones</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Ensures brand consistency across</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                              <span class="font-medium">Ad Format Adaptor</span>
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Prepares assets for any publication</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Eliminates delays and resizing errors.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PRODUCT 4: InfluBoost -->
+              <div id="product-content-4" class="product-content hidden">
+                <!-- Toggle Buttons -->
+                <div class="flex justify-center mb-8">
+                  <div class="toggle-container" id="toggle-container-4">
+                    <div class="toggle-slider" id="toggle-slider-4"></div>
+                    <button
+                      onclick="toggleProductView(4, 'about')"
+                      id="toggle-4-about"
+                      class="product-toggle active"
+                    >
+                      What is InfluBoost?
+                    </button>
+                    <button
+                      onclick="toggleProductView(4, 'feature')"
+                      id="toggle-4-feature"
+                      class="product-toggle"
+                    >
+                      Click here for Feature
+                    </button>
+                  </div>
+                </div>
+
+                <!-- About View -->
+                <div id="product-4-about" class="product-view active">
+                  <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"
+                  >
+                    <div>
+                      <img
+                        src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800"
+                        alt="InfluBoost Platform"
+                        class="rounded-lg shadow-lg w-full"
+                      />
+                    </div>
+                    <div>
+                      <h3 class="text-3xl font-bold text-[#05058f] mb-4">
+                        InfluBoost:
+                      </h3>
+                      <p class="text-gray-600 mb-4">
+                        Automated influencer engagement
+                      </p>
+                      <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        InfluBoost automates discovery, outreach, and tracking
+                        of influencers. Built for brands scaling partnerships
+                        with content creators.
+                      </p>
+                      <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        Focuses on ROI-driven influencer marketing at scale.
+                        Simplifies workflows while maximizing authentic reach.
+                      </p>
+                      <button
+                        class="px-6 py-3 border-2 border-[#05058f] text-[#05058f] rounded-md hover:bg-[#05058f] hover:text-white transition-all font-medium flex items-center gap-2"
+                      >
+                        Let's Talk
+                        <svg
+                          class="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Feature View -->
+                <div id="product-4-feature" class="product-view">
+                  <h3
+                    class="text-2xl font-bold text-[#05058f] mb-6 text-center"
+                  >
+                    Feature & Impact
+                  </h3>
+                  <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                      <thead>
+                        <tr
+                          class="bg-gradient-to-r from-indigo-400 via-blue-800 to-indigo-400"
+                        >
+                          <th
+                            class="border border-gray-300 px-6 py-4 text-left text-white font-semibold"
+                          >
+                            Features:
+                          </th>
+                          <th
+                            class="border border-gray-300 px-6 py-4 text-left text-white font-semibold"
+                          >
+                            Description:
+                          </th>
+                          <th
+                            class="border border-gray-300 px-6 py-4 text-left text-white font-semibold"
+                          >
+                            Impact:
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >Influencer Discovery AI</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Matches creators to brand goals</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Ensures alignment and campaign success.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                                />
+                                <path
+                                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >Outreach Automation</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Sends personalized pitches at scale</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Saves time and improves response rates.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >Contract & Brief Builder</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Streamlines onboarding process</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Reduces friction and campaign delays.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >Engagement Tracker</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Monitors content performance.</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Measures true ROI and brand impact.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                          <td
+                            class="border border-gray-300 px-6 py-4 bg-gray-600 text-white"
+                          >
+                            <div class="flex items-center gap-3">
+                              <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                              <span class="font-medium"
+                                >Payment Workflow Tool</span
+                              >
+                            </div>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Manages payouts and milestones</li>
+                            </ul>
+                          </td>
+                          <td class="border border-gray-300 px-6 py-4">
+                            <ul class="list-disc list-inside text-gray-700">
+                              <li>Builds trust and long-term partnerships.</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured Projects Section -->
+            <div class="mt-16">
+              <h2 class="text-2xl font-bold text-[#05058f] mb-8">
+                Featured Projects
+              </h2>
+
+              <!-- Project Tabs -->
+              <div class="product-tabs-container mb-8">
+                <div class="flex flex-wrap gap-4 md:gap-6">
+                  <button
+                    onclick="switchProjectTab(1)"
+                    id="project-tab-1"
+                    class="project-tab-btn active px-6 py-3"
+                  >
+                    TV Campaigns
+                  </button>
+                  <button
+                    onclick="switchProjectTab(2)"
+                    id="project-tab-2"
+                    class="project-tab-btn px-6 py-3"
+                  >
+                    Package Designs
+                  </button>
+                  <button
+                    onclick="switchProjectTab(3)"
+                    id="project-tab-3"
+                    class="project-tab-btn px-6 py-3"
+                  >
+                    Print Ads
+                  </button>
+                  <button
+                    onclick="switchProjectTab(4)"
+                    id="project-tab-4"
+                    class="project-tab-btn px-6 py-3"
+                  >
+                    Influencer Campaigns
+                  </button>
+                </div>
+              </div>
+
+              <!-- Project Content -->
+              <!-- TV Campaigns -->
+              <div id="project-content-1" class="project-content-item">
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=500"
+                      alt="Project 1"
+                      class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                      <h3 class="text-lg font-semibold text-[#05058f] mb-2">
+                        National TV Ad Campaign
+                      </h3>
+                      <p class="text-gray-600 text-sm">
+                        30-second commercial for leading beverage brand aired
+                        during prime time slots.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=500"
+                      alt="Project 2"
+                      class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                      <h3 class="text-lg font-semibold text-[#05058f] mb-2">
+                        Radio Jingle Series
+                      </h3>
+                      <p class="text-gray-600 text-sm">
+                        Memorable audio branding for retail chain broadcast
+                        across 20+ stations.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=500"
+                      alt="Project 3"
+                      class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                      <h3 class="text-lg font-semibold text-[#05058f] mb-2">
+                        Streaming Platform Ad
+                      </h3>
+                      <p class="text-gray-600 text-sm">
+                        15-second pre-roll ads optimized for YouTube and
+                        streaming services.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Package Designs -->
+              <div id="project-content-2" class="project-content-item hidden">
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1606663889134-b1dedb5ed8b7?w=500"
+                      alt="Project 1"
+                      class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                      <h3 class="text-lg font-semibold text-[#05058f] mb-2">
+                        Coffee Brand Packaging
+                      </h3>
+                      <p class="text-gray-600 text-sm">
+                        Interactive packaging with QR codes linking to brewing
+                        guides and origin stories.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500"
+                      alt="Project 2"
+                      class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                      <h3 class="text-lg font-semibold text-[#05058f] mb-2">
+                        AR-Enabled Cosmetics
+                      </h3>
+                      <p class="text-gray-600 text-sm">
+                        Augmented reality packaging allowing virtual try-on
+                        experiences before purchase.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1607435277394-6dcb3f99a1e7?w=500"
+                      alt="Project 3"
+                      class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                      <h3 class="text-lg font-semibold text-[#05058f] mb-2">
+                        Eco-Friendly Food Packs
+                      </h3>
+                      <p class="text-gray-600 text-sm">
+                        Sustainable packaging materials with biodegradable
+                        features and minimalist design.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Print Ads -->
+              <div id="project-content-3" class="project-content-item hidden">
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=500"
+                      alt="Project 1"
+                      class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                      <h3 class="text-lg font-semibold text-[#05058f] mb-2">
+                        Magazine Full-Page Spread
+                      </h3>
+                      <p class="text-gray-600 text-sm">
+                        High-impact fashion ad featured in premier lifestyle
+                        magazines nationwide.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500"
+                      alt="Project 2"
+                      class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                      <h3 class="text-lg font-semibold text-[#05058f] mb-2">
+                        Newspaper Campaign Series
+                      </h3>
+                      <p class="text-gray-600 text-sm">
+                        Weekly automotive ads with bold typography and
+                        premium-quality imagery.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500"
+                      alt="Project 3"
+                      class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                      <h3 class="text-lg font-semibold text-[#05058f] mb-2">
+                        Billboard Design
+                      </h3>
+                      <p class="text-gray-600 text-sm">
+                        Outdoor advertising campaign with attention-grabbing
+                        visuals and concise messaging.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Influencer Campaigns -->
+              <div id="project-content-4" class="project-content-item hidden">
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=500"
+                      alt="Project 1"
+                      class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                      <h3 class="text-lg font-semibold text-[#05058f] mb-2">
+                        Tech Product Launch
+                      </h3>
+                      <p class="text-gray-600 text-sm">
+                        Coordinated campaign with 50+ micro-influencers driving
+                        500K+ engagements.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1618077360395-f3068be8e001?w=500"
+                      alt="Project 2"
+                      class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                      <h3 class="text-lg font-semibold text-[#05058f] mb-2">
+                        Beauty Brand Partnership
+                      </h3>
+                      <p class="text-gray-600 text-sm">
+                        Long-term creator collaborations resulting in authentic
+                        content and brand loyalty.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1586473219010-2ffc57b0d282?w=500"
+                      alt="Project 3"
+                      class="w-full h-48 object-cover"
+                    />
+                    <div class="p-6">
+                      <h3 class="text-lg font-semibold text-[#05058f] mb-2">
+                        Food & Beverage Series
+                      </h3>
+                      <p class="text-gray-600 text-sm">
+                        Multi-platform campaign featuring lifestyle influencers
+                        with measurable ROI tracking.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- JavaScript -->
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/What-we-do.js"></script>
+  </body>
+</html>
