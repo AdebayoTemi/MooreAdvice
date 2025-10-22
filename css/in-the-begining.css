@@ -1,0 +1,79 @@
+/* Fix for card images on mobile view */
+
+/* Default card grid */
+.content-card .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .content-card .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Image container fixes for mobile */
+.content-card .relative.overflow-hidden {
+  position: relative;
+  width: 100%;
+  min-height: 300px; /* Ensure minimum height on all screens */
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 767px) {
+  /* Ensure images show on mobile */
+  .content-card .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Fix image container height on mobile */
+  .content-card .relative.overflow-hidden {
+    min-height: 250px;
+    height: 300px; /* Fixed height on mobile */
+    position: relative;
+  }
+
+  /* Ensure image fills container properly */
+  .content-card .relative.overflow-hidden img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  /* Fix for the first card specifically */
+  #our-story .relative.overflow-hidden {
+    height: 400px;
+  }
+
+  /* Remove the h-[400px] restriction that was only on first card */
+  .content-card .grid > div:last-child {
+    height: auto;
+    min-height: 300px;
+  }
+}
+
+/* Tablet fixes (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content-card .relative.overflow-hidden {
+    min-height: 350px;
+  }
+
+  .content-card .relative.overflow-hidden img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Desktop - maintain original behavior */
+@media (min-width: 1024px) {
+  .content-card .relative.overflow-hidden {
+    min-height: 100%;
+  }
+}
