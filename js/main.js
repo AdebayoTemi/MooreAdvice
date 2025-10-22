@@ -106,17 +106,23 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
               text: "Advertising & Brand Development",
-              url: "/WhatweDo.html",
+              url: "/whatwedo-advertising-brand-development.html",
             },
             {
               text: "Websites & App Development",
-              url: "/WhatweDo.html",
+              url: "/whatwedo-websites-apps-development.html",
             },
-            { text: "Digital Signage & OOH", url: "/WhatweDo.html" },
-            { text: "Project Management", url: "/WhatweDo.html" },
+            {
+              text: "Digital Signage & OOH",
+              url: "/whatwedo-digital-signage-ooh.html",
+            },
+            {
+              text: "Project Management",
+              url: "/whatwedo-project-management.html",
+            },
             {
               text: "A.I. & Brand Transformation",
-              url: "/WhatweDo.html",
+              url: "/whatwedo-ai-brand-transformation.html",
             },
           ],
           portfolioLink: "portfolio.html",
