@@ -132,9 +132,9 @@ document.addEventListener("DOMContentLoaded", () => {
             email: "info@mooreadvice.com",
           },
           footerLinks: [
-            { text: "Privacy Policy", url: "/privacy" },
-            { text: "Terms of Service", url: "/terms" },
-            { text: "Sitemap", url: "/sitemap" },
+            { text: "Privacy Policy", url: "#" },
+            { text: "Terms of Service", url: "#" },
+            { text: "Sitemap", url: "#" },
           ],
         });
         console.log("Footer loaded successfully!");
