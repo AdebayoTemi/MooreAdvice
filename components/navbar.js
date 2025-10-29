@@ -35,7 +35,7 @@ function Navbar({ logo, links, brandColor = "rgba(5, 5, 143, 1)" }) {
       
       /* Logo sizing for desktop (84px navbar) */
       .navbar-logo {
-        height: 84px;
+        height: 82px;
         width: auto;
         object-fit: contain;
       }
@@ -168,46 +168,57 @@ function Navbar({ logo, links, brandColor = "rgba(5, 5, 143, 1)" }) {
         }
       }
  
-
- 
-      
-       /* Default state - no hover background */
+      /* Default state - no hover background */
       .nav-link:hover {
         background-color: transparent !important;
       }
       
-     .main-navbar.navbar-scrolled .nav-link:hover {
-  background-color: rgba(5, 5, 143, 1) !important;
-  color: white !important;
-  border-radius: 50px !important;
-  pading: 2rem 4rem !important;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-    
-
+      /* Hover effect when scrolled */
+      .main-navbar.navbar-scrolled .nav-link:hover {
+        background-color: rgba(5, 5, 143, 1) !important;
+        color: white !important;
+        border-radius: 50px !important;
+        padding: 0.4rem 0.2rem !important;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, padding 0.3s ease-in-out;
+      }
+      
+      /* Active page styling - Always visible */
+      .nav-link.active-page {
+        background-color: rgba(5, 5, 143, 1) !important;
+        color: white !important;
+        border-radius: 50px !important;
+        padding: 0.4rem 0.2rem !important;
+      }
+      
+      /* Active page styling when scrolled */
+      .main-navbar.navbar-scrolled .nav-link.active-page {
+        background-color: rgba(5, 5, 143, 1) !important;
+        color: white !important;
+        border-radius: 50px !important;
+        padding: 0.4rem 0.2rem !important;
+      }
     </style>
     
     <nav class="main-navbar border-b-2 border-white w-full">
       <div class="nav-container mx-auto justify-between">
-      <!-- Logo -->
-       <!-- Logo -->
-<div class="navbar-logo-wrapper">
-  <a href="index.html" class="logo-link" aria-label="Go to homepage">
-    <img src="${logo}" alt="Logo" class="navbar-logo">
-  </a>
-</div>
-
+        <!-- Logo -->
+        <div class="navbar-logo-wrapper">
+          <a href="index.html" class="logo-link" aria-label="Go to homepage">
+            <img src="${logo}" alt="Logo" class="navbar-logo">
+          </a>
+        </div>
         
         <!-- Navigation Links (Desktop) -->
-        <ul class="hidden lg:flex items-center gap-8 nav-gap navbar-desktop ">
+        <ul class="hidden lg:flex items-center gap-8 nav-gap navbar-desktop">
           ${links
             .map(
               (link, index) => `
-            <li class="${index > 4 ? "hidden xl:block" : ""} ">
+            <li class="${index > 4 ? "hidden xl:block" : ""}">
               <a 
                 href="${link.url}" 
-                class="text-white   font-normal nav-link whitespace-nowrap p-1  "
+                class="text-white font-normal nav-link whitespace-nowrap p-1"
                 style="font-size: 15px;"
+                data-page="${link.url}"
               >
                 ${link.text}
               </a>
@@ -217,7 +228,7 @@ function Navbar({ logo, links, brandColor = "rgba(5, 5, 143, 1)" }) {
             .join("")}
           <!-- More Menu for Hidden Links -->
           <li class="xl:hidden relative group">
-            <button class="text-white  transition-colors duration-200 font-normal flex items-center gap-1" style="font-size: 15px;">
+            <button class="text-white transition-colors duration-200 font-normal flex items-center gap-1" style="font-size: 15px;">
               More
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -229,7 +240,7 @@ function Navbar({ logo, links, brandColor = "rgba(5, 5, 143, 1)" }) {
                 .slice(5)
                 .map(
                   (link) => `
-                <a href="${link.url}" class="block px-4 py-2 text-gray-800 whitespace-nowrap" style="font-size: 15px;">
+                <a href="${link.url}" class="block px-4 py-2 text-gray-800 whitespace-nowrap nav-link-dropdown" style="font-size: 15px;" data-page="${link.url}">
                   ${link.text}
                 </a>
               `
@@ -241,21 +252,21 @@ function Navbar({ logo, links, brandColor = "rgba(5, 5, 143, 1)" }) {
         
         <!-- Search and User Icons -->
         <div class="hidden lg:flex items-center gap-10 icon-gap mr-12 flex-shrink-0">
-          <button class="text-white  transition-colors">
+          <button id="navbar-search-btn" class="text-white transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/>
             </svg>
           </button>
           
-          <button class="text-white  transition-colors">
-          <a href="HowtoReachUs.html" aria-label="How to reach US pAGE">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/>
-            </svg>
+          <button class="text-white transition-colors">
+            <a href="HowtoReachUs.html" aria-label="How to reach US page">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/>
+              </svg>
             </a>
           </button>
 
-             <a href="index.html" class="text-white transition-colors" aria-label="Go to homepage">
+          <a href="index.html" class="text-white transition-colors" aria-label="Go to homepage">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
               <polyline points="9 22 9 12 15 12 15 22"></polyline>
@@ -282,8 +293,9 @@ function Navbar({ logo, links, brandColor = "rgba(5, 5, 143, 1)" }) {
               <li class="border-b border-gray-700">
                 <a 
                   href="${link.url}" 
-                  class="block text-white hover:bg-gray-700/30 transition-colors py-3 px-2"
+                  class="block text-white hover:bg-gray-700/30 transition-colors py-3 px-2 nav-link-mobile"
                   style="font-size: 16px; font-weight: 400;"
+                  data-page="${link.url}"
                 >
                   ${link.text}
                 </a>
@@ -297,12 +309,42 @@ function Navbar({ logo, links, brandColor = "rgba(5, 5, 143, 1)" }) {
     </nav>
   `;
 
-  // Initialize scroll effect after a short delay to ensure DOM is ready
+  // Initialize scroll effect and active page detection
   setTimeout(() => {
     initNavbarScrollEffect();
+    setActivePage();
   }, 100);
 
   return htmlContent;
+}
+
+// Function to set active page based on current URL
+function setActivePage() {
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+  // Select all navigation links
+  const navLinks = document.querySelectorAll(
+    ".nav-link, .nav-link-dropdown, .nav-link-mobile"
+  );
+
+  navLinks.forEach((link) => {
+    const linkPage = link.getAttribute("data-page");
+    const linkPageName = linkPage ? linkPage.split("/").pop() : "";
+
+    // Compare current page with link page
+    if (
+      linkPageName === currentPage ||
+      (currentPage === "" && linkPageName === "index.html") ||
+      (currentPage === "index.html" && linkPageName === "")
+    ) {
+      link.classList.add("active-page");
+
+      // For mobile menu, add active styling
+      if (link.classList.contains("nav-link-mobile")) {
+        link.style.backgroundColor = "rgba(5, 5, 143, 0.3)";
+      }
+    }
+  });
 }
 
 // Separate function to initialize the scroll effect
@@ -319,41 +361,6 @@ function initNavbarScrollEffect() {
   function handleScroll() {
     const scrollY = window.scrollY || window.pageYOffset;
 
-    console.log("Scroll position:", scrollY); // Debug log
-
-    // Change background when user scrolls down more than 50px
-    if (scrollY > 50) {
-      // Make background transparent with blur
-      navbar.style.backgroundColor = "rgba(26, 26, 26, 0.7)";
-      navbar.style.backdropFilter = "blur(10px)";
-      navbar.style.webkitBackdropFilter = "blur(10px)";
-      navbar.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
-
-      // Add text shadow for better readability
-      const navLinks = navbar.querySelectorAll(".nav-link, button");
-      navLinks.forEach((link) => {
-        link.style.textShadow = "0 1px 3px rgba(0, 0, 0, 0.3)";
-      });
-    } else {
-      // Reset to original brand color
-      navbar.style.backgroundColor = brandColor;
-      navbar.style.backdropFilter = "none";
-      navbar.style.webkitBackdropFilter = "none";
-      navbar.style.boxShadow = "none";
-
-      // Remove text shadow
-      const navLinks = navbar.querySelectorAll(".nav-link, button");
-      navLinks.forEach((link) => {
-        link.style.textShadow = "none";
-      });
-    }
-  }
-
-  function handleScroll() {
-    const scrollY = window.scrollY || window.pageYOffset;
-
-    console.log("Scroll position:", scrollY);
-
     if (scrollY > 50) {
       // Add the navbar-scrolled class
       navbar.classList.add("navbar-scrolled");
@@ -368,8 +375,6 @@ function initNavbarScrollEffect() {
       navLinks.forEach((link) => {
         link.style.textShadow = "0 1px 3px rgba(0, 0, 0, 0.3)";
       });
-
-      console.log("Applied transparent background");
     } else {
       // Remove the navbar-scrolled class
       navbar.classList.remove("navbar-scrolled");
@@ -384,8 +389,6 @@ function initNavbarScrollEffect() {
       navLinks.forEach((link) => {
         link.style.textShadow = "none";
       });
-
-      console.log("Reset to brand color");
     }
   }
 
