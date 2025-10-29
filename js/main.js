@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
             { text: "Where We Shine", url: "/whereWeShine.html" },
             { text: "Why Choose Us", url: "/whyChooseUs.html" },
             { text: "How to Reach Us", url: "/HowtoReachUs.html" },
+            { text: "Our Blog", url: "/OurBlog.html" },
           ],
           servicesLinks: [
             {
