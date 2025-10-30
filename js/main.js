@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
         navbarContainer.innerHTML = Navbar({
           logo: "img/ma-logo.webp",
           links: [
-            { text: "In the Beginning", url: "/inTheBegining.html" },
-            { text: "Who We Are", url: "/WhoweAre.html" },
-            { text: "What We Do", url: "/WhatweDo.html" },
-            { text: "When & From Whom", url: "/WhenandFromWhom.html" },
-            { text: "Where We Shine", url: "/whereWeShine.html" },
-            { text: "Why Choose Us", url: "/whyChooseUs.html" },
-            { text: "How to Reach Us", url: "/HowtoReachUs.html" },
+            { text: "In the Beginning", url: "inTheBegining.html" },
+            { text: "Who We Are", url: "WhoweAre.html" },
+            { text: "What We Do", url: "WhatweDo.html" },
+            { text: "When & From Whom", url: "WhenandFromWhom.html" },
+            { text: "Where We Shine", url: "whereWeShine.html" },
+            { text: "Why Choose Us", url: "whyChooseUs.html" },
+            { text: "How to Reach Us", url: "HowtoReachUs.html" },
           ],
         });
         console.log("Navbar loaded successfully!");
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
             { number: "24/7", label: "Support" },
           ],
           ctaText: "Get in Touch",
-          ctaUrl: "/HowtoReachUs.html",
+          ctaUrl: "HowtoReachUs.html",
         });
         console.log("Our Impact loaded successfully!");
       } catch (error) {
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
           logo: "img/ma-logo.png",
           description:
             "A 460 degree brand agency delivering comprehensive marketing communication and brand identity development.",
-          portfolioLink: "/portfolio",
+          portfolioLink: "/Portfolio",
           socialLinks: [
             {
               label: "Facebook",
@@ -91,42 +91,42 @@ document.addEventListener("DOMContentLoaded", () => {
             },
           ],
           quickLinks: [
-            { text: "The Beginning", url: "/inTheBegining.html" },
-            { text: "Who We Are", url: "/WhoweAre.html" },
-            { text: "What We Do", url: "/WhatweDo.html" },
-            { text: "When & For Whom", url: "/WhenandFromWhom.html" },
-            { text: "Where We Shine", url: "/whereWeShine.html" },
-            { text: "Why Choose Us", url: "/whyChooseUs.html" },
-            { text: "How to Reach Us", url: "/HowtoReachUs.html" },
-            { text: "Our Blog", url: "/OurBlog.html" },
+            { text: "The Beginning", url: "inTheBegining.html" },
+            { text: "Who We Are", url: "WhoweAre.html" },
+            { text: "What We Do", url: "WhatweDo.html" },
+            { text: "When & For Whom", url: "WhenandFromWhom.html" },
+            { text: "Where We Shine", url: "whereWeShine.html" },
+            { text: "Why Choose Us", url: "whyChooseUs.html" },
+            { text: "How to Reach Us", url: "HowtoReachUs.html" },
+            { text: "Our Blog", url: "OurBlog.html" },
           ],
           servicesLinks: [
             {
               text: "Retail & Brand Space Design",
-              url: "/WhatweDo.html",
+              url: "WhatweDo.html",
             },
             {
               text: "Advertising & Brand Development",
-              url: "/whatwedo-advertising-brand-development.html",
+              url: "whatwedo-advertising-brand-development.html",
             },
             {
               text: "Websites & App Development",
-              url: "/whatwedo-websites-apps-development.html",
+              url: "whatwedo-websites-apps-development.html",
             },
             {
               text: "Digital Signage & OOH",
-              url: "/whatwedo-digital-signage-ooh.html",
+              url: "whatwedo-digital-signage-ooh.html",
             },
             {
               text: "Project Management",
-              url: "/whatwedo-project-management.html",
+              url: "whatwedo-project-management.html",
             },
             {
               text: "A.I. & Brand Transformation",
-              url: "/whatwedo-ai-brand-transformation.html",
+              url: "whatwedo-ai-brand-transformation.html",
             },
           ],
-          portfolioLink: "portfolio.html",
+          portfolioLink: "Portfolio.html",
           contact: {
             address: "1b Emmanuel Street, Maryland, Ikeja, Lagos",
             phone: "+2348035354000",
